@@ -27,8 +27,12 @@ For more Python Program Language details see [Welcome to Python.org](https://www
 ### Write by myself
 
 #### 木兰的故事翻版(Mu Lan's Stories (H))
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AndySoftwareExploit/Yellow-Novels/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Mu Lan, a woman in North Chao Dynasty. Ke Han (The name given to the supreme ruler of the northwest territories) conscript soldiers, her father must go to the wars. But he was old and haven't an Adult son. Then Mu Lan instead of his father to went to wars. <br>
+This Novel isn't tell this story, it tells Mu Lan's Yellow lives.
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Having trouble with Pages? You can contact the website Provider to ask for the help.  
+Ways to contact Website Provider:
+* QQ 2358365507
+* Wechat YHZSZKA520LYSY
