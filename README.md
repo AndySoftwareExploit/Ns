@@ -29,7 +29,7 @@ For more Python Program Language details see [Welcome to Python.org](https://www
 #### 木兰的故事翻版(Mu Lan's Stories (H))
 Mu Lan, a woman in North Chao Dynasty. Ke Han (The name given to the supreme ruler of the northwest territories) conscript soldiers, her father must go to the wars. But he was old and haven't an Adult son. Then Mu Lan instead of his father to went to wars. <br>
 This Novel isn't tell this story, it tells Mu Lan's Yellow lives.
-`[Click here to read →→](https://andysoftwareexploit.github.io/Yellow-Novels/Mu%20Lan's%20Story.txt)`
+[Click here to read →→](https://andysoftwareexploit.github.io/Yellow-Novels/Mu%20Lan's%20Story.txt)
 
 ### Support or Contact
 
