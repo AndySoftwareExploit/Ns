@@ -2,34 +2,30 @@
 
 Here are some Yellow Novels. If you're under 18 years old, Please exit this website.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The Novels on this website was upload from [御宅屋](m.yuzhaiwu.live) and [海岸线文学网](www.haxwenx.com).
 
-### Markdown
+### Special Recommended
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Python Edition （激爽月我的露出）
 
-```markdown
-Syntax highlighted code block
+>在教室里自习，大约8点半左右，我决定回寝室，就在关灯的一刹那，一股莫名的冲动涌上心头，全身一阵燥热，我把灯关了，把门锁好了，再用一个桌子一头顶住门一头顶住讲台。由于3月的天气还是很冷我只把裤子脱了，坐在冰凉的台子上，拿出2只水笔，一只插进，一只插进肛门，不断的，没多久我就觉得一点都不冷了。脱光了全身的衣服，包括靴子袜子一直\*\*到了。
 
-# Header 1
-## Header 2
-### Header 3
+>The Python Edition source may like this: <br> 
+>```Python
+>import time
+>import os
+>print("...(Novel Line1)...")
+>time.sleep()                   #Seconds in ()
+>print("...(Novel Line2)...")
+>time.sleep()                   #Seconds in ()
+>print("...(Novel Line n)...")
+>time.sleep()                   #Seconds in ()
+>```
+For more Python Program Language details see [Welcome to Python.org](https://www.python.org/).
 
-- Bulleted
-- List
+### Write by myself
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
+#### 木兰的故事翻版(Mu Lan's Stories (H))
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AndySoftwareExploit/Yellow-Novels/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
