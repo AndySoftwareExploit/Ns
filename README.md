@@ -3,7 +3,7 @@
 Here are some Yellow Novels. If you're under 18 years old, Please exit this website.
 
 The Novels on this website was upload from [御宅屋](http://m.yuzhaiwu.live) and [海岸线文学网](https://www.haxwenx.com). <br>
-You need to Enter the web address by yourselves.
+You may need to Enter the web address by yourselves.
 
 ### Special Recommended
 
