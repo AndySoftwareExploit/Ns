@@ -1,6 +1,6 @@
 ## Welcome to Yellow Novels
 
-You can use the [editor on GitHub](https://github.com/AndySoftwareExploit/Yellow-Novels/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Here are some Yellow Novels. If you're under 18 years old, Please exit this website.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
