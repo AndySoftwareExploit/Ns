@@ -22,7 +22,12 @@ Python Edition （激爽月我的露出）
 >print("...(Novel Line n)...")
 >time.sleep()                   #Seconds in ()
 >```
-For more Python Program Language details see [Welcome to Python.org](https://www.python.org/).
+For more Python Program Language details please goto [Welcome to Python.org](https://www.python.org/). <br> 
+
+H Passage generator
+
+>A "smart" H novel generator. It was rebulid by the "Bullshit Novel Generetor". It can bulid a bullshit H novel. <br>
+[Come and see!](https://andysoftwareexploit.github.io/Yellow-Novels/YellowNovelgenerator.html)
 
 ### Write by myself
 
