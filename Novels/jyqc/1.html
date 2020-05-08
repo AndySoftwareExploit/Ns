@@ -1,0 +1,451 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>1 - 一世书城</title>
+    <meta name="keywords" content="1" />
+    <meta name="description" content="您正在一世书城(www.14txt.net)小说网阅读由姐弟合欢创作的小说《1》最新章节- 1。" />
+	
+	<link rel="stylesheet" href="/layui/css/layui.css" />
+	<link rel="stylesheet" href="/static/css/xiaoshuo.css" />
+	<script type="text/javascript" src="/static/js/jq.min.js"></script>
+	<script type="text/javascript" src="/static/js/Post.js"></script>
+	<script type="text/javascript" src="/static/js/wap.js"></script>
+	<script type="text/javascript" src="/static/js/bqg.js"></script>
+	<script type="text/javascript" src="/static/js/index.js"></script>
+	
+<script language="javascript">
+
+if(isMobileBrowser())
+{
+    document.location.href='https://m.114txt.cc/12/12448/805033.html';
+}
+
+var prevpage="/12/12448/0.html";
+var nextpage="/12/12448/805035.html";
+var index_page = "/12/12448/";
+var bookId,chapterId;
+
+function keypage()
+{
+	var event = document.all ? window.event : arguments[0];
+	if (event.keyCode==37) document.location.href = prevpage;
+	if (event.keyCode==39) document.location.href = nextpage;
+	if (event.keyCode == 13) document.location.href = index_page;
+}
+
+document.onkeydown = keypage;
+
+var speed = 5;
+var autopage;
+var night;
+var currentpos, timer;
+var temPos = 1;
+
+$(document).ready(function(){
+	
+	if(typeof(nextpage) != "undefined" ) {
+		
+		autopage = getCookie("autopage");
+		if(autopage==1) {
+			$('#autopage').attr("checked", true);
+			speed = getCookie("scrollspeed");
+			scrollwindow();
+		}
+	}
+	
+	bgcolor = getCookie("bgcolor");
+	setBGColor(bgcolor);
+	
+	font = getCookie("font");
+	setFont(font);
+	
+	size = getCookie("size");
+	setSize(size);
+	
+	fontcolor = getCookie("fontcolor");
+	setColor(fontcolor);
+	
+	width = getCookie("width");
+	setWidth(width);
+	
+	night = getCookie('night');
+	if(night==1) {
+		$("#night").attr('checked', true);
+		setNight();
+	}
+	
+
+	
+});
+
+document.onmousedown = sc;
+document.ondblclick = scrollwindow;
+
+function scrollwindow()
+{
+	timer=setInterval("scrolling()", 100/speed);
+}
+
+function sc()
+{
+	clearInterval(timer); 
+}
+
+function scrolling()
+{
+	currentpos = document.body.scrollTop;
+	window.scroll(0,++currentpos);
+	if (currentpos != document.body.scrollTop){
+        autopage = getCookie("autopage");
+        if(autopage==1) document.location.href = nextpage;
+		sc();
+	}
+}
+
+function setBGColor(bgcolor)
+{
+	$('#wrapper').css("background-color", bgcolor);
+	setCookie("bgcolor", bgcolor, 365);
+}
+
+function setFont(font)
+{
+	$("#content").css("font-family", font);
+	setCookie("font", font, 365);
+}
+
+function setSize(size)
+{
+	$("#content").css("font-size", size);
+	setCookie("size", size, 365);
+}
+
+function setColor(fontcolor)
+{
+	$("#content").css("color", fontcolor);
+	setCookie("fontcolor", fontcolor, 365);
+}
+
+function setWidth(width)
+{
+	$('#content').css("width", width);
+	setCookie("width", width, 365);
+}
+
+function setNight()
+{
+	if($("#night").attr('checked')==true) {
+		$('div').css("background-color","#111111");
+		$('div,a').css("color","#939392");
+		setCookie("night",1,365);
+	} else {
+		$('div').css("background-color","");
+		$('div,a').css("color","");
+		setCookie("night",0,365);
+	}
+}
+
+function setSpeed(ispeed)
+{
+	if(ispeed==0)ispeed=5;
+	speed=ispeed;
+	setCookie("scrollspeed", ispeed, 365);
+}
+
+function setAutopage()
+{
+	if($('#autopage').is(":checked") == true){
+		$('#autopage').attr("checked",true);	
+		setCookie("autopage",1,365);
+	}else{
+		$('#autopage').attr("checked",false);
+		setCookie("autopage",0,365);
+	}
+}
+
+</script>
+
+</head>
+<body>
+<div id="wrapper">
+<div class="ywtop">
+	<div class="ywtop_con">
+		<div class="ywtop_sethome">
+			<a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('https://www.114txt.cc');" href="#">将一世书城设为首页</a>
+		</div>
+		<div class="ywtop_addfavorite">
+			<a href="javascript:window.external.addFavorite('https://www.114txt.cc','一世txt电子书 全本txt电子书免费下载 完本txt小说免费阅读 - 一世书城')">收藏一世书城</a>
+		</div>
+		<div class="nri">
+						<form name="mylogin" id="mylogin" method="post" action="/index.php?s=/web/index/login">
+				<div class="cc">
+					<div class="txt">账号：</div>
+					<div class="inp"><input type="text" name="uname" id="uname"></div>
+				</div>
+				<div class="cc">
+					<div class="txt">密码：</div>
+					<div class="inp"><input type="password" name="pass" id="pass"></div>
+				</div>
+				<div class="frii">
+					<input type="submit" class="int" value=" ">
+				</div>
+				<div class="ccc">
+					<div class="txtt"></div>
+					<div class="txtt"><a href="/index.php?s=/web/index/reg">用户注册</a></div>
+				</div>
+			</form>
+					</div>
+	</div>
+</div>
+
+<div class="header">
+	<div class="header_logo">
+		<a href="https://www.114txt.cc">一世书城</a>
+	</div>
+	<div class="header_search">
+		<form name="mysearch" id="mysearch" method="post" action="/index.php?s=/web/index/search">
+			<input class="search" id="bdcsMain" name="name" type="text" maxlength="30" value="可搜书名和作者，可少字但别输错字。" onfocus="this.style.color = '#000000';this.focus();if(this.value=='可搜书名和作者，可少字但别输错字。'){this.value='';}" ondblclick="javascript:this.value=''">
+			<input type="submit" class="searchBtn" value="搜索" title="搜索">
+		</form>
+		
+	</div>
+</div>
+
+<div class="clear"></div>
+
+<div class="nav">
+	<ul>
+		<li><a href="/">首页</a></li>
+		<li><a rel="nofollow" href="/index.php?s=/web/index/bookcase">我的书架</a></li>
+		
+		<li><a href="/xuanhuan/">玄幻小说</a></li>
+		<li><a href="/xianxia/">仙侠修真</a></li>
+		<li><a href="/dushi/">都市小说</a></li>
+		<li><a href="/lishi/">历史小说</a></li>
+		<li><a href="/wangyou/">网游小说</a></li>
+		<li><a href="/kehuan/">科幻小说</a></li>
+		<li><a href="/qita/">其他小说</a></li>
+		
+		<li><a rel="nofollow" href="/index.php?s=/web/index/gj">阅读轨迹</a></li>
+		
+		<li><a href="/wanben/1/">全本小说</a></li>
+		<li><a href="/paihangbang/">排行榜单</a></li>
+		<li><a href="/xiaoshuodaquan/">小说大全</a></li>
+	</ul>
+</div>
+
+<div id="main">
+
+<div class="content_read">
+	
+	<div class="box_con">
+		<div class="con_top">
+			
+			<div id="page_set">
+				<select onchange="javascript:setFont(this.options[this.selectedIndex].value);">
+					<option value="宋体">字体</option>
+					<option value="方正启体简体">默认</option>
+					<option value="黑体">黑体</option>
+					<option value="楷体_GB2312">楷体</option>
+					<option value="微软雅黑">雅黑</option>
+					<option value="方正启体简体">启体</option>
+					<option value="宋体">宋体</option>
+				</select>
+				<select onchange="javascript:setColor(this.options[this.selectedIndex].value);">
+					<option value="#000">颜色</option>
+					<option value="#000">默认</option>
+					<option value="#9370DB">暗紫</option>
+					<option value="#2E8B57">藻绿</option>
+					<option value="#2F4F4F">深灰</option>
+					<option value="#778899">青灰</option>
+					<option value="#800000">栗色</option>
+					<option value="#6A5ACD">青蓝</option>
+					<option value="#BC8F8F">玫褐</option>
+					<option value="#F4A460">黄褐</option>
+					<option value="#F5F5DC">米色</option>
+					<option value="#F5F5F5">雾白</option>
+				</select>
+				<select onchange="javascript:setSize(this.options[this.selectedIndex].value);">
+					<option value="#E9FAFF">大小</option>
+					<option value="19pt">默认</option>
+					<option value="10pt">10pt</option>
+					<option value="12pt">12pt</option>
+					<option value="14pt">14pt</option>
+					<option value="16pt">16pt</option>
+					<option value="18pt">18pt</option>
+					<option value="20pt">20pt</option>
+					<option value="22pt">22pt</option>
+					<option value="25pt">25pt</option>
+					<option value="30pt">30pt</option>
+				</select>
+				<select name="scrollspeed" id="scrollspeed" onchange="javascript:setSpeed(this.options[this.selectedIndex].value);">
+					<option value="5">滚屏</option>
+					<option value="1">最慢</option>
+					<option value="2">慢2</option>
+					<option value="3">慢3</option>
+					<option value="4">中4</option>
+					<option value="5">中5</option>
+					<option value="6">中6</option>
+					<option value="7">快7</option>
+					<option value="8">快8</option>
+					<option value="9">快9</option>
+					<option value="10">最快</option>
+				</select>
+				<select onchange="javascript:setBGColor(this.options[this.selectedIndex].value);">
+					<option value="#E9FAFF" style="background-color: #E9FAFF;">背景</option>
+					<option value="#E9FAFF" style="background-color: #E9FAFF;">默认</option>
+					<option value="#FFFFFF" style="background-color: #FFFFFF;">白雪</option>
+					<option value="#000000" style="background-color: #000000;color:#FFFFFF;">漆黑</option>
+					<option value="#FFFFED" style="background-color: #FFFFED;">明黄</option>
+					<option value="#EEFAEE" style="background-color: #EEFAEE;">淡绿</option>
+					<option value="#CCE8CF" style="background-color: #CCE8CF;">草绿</option>
+					<option value="#FCEFFF" style="background-color: #FCEFFF;">红粉</option>
+					<option value="#EFEFEF" style="background-color: #EFEFEF;">深灰</option>
+					<option value="#F5F5DC" style="background-color: #F5F5DC;">米色</option>
+					<option value="#D2B48C" style="background-color: #D2B48C;">茶色</option>
+					<option value="#C0C0C0" style="background-color: #E7F4FE;">银色</option>
+				</select>
+				<select onchange="javascript:setWidth(this.options[this.selectedIndex].value);">
+					<option value="95%">宽度</option>
+					<option value="95%">默认</option>
+					<option value="85%">85%</option>
+					<option value="76%">75%</option>
+					<option value="67%">65%</option>
+					<option value="53%">50%</option>
+					<option value="41%">40%</option>
+				</select>
+				翻页<input type="checkbox" name="autopage" id="autopage" onchange="javascript:setAutopage();" value="">
+				&nbsp;
+				夜间<input type="checkbox" name="night" id="night" onchange="javascript:setNight();" value="">
+			</div>
+			<a href="https://www.114txt.cc">一世书城</a> &gt; <a href="/12/12448/" title="娇淫青春之放纵">娇淫青春之放纵</a> &gt; 1		</div>
+		<div class="bookname">
+			<h1>1</h1>
+			<div class="bottem1">
+				<a href="javascript:;" onclick="addBookMark(805033,12448,'1');">加入书签</a>
+								<a href="/12/12448/" target="_top" class="pre">上一章</a>
+								←
+				<a href="/12/12448/" target="_top" title="" class="back">章节列表</a>
+				→
+								<a href="/12/12448/805035.html" target="_top" class="next">下一章</a>
+								<a href="javascript:;" onclick="addBookMark(805033,12448,'1');">加入书签</a>
+			</div>
+			<div class="lm">
+				&nbsp;热门推荐：
+								<a href="/12/12448/">娇淫青春之放纵</a>、
+								<a href="/98/98624/">逢床作戏(H)</a>、
+								<a href="/111/111169/">淫液香水系统</a>、
+								<a href="/14/14155/">斗破苍穹之淫宗肆虐</a>、
+								<a href="/75/75210/">乱仑合集(一)</a>、
+								<a href="/11/11812/">【斗破苍穹-淫宗肆虐】第七卷（全）大结局</a>、
+							</div>
+		</div>
+		
+		<div id="content" deep="3">
+			<p>
+				&nbsp;&nbsp;&nbsp;&nbsp;本网页使用IDM站点抓取，仅保留.html格式网页不保留.css层叠样式表，对于阅读的障碍我们深表歉意。<br/><br/>
+			</p>
+			&nbsp;&nbsp;&nbsp;&nbsp;在中国江南的一所大学，这是个文科的大学所以女生很多也很漂亮，男生都希望考上这所大学，我今天说的是艺术系大一的五位新生，在女生宿舍３０２号房间住着刚来的五位新生她们是云南的马洁，浙江的王雪，四川的李倩，广东的刘梅，湖南的白娜。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她们的到来在学校引起不小的波动。原因她们太漂亮了，马洁身高１米６７大大的眼睛长长的秀发雪白的皮肤身才太性感了高耸的玉乳，修长的双腿，圆圆的臀部，王雪属于淑女型的１米６５黑黑的齐肩长发，迷人的酒涡，瓜子儿脸身材随没那么性感但也凹凸不平，李倩是她们中最矮的一个，才１米６4，但绝对是个尤物，两个硕大的乳房，肥肥的厚臀，让男生看了心动，刘梅属活波型马尾辫皮肤有一点点黑，健美的身材，白娜是典型的淫荡美人雪一样的肌肤１米７０的高度丹凤眼性感的美唇，丰骚的举止……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;第一天无话,到了第二天的晚上，南方的九月还很热。所以１２点了马洁被一阵低喘声惊醒，听见白娜在不停地动，对于她来说，这声音在熟悉不过了，因为她也常常的做……手淫，是啊，她也几天没弄了。于是也加入了进来，没多久喘息声呻吟声越来越大，五个妙龄女孩都在做着同一件事.<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;３０２房间的喘息，呻吟越来越大，大姐马洁突然说话了“姐妹们，我们打开灯好不好？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“好……”五个姑娘齐口同声，灯打开了，屋内的春色绝对让每个男人都心跳加速，五个女孩全都一丝不挂，各式各样的动作，一个个燕瘦环肥，每人小脸都红红的泛着春情…<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;大姐柔声说：“开始吧”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一条条白嫩性感的大腿不停的扭动，只见白娜斜躺在床上弓起纤纤细腰，大腿向两边尽量分开，一支白嫩纤细的小手在阴部抚摸，而另支手在捻动葡萄粒大小的rǔ头，再看她的下边暗红色的大yīn唇已分开，大大的yīn蒂已脱离包皮凸了出来，随着手指的出出入入一股一股的黏液流了出来：“啊啊…啊啊…哦哦…哦哦…真舒服…”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;再看马洁跪在床上，翘着那令她骄傲的白嫩肥臀，把手指放在嘴里沾着唾液又深深的插进小小的mī穴，随着细长的嫩指一进一出大量的淫液流了出来小小的肛门菊花口也一张一合。她重重的喘息“呜呜…呜…哑哑…呀呀…”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;王雪的性格很文静，动作也不向别人那么夸张。她躺在床上，雪白修长的玉腿弓着，两手指捻动着因兴奋已涨大的yīn蒂。她的黏液流的最多，大腿，肛门周围，床单，都流下她的aì液，见她白静的脸蛋儿娇羞绯红一双迷人的眼睛半睁半闭，滑嫩的香舌不停地添着嘴唇，齐肩的长发纷乱地披在肩上。由于激动全身香汗淋淋：“啊啊…啊啊…哦哦…哦哦…哦哦…哦哦…哦哦……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;而这个时候李倩和刘梅两人已趴到一张床上，相互抚摸着。两人香嫩的舌头缠在一起，口水流的脸上都是，两个丰满的乳房在一起蹭来蹭去，而两手相互插在对方的yīn道里，发出“咕叽…咕叽”的声音。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“哦哦…哦哦…哦哦…啊啊…啊啊…啊啊…啊啊…姐姐…妹…真好…好好…对对…再…再深…深点……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;这场表演一直……到深夜……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;这种表演也经常在302宿舍里一次次上演……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;相同的爱好和兴趣，也让五个妙龄少女的关系变的超常的融洽，她们是那么的无话不谈…………<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;整天几乎是同进同出，行影不离……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;而只有从学校离家最近、只有2个半小时路程的刘梅每个周末从不在学校里多待一分钟，一下课就匆匆忙忙的往家赶。同学们包括302宿舍的小姐妹们都自以为是的以为刘梅的家里有许多家务事等她回去干。刘梅家并不特别富裕。其实，刘梅家里确实有一件家务事等了她一个礼拜，她也等了一个礼拜急着要去做了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;所以每次都近乎一成不变的进行着这样的…………<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;近家情怯，她还没掏出钥匙，心里已经『扑通扑通』地跳个不停了。门後等待着她的会是什麽，她早已经知道，有将近六年了，可是每次面临这件事她还是激动不已。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一打开门，就看见那双饥渴的要喷火的却又充满温情脉脉的眼，盯着她大概已有十九年了吧。她觉得自己的眼睛再也离不开那双眼，那怕自己似乎已被那双眼神剥得精光。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她定了定神，回手关上了门。一转身，人已被拥入那个宽阔的胸怀之中。深吻时，她感觉得到对方的期盼如他的嘌吸一般地急促。两人一言不发的进了她的房间。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;窗帘已被拉好，床上也铺好了新的床单。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她回眸一笑，放下背包就开始解开第一粒钮扣。他默契地蹲下身子为她解开裤扣，慢慢地往下脱掉她的长裤。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她停止了动作，闭上眼享受着那双手从她的腰到屁股，到大腿，到脚踝，一次又一次地慢慢的移动下来的感觉。她喜欢这种由外及里被接触肉体的刺激，所以每次回家她都放弃裙子而身着长裤。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;最後，内裤被剥到脚踝，她就立刻开始脱自己的上衣。刚扔掉胸衣，人已被赤裸的他给扔到床上。两条肉体刚一接触，他就又开始温存地把她的舌关打开，舌尖柔柔地在她口内伸缩转动。他的手也轻轻地爱抚着她的双颊。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;随着嘴向下移动吮吸，她开始发出『嘤嘤』的呻吟。她小巧圆润的乳房在他的轻噬与慢捻下开始坚挺，她的脸颊变得通红。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;当小腹上变得温暖时，她的爱处开始湿润起来。他的舌尖在那浅浅的肚脐中反覆舔噬，她的呻吟声也大了起来。她雪白娇嫩的身子也随着轻轻地扭动，双腿不安地在他的两腿间蠕动，似在渴求那逐渐涨大的东西。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;终于，她的那双玉腿被分了开来，少女清香的气息喷薄而出。随着那舌尖灵巧的翻动，她的隐处也涌出清的蜜液。她抬头看着他扶起她的双腿并直起身子，不禁有点晕旋。啊!那雄伟的东西正向她逼来。她看着感觉着，一分一寸地，她的身体被充满，身心被快乐占领。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;待到全部被充实，他又恢复了野性，狂暴地撞击着她的身体，不停地抽插。她的乳房在他的大手的揉搓下变形。她觉得像海岸的礁石被快感的大浪一波高似一波地冲击着。她的呻吟和着他的喘息也越来越大....<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;终于，浪潮慢了下来。她刚长长地吐了一口气，他就又恢复了温柔，伸展身子伏了上来，衔住她的右乳，轻轻地吮吸。她享受着这『饭後甜点』，分外感到他的温情与对她的爱惜，心中不由充满了对这男人的爱意。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;想着想着，忽然她想到一个怪想法，不由扑哧一声笑了出来。从进门直到结束，他们都未出一声，是在尽情地享受着对方。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;这次他打破了沉默：<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“想到什麽开心的事了？快讲出来也让爸爸高兴一下。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;刘梅斜眼看了伏在她乳房上的父亲，笑着说：”从来我们女人都是我们的儿子吃奶。现在吃我奶的人是不是也是我的儿子呢？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“好啊！我吃你的奶，你就笑我是你儿子。好，那爸爸也让你吃吃爸爸的奶，恢复我们俩父女的名分。”说完，他就把自己的rǔ头送到女儿的嘴边。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她躲闪着笑道：“您的nǎi子太小了，我不吸。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“好！给你一个大的。”立刻那根让她癫狂的玉柱送到了她的嘴里。俩人一下子安静了下来。她一手扶着ròu棒吮吸着几乎塞满她小嘴的guī头，另一只手捧着肉囊，食指还在他的肛门附近轻轻拂动。这次他发出了阵阵的呻吟。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“来，乖女，把屁股撅起来。”他抽回重振雄风的玉茎，翻过女儿轻盈的身子，抚摩着女儿的宛宛香臀，然後分开细嫩的两股，重又占领了女儿的身心......<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;许久，穿回衣服，他轻拂女儿的面颊：”开心吗？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“真希望天天这样快乐。”刘梅的眼里闪过一丝幽怨。刘迎风也叹了一口气。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“如果我们不是爸爸跟女儿多好！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“傻女儿，如果我们不是父女，还会有今天的快乐和方便吗？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“现在，每个礼拜只有这一次了。我要是不上大学就好了。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我觉得一个礼拜一次倒还不错。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“啊，爸爸你不爱我了，还把妹妹搞上手了？”刘梅有点着急。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“傻女儿，爸爸怎麽会不爱你呢？！爸爸是说一星期一次是小别胜新婚。何况，想你到得到你的过程是最美妙的不是吗？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她这才回嗔转喜，吻了爸爸一下。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“爸爸，你知道我的同学对我周末这麽急回家是怎麽说的？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“怎么说？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“她们都以为我像个童养媳，家里有许多家务事要干。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;爸爸哈哈大笑：”好女儿，跟爸爸上床，这也是家务事啊！！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;穿好衣服，两人真的开始做起家务。晚饭前妹妹和母亲分别回到家中。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;日子在平凡平静和激情的相互交融下飞逝----------<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;时间过的真快转眼到了十一，放７天长假，大部份学生都回家了。３０２宿舍也只剩下李倩一个人。过了两天她觉的无聊就一个人上街逛逛，在一个体时装城她认识了那的老板程万宗，他49岁但精神很好，闲谈中知道，他有一个儿子和一个女儿。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;经过一天的接触，两人一拍即合，疯玩到半夜后，他们在全市最大的五星级宾馆--南海酒店开了个房间……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;在房内程万宗坐在沙发上吸烟看着身边漂亮性感的妙龄女孩，心想：没想到我５５岁还能有这艳福，今天李倩穿的是白色修闲外套下穿暗红色短裙黑色长统皮靴，白色外套脱下后内穿黑色紧身衣，只见黑色紧身衣包着两个大大的肥乳。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我先去洗个澡”她向大她30岁的男人甜甜的娇笑……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“好…好啊……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“你洗完我再洗”，在李倩去卫生间后他把春药放在两人的饮料中，便于今天好好玩玩……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;等程万宗洗完澡出来时李倩已喝完饮料，躺在大大的软床上。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;这时候什么话都是多余的，马上，两人就赤裸着抱在一起亲吻，姑娘用滑嫩的香舌添着她身上的男人。两人的舌头绞在一起相互吸允着对方的唾液。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;虽然李倩很淫荡但还是处女，第一次和男人接吻，闻着成熟男人的味道，添着他的舌头不禁低喘着“啊啊…啊…哦哦…哦…伯伯，我要……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;看着这么美丽的少女媚眼如丝，呼吸急促，春潮满面，程万宗先由脚下吻起一双美丽的小脚，雪白细嫩晶莹剔透，脚趾整齐漂亮，他含住女孩的脚趾不停的允吸把整个脚都添遍了，接着由小腿到大腿一遍遍添，姑娘修长的白腿上被添的都是口水，他又拉过少女的纤纤嫩手，一根根葱白细指放在嘴中吸允着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;经过一阵亲吻，他把目光放在姑娘胸前的大号乳房上。哦，太美了，两个小山似的白馒头，大大的乳晕，粉红色紫葡萄大小地rǔ头已硬硬的勃起，没想到19岁的女孩竟有这么大的……太美了，好好……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;李倩腰细乳房和rǔ头却这么大真难得……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他在女孩的乳房上扶摸含住大大的rǔ头深添轻咬……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“啊啊…啊啊…啊啊…啊…哦哦…哦哦…哦哦…哦…”女孩发出迷人的呻吟：“好伯伯…你添的我…好舒服啊…啊啊…啊……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;奇迹发生了，经过一阵的刺激，女孩的乳房变的更大，乳晕也随之阔散占了整个乳房的1/4，rǔ头骄傲地挺立着。再看女孩的阴部：粉红的大yīn唇象两片肥肉已张开，花生米大的yīn蒂早已凸出，姑娘的下身早已狼狈不堪yín水淋淋，程万宗的大舌头在yīn唇上添着，在yīn蒂上轻咬着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女孩随着亲吻，玉体不停乱抖，并大声的胡言乱语“好…好人…你杀了我吧！我不行了…好人…你不要停…好吗？对对…就是这…好…哦哦…哦哦…哦哦…啊啊…啊啊…呀呀…呀呀…呀呀……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他知道女孩水流的越多就越易进入。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“好…伯伯…你快干我吧…快……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他看时机已到，挺动yīn茎沾着女孩流出的黏液在穴口磨着慢慢的进入。李倩毕竟是个成熟的大姑娘，虽是处女，但因她常常手淫所以很快yīn茎就基本未遇障碍的整个插进。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“啊啊”女孩大叫着，“好…好…真的…你的**巴…快……哦哦…哦哦…哦<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;…啊啊…啊啊…啊…呀呀…呀呀…呀…好…”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;随着大yīn茎一出一入，小yīn唇也随着翻了出来，xiāo穴里又滑又紧，太舒服了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女孩也大力的停动着肥臀迎合着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“咕叽…咕叽……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;看着这么年轻女孩的xiāo穴，太刺激了，不知不觉他忍不住了，一阵阵狂射。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女孩也喷射出大量阴精，“哦哦…哦哦…哦哦…啊啊…啊啊…好人…你坏死了，我太舒服了”两人同时达到高氵朝。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;香甜的一觉后，天已经大亮，两人次第洗漱后，一起到宾馆的餐厅亲密的吃早点，在交谈中，程万宗提起自己的小女儿和李倩同名也叫倩。两人都觉得太巧了，遂有点默契的，李倩就认程万宗做干爸，方便两个人以后交往，说白了也为了方便两个人做爱……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;###############################################################################<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;（二）<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;其实在这个假期里，还有一个女孩子没有回家，她就是３０２宿舍的五个女孩中最淫荡的白娜了，她天生丽质，在宿舍带头手淫的就是她。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;高窕的身材，一头乌黑秀丽的长发，她的双眼是迷人的桃花眼，性感的嘴唇让人见了就流口水，她的皮肤白晰而细腻，她是个爱笑的姑娘，整齐洁白的牙齿象玉一样。丰满的乳房高耸在胸前，两瓣肥臀撑的牛仔裤紧邦邦的，好像随时都要裂开似的，修长的双腿一点浮肉都没有。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她早在初三时她就已和她的老师发生了关系，其他上过她的男人就更多了。其实最令她自豪的是她床上的功夫，凡是和她发生关系的男人没有一个不被她搞的神魂颠倒，乐不思蜀的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;白娜的舅舅在她就读的大学所在的城市工作，是公安局的书记，而她的舅妈在外贸局工作，平时她一有时间就去她舅舅家，有时赶上周末就住在舅舅家，反正有的是房间，舅舅有一个儿子，就是白娜的表弟，小她四岁今年刚好十五，叫小德，在本市体校踢足球。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一想起表弟小娜心就痒痒的，想起小德英俊的像貌１米８０的身高，强壮的肌肉和穿短裤时鼓鼓的下体时；小娜禁不住夹紧双腿，她早就想和表弟进行鱼水之欢，但苦于一直没有机会。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;这不，放假了，她给家里说了声就不回去了，想住舅舅家就住，不想就回宿舍来陪李倩。这在李倩和程万宗搞上的那天，她大中午的坐出租车来到位于公安局宿舍的舅舅家，她有钥<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;匙开门进了屋，“舅舅，舅妈，舅舅，舅妈”，她边喊边在各个屋找，家没……人……不能呀？今天他们应该休息，不管了，先洗个澡。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;洗后小娜躺在沙发上看电视，快六点了他们怎么还不回来？正在这时有人在用钥匙开门，啊回来了。可是进门的却是表弟小德。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“哦，表姐你来了……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“啊，小德，你爸妈呢？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“他们回老家参加一个亲戚的婚礼……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“哦，什么时侯回来？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“明天是正日子可能要明天晚上……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“哦，太好了”，小娜心想，今晚我就要和表弟，凭我的身材他能不上勾，想着想着她激动不已……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“表姐，表姐”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“哦！什么事？”小德的叫声打段了她的思路……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“你等我一下，我刚练完球，等我洗个澡咱们去外边吃饭……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“好的你快去……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;两人去附近一家四川餐厅吃饭。在街上小娜紧紧挎着表弟的胳膊，两人象情人一样。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晚饭后他们一起上了会儿网，就在表弟的房间聊天。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“你有女朋友吗？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“没哦……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“怎不交一个？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“天天练球没时间哦……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“那也得交一个嘛！”说着小娜随意的用细嫩的手指轻轻地在表弟的大腿上划着……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;小德浑身一颤，抬眼看着漂亮的表姐：由上往下看到表姐的衬衫，硕大的乳房并且随著身体的摇摆动作在左右晃动著。小德不禁看呆了，喉咙不自觉的发出咕噜声，感觉他下体开始起了变化。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;小娜斜眼瞥见身旁表弟裤档开始澎起，粉脸煞红，她也知道小德已被她的美貌所吸引。就顺势倒在表弟的身上，他不但没躲，反而顺手搂住表姐的细腰，一股刚阳的男性体温，传到小娜的身上，使得她全身不由自主的轻轻颤抖起来，并含情默默地看了小德一眼。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;得到表姐的默许和鼓励，他大胆的将搂著腰的手按著她的一边乳房上轻轻揉捏起来，小娜感觉表弟的手在乳房上揉搓，真是又兴奋又舒服。她虽然现在不是处女，但还从没和这么帅这么小的男孩玩过，现在被表弟这样挑逗，xiāo穴里面好像是万蚁钻动，yīn户也开始潮湿了起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;小德看她这副娇羞的模样，心中爱极了，手掌也就揉捏得更有劲。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“表姐你想不想呢？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;小娜羞得低下粉颈，连连点了几下。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“你真的想吗？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;小娜的粉脸更是红过了耳根地点点头……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“姐我好喜欢你，我早就喜欢你了，我没交女朋友就因为喜欢你……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;小德抬起她的粉脸，吻著她的红唇，小娜被吻得粉脸胀红，双眼现出既兴奋又饥渴的神采，xiāo穴也不由自主流出一阵yín水，连三角裤都湿了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;小德一看她那浪浪的模样，知道她已经大动春情，急需男性的爱抚，于是伸出手去摸摸她的屁股，那种富有弹性而且有柔软感的触觉，使得小德心里产生震撼。低头看看表姐小娜娇羞的看着他点了点头，于是小德便开始用手轻轻地抚模起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;小娜感到表弟那温暖手抚摸在自已的臀部上有一种舒适感，就任由小德尽情去摸。但是小德越摸越用力，不但抚摸，更揉捏著的屁股肉，更试探地向下滑落，移到她屁股沟的中间，用手指在那里轻轻的抚摸。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“啊啊嗯……嗯……啊……哦……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;小德受到鼓励，索性撩起她的睡裙，把手按在她的粉腿上，轻轻地抚摸起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;过了一会，小德一把抱起她的娇躯，放在床上，搂著她轻吻，一手伸入裙内挑开三角裤，摸到长长的阴毛，手指正好碰到桃源洞口，已经有点湿濡濡的了。从他手掌压在yīn户上所传出的男性热力，已经使她全身酥麻，浑身无力。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“请你……快……好痒……求求你……我受不了了……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她敏感的yīn蒂被他的手指揉捏得更是麻、痒难当，小德继续的轻轻地揉挖著她的桃源春洞，湿濡濡、滑腻腻，揉著、挖著……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;小娜全身猛然一阵颤抖，叫道：“啊…我流出来啦。好弟弟，姐流…流出yín水了。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;小德快速地将她的迷你三角裤给拉了下来。只见她的xiāo穴旁长满了柔软细长的阴毛，小德再把她的臀部往上抬，将她的三角裤完全脱去，脱光她全身衣物，自己也脱得清洁溜溜。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;小娜弓起雪白细腻的大腿，让阴部完全展露在小她四岁的男孩面前，“好弟弟，来看看姐姐的……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;小德兴奋的低下头看着漂亮姐姐的迷人xiāo穴。她的yīn户高凸起，长满了一片泛出光泽，柔软细长的阴毛，细长的阴沟，暗红色的大yīn唇正紧紧的闭合著，小德用手拨开暗色的大yīn唇，一粒像红豆般大的阴核，凸起在阴沟上面，微开的小洞旁有两片呈鲜红色的小yīn唇，紧紧的贴在大yīn唇上，鲜红色的阴壁肉正闪闪发出yín水的光茫。好漂亮的xiāo穴……太美了！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;小娜的粉脸满含春意，鲜红的小嘴微微上翘，吐气如兰，媚眼如丝，一双硕大肥嫩的尖挺的乳房，粉红色似莲子般大小的奶头，高翘挺立在一圈艳红色的乳晕上面，配上她雪白细嫩的皮肤，白的雪白，红的艳红，黑的乌黑，三色相映、真是光艳耀眼、美不胜收，迷死人了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;这副情景看得小德是欲火亢奋，立即伏下身来吸吮她的奶头、舐着她的乳晕及乳房，舔得小娜全身感到一阵酥麻，不觉地呻吟了起来……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“啊……啊……好弟弟……姐姐要看你的大**巴”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“…好…好…”小德边说边手又在揉捏她的yīn蒂，嘴也不停地吸吮她的鲜红rǔ头。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;小娜被小德搞得全身骚痒，不停地颤抖。小娜跪在小德的两腿间，无比娇羞地对小德说：“好弟弟，让我来服侍你”，她纤细的小手握住了小德的yīn茎，上下套弄着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他看着粗大的yīn茎在美少女的纤纤玉指中变的越来越大，接着他看见姐姐低下头用性感的小嘴含住他硬硬的大**巴，「啊……姐姐在为他口交」，一股湿湿的软软的热热的感觉包围了他的guī头，那是一种他从未体验过的感觉。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;小娜加快了套弄的速度，“啧啧”的水声响了起来。他两眼盯着身边的美女，感受着女孩香甜的小嘴给他yīn茎前所未有的刺激。小娜的嘴唇和牙齿包围和摩擦着他的yīn茎，同时舌尖在guī头上快速的扫动和缠绕，以及偶尔坚硬牙齿的刮碰却带来了另外一种别有风味的快感。他心怀感激地享受着美人儿的口淫。歪头看过去，小娜鲜红的嘴唇正紧紧地含着他坚挺的yīn茎，一上一下地套弄着，两只小手扶着yīn茎的下部，也不停地抚摸着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;经过一阵口交他觉的是时候了，“好姐姐，让我为你……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“好…来吧”，小娜风骚地倒在床上，把小德的头按在自己的两腿间。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他迫不急待的吻了下去，他吻着表姐的阴毛，然后向下，把她的yīn唇含在嘴里吸允着，表姐的阴水流出来好多了。他用嘴把她的yīn唇分开，舌头舐着她的yīn蒂。表姐把屁股向上挺动着迎合他的爱抚，口里开始发出了呻吟声“啊……好舒服……啊！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她的阴水越来越多了，都流进他的嘴里了，而他全吞了进去，舌头也不失实机的伸进了她的yīn道口里。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;表姐更加用力的向上挺着，并大声的浪叫了起来：“亲爱的弟弟啊！你怎么这么会添我的穴啊！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我都是从书上学的啊，今天是第一次实践呢？”小德自豪的说道。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“姐都快被你搞死了！啊……啊……快快！……”小娜越叫越大声……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;看着小娜姐这么快活他好高兴，他双手抱着她如雪的屁股，埋头苦干。他把舌头伸进她的阴穴里一进一出的用力抽送着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她的阴水越来越多，几乎弄湿了他的脸，她大声呻吟，并用力把阴穴向他的嘴里送。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“亲爱的弟，快……姐要来了……要都高氵朝了……快用力吸啊！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他把整个头埋在她的阴部全力吸着姐的阴穴。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“快快……搞死姐……啊……啊！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他又一阵拼命的抽送舌头，小娜发出阵阵娇呻，“爽啊……啊……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一股阴液冲进他的嘴里，小娜拼命的扭动了几下就不动了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“爽死姐了，我亲的好弟弟！”小娜娇喘不已，如花的脸上露出满意的媚笑。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“好弟弟，来干姐姐…来……”说着就把双腿分开，阴穴充分的张开着，等待着他的yīn茎。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;看着玉体横阵的表姐，黑黑阴毛下如花鲜艳的阴穴，他都快急炸了，他急不可待的对着表姐的阴穴就插下去。可是太急了一时没插进去。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“看你急的…”小娜一把握着他的yīn茎对着她的阴穴口插了进去。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;yīn茎一下就齐根进入了她的yīn道。yīn茎在阴穴里的感受真是大不一样啊！表姐的阴穴好温暖好紧凑哦。他立刻抽动了起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;小德看着他的yīn茎在小娜的阴穴里进进出出，他和她的阴毛时分时合，他血液沸腾了，她也用力的摆动着她丰满的屁股向上迎合他的冲刺，阴穴一紧一松的，小娜可真的高手。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他拼命的抽动着，她在他的抽送之下呻吟之声越来越大了，“啊……哦……啊爽啊……插我……亲爱的弟快插……好快……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他看着身下如花一样的面容，脸上红红的，妖艳的神情，动人的荡叫。迷人的胴体，简直就是人间尤物啊。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他一边抽插，一边用手揉捏她的乳房，她在他的身下越来越骚了，她疯狂的向上迎合他的冲刺，口里仍然大声的淫叫着：<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“亲爱的，快插……啊……啊我要死了……啊哦……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“来…好弟弟，咱换个姿势”说着她扒在床上，雪白的屁股对着他，阴水横流的骚逼全部呈现在他的面前。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他握着yīn茎从她的后面插进了她的迷人骚逼。他全力抽送她在他的抽动下已经是荡叫不已了，并前后扭动浑圆的屁股抽动着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她的阴水随着他的yīn茎的抽动，顺着他的yīn茎流了出来流到了他的大腿上，“姐姐可真是淫荡，好姐姐你真浪呀……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“啊……啊哦……快快……姐要来了……啊……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我也要射了…姐……我要在姐的骚逼里shè精了！”他兴奋的大叫起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“在姐的yīn户里射吧，我亲爱的弟……啊……啊……都射进来……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“啊啊…啊啊…啊…”他大量的jīng液喷向她的子宫深处……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“啊……啊……爽啊……”他和她同时大声的浪叫起来，两人…同时达到了高氵朝。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他把yīn茎从她的骚逼里抽出来。jīng液混合着她的阴水流在了床单上，湿了好大的一片。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“姐…你的阴水好多哦！”，他笑着说。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“还说呢，还不是全让你给搞出来的”她娇嗔道，神情却是一片淫荡。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;###############################################################################<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;5、像往常一样，下课的铃声响起，刘梅马上拿了早就收拾的的随身小包包，一刻也不愿意停的登上了回家的车。一切都依然是那么自然的，默契的一度消魂--------<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;转眼三四天过去了，天天收拾好家务就到图书馆里看书的刘梅因为没有很好的机会，也没有再与老爸共赴巫山行云布雨。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;这天，刘梅正准备出门，忽然母亲接到乡下的外婆过世的消息，就要赶到乡下去奔丧，妹妹也都吵着去，顺便到乡下玩玩。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;本来在母亲询问自己的时候也想一起去的刘梅突然心头一颤，赶紧借口快开学了，要看书为由，拒绝了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晚上，当把母亲与妹妹送上车，她扭头看向父亲，立即就从那双眼里看到那股熟悉的欲火。两人无言地离开车站，上了一辆出租车。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一路上两人都一言未发，也没有看对方，就连手也没碰过，但都可以感到对方的身上有一股火焰在向自己扑来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一进家门，父亲就抱住了女儿，狂热地吻着，边吻边脱女儿的衣服。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;眼看着在门厅里父亲就要进入自己了，刘梅虽然也欲火焚身，但却推却着：“别……别……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“好女儿……乖……爸爸好想……你不想？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“爸……我们到床……上……去，好不……好……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;衣物被一件件的抛在大门到卧室的地上……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;父亲分开她的两腿，那里面已经是潮水泛滥了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女儿挺起屁股，把两腿分得开开得，自己扒开花苞，迎接着父亲的到来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;父亲跪在她两腿的中间，把女儿的两腿缠绕在自己的腰上，然後对准花径猛力推送了进去。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;玉茎在女儿的体内像活塞似地往覆运动，她的屁股也随每一次的抽动而挺动，aì液不断地从穴中流出，滋润着父亲的ròu棒，更粗壮、更滑爽地来回於她的”天堂”之中。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;抽动了不知多时，父亲架起女儿的大腿，放在肩上。她的下身高高地离开了床面，花房中的玉茎抽出了”吱吱”的响声。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;开始时，刘梅还像过去与爸爸性交时一样，压抑着自己的呻吟，但此时，她已按奈不住自己，大声地叫了起来：<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“啊啊……啊……对……啊……这里……好……好，啊啊…………”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;父亲也不用过去交欢时的温柔的节奏，一个劲地用力把玉茎刺向女儿的深处……仿佛要把这几年来未与女儿的尽兴交欢毕于此役……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;正干着，女儿觉得父亲的玉茎停了下来，她喃喃道：<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“爸，……干吗停了？你……泄了吗？我还要呢……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;父亲没有做声，抓住女儿的身子，玉茎停留在yīn道里转了个180度，让女儿背对着他把屁股撅着。抚爱了一会少女娇嫩的屁股，父亲就又开始了新一轮的攻击……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;柔嫩的屁股一次又一次地撞击着父亲的小腹，玉茎一次又一次地被抱紧……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;许久许久……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;父亲的攻击在猛地一震後停止了。他伏在女儿赤裸的脊背上，两手仍在轻轻地抚爱女儿的乳房。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;在下面，他的玉茎仍然留在女儿的xiāo穴里，极慢极慢地蠕动着，享受着女儿年轻的屁股与他的小腹摩擦所带来的温柔的快意。女儿的呻吟声也越来越小……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;终于，女儿跪趴着的身子倒下了。父亲软缩的玉茎也无力地脱出女儿的xiāo穴。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女儿慵懒地转过身，父女两人紧紧地相拥着，四腿相交，阴部紧贴，酥胸紧靠，四股交缠，在一阵混乱的相吻与细语声中两人沉沉睡去……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;太阳的光芒穿过厚厚的窗帘照映到刘梅的脸上。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她蓦然惊醒，发现自己正赤裸裸地与同样赤裸的父亲相拥在一起。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;父亲的玉茎已然粗粗大大地顶在自己的阴部，而父亲的一只手已然在自己的屁股上游动。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;四目相对，父女俩都有些赫然。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“爸，能跟你一齐过夜，是我梦想多少年的愿望了。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“乖女儿，爸也一样。等了这麽多年了，终于有这麽一天可以痛痛快快地玩了。我还已经请过假了，我会一直陪你到你回学校。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女儿握着爸爸的粗壮的yáng具：“爸，那太好了。这样我们可以痛快地玩叁天两夜了。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;捻着女儿的rǔ头，他吻了吻女儿的脸颊：<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“是啊，乖女儿，这样我们还可以玩许许多多的花样了呢！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“除了戳穴，爸爸还有什麽花样可以玩？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“多呢！比如--爸爸好好给你舔舔你的xiāo穴穴……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“那玩过了吗。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“那我乖女儿的後门……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我的後门？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“就是这儿！你的小屁眼儿。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“哎呀！爸！那儿怎麽能玩，多脏啊！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“为什麽不能玩？你跟爸爸小便的地方脏吗？你为什麽不嫌脏？爸爸舔哪儿，你还特别喜欢？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“可哪儿好玩吗？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“有什麽不好玩的？爸爸过去老玩了。干屁眼不知有多刺激！你要是玩上了瘾，连戳穴你都觉得不够刺激。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“那你过去为什麽不跟我玩那里？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“玩後门太麻烦，第一次玩的准备工作太多。再则我又怕我乖女儿的嫩屁眼受不了……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“哎呀！你真坏！坏爸爸！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“来，我先玩一下爽快的，干穴！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他让女儿侧身躺下，竖起一条大腿，把花房分得大大的，在把玉茎刺入後就抱着女儿的大腿抽动起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女儿的两腿分着，穴内被爸爸的大ròu棒子抽的十分快意，不禁大声地哼哼起来：“好……爸爸……真舒服……女儿我……今後就给……您一个……人插……轻一点……啊……你戳到……我子宫……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;父亲一边在女儿穴内抽送一边抱着女儿的大腿在脚趾上亲吻着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;干了一会，还未shè精，他就抽出玉茎，伏到女儿湿漉漉的花房上又吻又舔舐起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女儿尝到这种味道，屁股不停地挺动，yín水大量地流下，嘴里也发出了与戳穴时不同的”呜呜”声。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;由於穴里没有大ròu棒塞着，yín水直向下流去，弄得屁股上，屁眼里，大腿上都湿哒哒的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;父亲一边为女儿吹琴，一边把女儿的yín水涂满女儿的屁眼内外。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女儿在情迷意乱之间丝毫也没有觉得亲爱的爸爸的手指已经伸入到自己身上的最後的处女地---少女娇嫩的小屁眼内。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;父亲的嘴慢慢地离开了女儿的xiāo穴向上一路吻去。他的左手仍在女儿的屁眼内辗转揉动，右手随着嘴的舔舐停留在女儿的一对饱满的乳房上揉搓玩弄。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他的嘴移过小腹，移到女儿的肚脐，在那小小的凹眼内用舌头转了那麽的几圈；再向上移到rǔ头……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;吮吸完两个少女的白玉峰後，他的舌尖移到了女儿的咽喉、移到女儿的下巴、移到女儿的嘴唇……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女儿的手也攥住爸爸的玉茎，不住地套弄，舌尖与爸爸的舌尖在相互纠缠、搅动……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;分开时，爸爸笑了：“乖女，你的嘴可真厉害！把爸爸的舌头都吮得麻木了。待会儿吸一下爸爸的棒棒，好吗？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“不好！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“干吗不帮爸爸吸？你不是很喜欢吃爸爸的棒棒吗？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“嘻嘻……我怕我一吸爸爸的棒棒，爸爸就会溃不成军。我就不能舒服了。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“哈哈！看低爸爸啊。呵！待会看爸爸不让丫头你溃不成军！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“要吸？可以！只要爸爸在让我吸的时候，最好还有一根棒棒插在女儿的穴里。行吗？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“好骚的女儿。以後看来还得有一根棒棒插在你得屁眼里，你才能过瘾！？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;父亲正待将女儿翻过身来，却让女儿察觉了屁眼里的手指。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“好啊！爸！你乘人不备，竟把手插到人家的屁眼里去了！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“乖女，你不是想尝尝戳你屁眼的滋味吗？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“可是……可是人家那里好难受啊！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“丫头，屁眼那麽小，爸爸的ròu棒那麽大。不先把你这儿撑开了，待会爸爸把那根又粗又大的棒棒插到我乖女儿的又嫩又小的屁眼里去时，你怎麽受的了？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“还好意思说！你玩了亲生女儿的穴，玩了亲生女儿的嘴，还要玩亲生女儿的屁眼？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“丫头，爸爸可是想带你更上一层楼，领略性爱的新领域啊！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“说的好听。得，从小我就是被爸爸你骗大的，外加干大的。那我就再让您骗一次，让我把屁股撅撅高，让您再干干我的屁眼。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“还是我女儿乖，爸爸一定把你的小屁眼伺候得舒舒坦坦的。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;父亲面对着女儿的白嫩嫩、圆滚滚的屁股，扒开女儿的鲜嫩的粉红色的满是少女菊花纹的小屁眼，手指伸到了里面，轻轻转动着，抚摩着里面细软的内壁……然後，再用另一只手的两个手指分开xiāo穴，沾了沾里面的蜜液，再涂入屁眼里。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;屁眼里有了两根手指在转动，虽说有蜜液润滑，刘梅也有点受不了：“好难受！爸，戳屁眼有戳穴那麽舒服吗？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;父亲正聚精会神地玩弄女儿的屁眼，随口答道：“就像戳穴一样，开始是有点难受，不过多玩几次，你就会觉得跟戳穴有一种不同的快感。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女儿跪趴在床上，把屁股撅得高高的，茫然地接受身後父亲在她屁股里的鼓捣：“真的？你跟妈戳过屁眼吗？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“跟你妈？她怎麽会！干她就跟干死人一样。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“那你玩过的女人，那个的屁眼你戳得最舒服？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;正弄得高兴得父亲一时兴起，脱口道：<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“最喜欢玩後门的是你姑姑。她过去要是屁眼没舒服透，还不让我戳她的穴呢。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;刘梅一听就兴奋了，xiāo穴一激灵就流出一大股yín水原来已经有人比她先乱伦了，还是一向端庄的姑姑：“爸，你跟姑姑也上过床？乱伦过？干过穴？还戳过屁眼？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;父亲方才发现自己说漏了嘴。不过也不要紧，女儿早已经是自己乱伦的对像，对自己跟妹妹的乱伦不会有反感：<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“丫头，听到乱伦的事就这麽兴奋。你看水流得那麽多！是不是想拉个乱伦得同盟军？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女儿已经兴奋得有点控制不住了，全身在乱抖：“爸！好爸爸！亲爸爸！！告诉我嘛，你跟姑姑当年是怎麽开始的？是谁先主动的？……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;父亲直起身子，把玉茎对准女儿早已湿淋淋的屁眼：<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“想听故事？先让爸爸在你的小屁眼里干舒服。爸爸干得舒服了，就会告诉你。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女儿回身把两个屁股蛋子扒开：“爸，你刚才说，姑姑最喜欢你戳她屁眼？啊……爸……啊……轻点！……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;父亲的大ròu棒已经戳进了大半。他停了下来，一面轻轻地在女儿的屁眼周围揉动，一面安慰女儿：“别怕。这跟你第一次让我干穴没有两样。戳进去就好了。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;说完就开始在女儿的肛门内开始轻微的抽插。女儿的屁眼内已经给她父亲涂入了许多的yín水，这种天然的润滑剂帮助了父女俩的初次肛交，让玉茎在少女篷门初开的小屁眼内渐渐进出如意起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;圆圆紧紧的女儿的孔道紧包着爸爸的玉茎，给他带来了不同於抽插xiāo穴的异常快感。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一时间，他似乎又回到了从前，那时心爱的妹妹也是这样挺起屁股给他抽插屁眼，他的玉茎也是在这样紧窄的肛门内来回传插……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;回想昔日的艳景，他不觉加快了抽插的速度，却未想到，今日玉茎之下已经不是当日尝惯後庭花滋味的妹妹，而是『肛门初始为父开』的十九岁的娇娇女儿。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;刘梅开始觉得屁眼内被爸爸的玉茎捅得火烧火燎的胀疼，虽然有yín水的润滑也非常的难受。但渐渐地，她也开始感到在父亲一抽一插，屁眼内一紧一松间也有些快意，不禁开始仔细品味起肛交的乐趣。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;但父亲一开始加快速度，那仅有的一丝快意都烟飞云散了。她痛的大叫起来：“……啊……痛死了……爸……慢点……我可不……是慧姑……你轻一……点……啊啊……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女儿的哭叫让父亲清醒了，这才放慢了速度，并且涂了点吐沫到女儿的屁眼上，俯身轻轻握住女儿的两个乳房，开始温柔地品尝女儿屁眼的滋味。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;少女的屁眼在父亲的轻抽慢弄下开始松弛下来，能够让父亲的玉茎戳到根部了。屁眼内没有花心，玉茎戳到底还能往前送一送。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;蓦地，父亲猛然一送，仿佛连两个睾丸都想插进女儿的屁眼似的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;随着女儿的一声惨叫和父亲的一声闷哼，一股浓浓的热流打在少女的直肠壁上……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;等擦好女儿屁眼里流出的jīng液，父亲翻身倒在仍跪着的女儿的身边。女儿也一下子瘫在父亲的怀里：“爸！人家的屁股好痛啊！你欺负人家！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;搂住女儿白嫩的身子，父亲亲了亲女儿的脸颊：“乖女儿，这『後庭花』可不像干前边的小花蕾，要多经过几次才能苦尽甘来。想当年，我跟你姑姑是整整戳了一个月的屁眼，你姑姑才喜欢上的肛交。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“那时姑姑多大？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“比你现在小的多。大约是十四岁吧。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“爸爸，你好好说说，你是怎麽才跟姑姑搞上的？怎麽搞的？……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“别急吗。你看已经中午了。起来帮爸爸一起弄顿饭。吃饱了，我们父女好好的享受享受，我一定尽快让你喜欢上开后门哦！你先忍忍，以后爸爸会好好的给你讲过去的故事。现在我们在这难得的机会只管尽情的享受好了！！！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;6、开学了，302宿舍里的五姐妹都到齐了，又恢复了往日的热闹和甜蜜。当天晚上，早早的，五位漂亮的美少女就又不约而同的又进行起她们的保留节目来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;许久，激情过后的少女们正在小憩，忽然传来一声长叹：“唉，还是让男人用那宝贝弄的过瘾啊！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“啊！？你这个假期告别你的少女之身了？”其他四人不约而同的坐起身来，眼睛挣的大大的，盯着刚才感叹的李倩，惊讶的问。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“YES！”李倩脸上挂着激情的潮红，自然的说，看来这个假期中，她的干爸把她调教的可真不错哦！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“你好幸福哦！”另一边的王雪幽幽的说，话语中明显的带着羡慕的气息。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“吆，那我们宿舍可就剩下我们的小幺妹还是处女喽！”白娜大大咧咧的接过话头，“不过也不要紧啊，小雪，要不要我帮你啊？呵呵呵呵”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“算了吧，她自己的事还是由她自己办吧！”刘梅接着问：“小雪啊，你怎么还不试试啊？没有目标？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我不敢啊，怕人家拒绝！再说了，听说第一次都----------------”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“呵呵，苦尽甘来啊！真的很不错哦！和我们自己解决绝对是不一样的感觉哦！”白娜伸出小巧的舌尖，淫荡的在嘴唇上舔了一下，满脸春情的说。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“天呐，小娜啊，你好淫荡哦！咯咯！”马洁这时候说话了：“不过说的还真是实话哦！所以你要大胆点，就你这条件，只要你想，呵呵，男人嘛，大把哦！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“是啊，是啊没有男人对我们的身体、对那事不馋的，只要我们稍稍一表示啊，一上一个准！本小姐就从未失手过！呵呵”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“那小娜你是不是阅人无数啊？说说看，也让大伙长长见识啊！”刘梅戏谑的说。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“对，对，对，小娜说说看”其他的女孩子也随声附和。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“嘿嘿，说说倒没什么。姐妹们，我有个提议，为了鼓励小雪尽快尝到那迷人的滋味，我建议，我们每个人都说说自己的经验，特别是第一次，怎么样啊？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“好啊，好啊！”一致通过，而且刘梅还补充：“我们啊，每天一个人说，先说第一次，说完，大家讨论讨论，也交流一下经验嘛！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“是啊，为了充分享受我们的青春嘛，这样增加我们的见识，说说不定还多点机会呢！嘻嘻”李倩笑眯眯的发言。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;大伙一阵娇笑，又相互笑闹了一下，表示通过，都举双手赞成。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“那我们今天就开始吧？”王雪怯生生的说。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“好，马洁是大姐，先由她开始，大家说好吗？”李倩提议。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;又是一次通过，马洁拗不过大家，只好服从。她清了清嗓子，扫了大家一眼，起身关了灯，偎到自己的被窝里，开始讲述：“我啊，第一次是16岁的时候，到现在只享受一条那宝贝-----------<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;原来啊，我家有三口人，父母和我。爸爸妈妈同岁，他们17岁的时候就奉‘我’成亲了。上一辈老人都不在了，我们也没什么亲戚，但有一个董叔叔，他是是家中的常客，听父亲说他俩是换帖的兄弟。早年一起奋斗过，俩人的交谊可以说水乳交融。因为董叔叔一直保持单身没有娶老婆，所以要一有空就往家里跑，跟我们都很熟。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他也的确蛮照顾我们母女，经常大包小包的从外头买来给我们。如果母亲这样说：「家中又不缺甚麽的！干嘛那样客气，大鹏啊！你自己将来总要讨媳妇的！省点吧？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;董叔叔定会说：「秀姐，你真是皇帝不急却急死太监啦！缘份未到嘛！小小意思又何必挂在嘴边上呢！」<br/><br/>&nbspnbsp;&nbsp;&nbsp;&nbsp;母亲拗不过，总是依着他。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;初中毕业那年，父亲因车祸丧失生命，母亲因一时无依无靠，觉得生活很艰难，而董叔叔更是把我家当成了他的家，后来干脆就在我们家住。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;-----<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;有一天晚上我放学回到家，感觉很累，就随便的洗了个澡走进房间倒头便呼呼大睡。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;睡到半夜，可能因为口渴，再加上连日来因为学习上的问题，所以精神不能集中，没多久我就醒来了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;我在床上翻来覆去就是睡不觉，这时客厅里传来阵阵的耳语，那是妈跟董叔叔交谈的声音，因一时好奇心起，於是靠近房间的门缝，向客厅望去，见母亲和董叔坐得很近。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;於是便好奇的蹲在那偷听他们的对话。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「唉呀！秀姐，我们的事迟早还是要让她知道，总不能一辈子偷偷摸摸呀！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「话是不错，可是，今天那死鬼才下土，总要等过了一阵子才能议呀！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;董叔叔不耐烦似的说：「好吧，暂时不谈这些，来！到我房里去！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;董叔叔说着，就站起来去拉妈妈的手，但是妈不想动，她说：「就在这里吧，万一小洁醒来，至少我没在你的房里。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;董叔叔只得说：「好吧」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;於是他一把将妈搂进怀里，两人深深的拥吻着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;好一会才分开，彼此飞快的除去了身上的衣物，妈露出了一身白雪细嫩的冗肉来，董叔叔又搂紧妈，一阵狂吻，一双手也在妈妈身上抚摸起来。妈妈喘息着说：「大鹏，快住手吧，我禁不住你这般抚弄啊！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「怎麽，浪起来啦！」董叔叔嘻嘻笑道。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;於是，他把妈抱到长沙发上平躺着，就在上面搂抱住了。这情景对我而言是无比的羞愧，但也有一股莫名的刺激。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;董叔叔身上的东西是我从来没有见过的，那麽粗黑长大，高高的翘着，看得我不禁打个冷颤。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他将那东西抵在妈的yīn户上，用力一挺，就整根埋入，然後一会抽出，一会送入，那样子真丑，可是我禁不住看下去。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一阵阵的呻吟声发自妈的口里，像是生病却没有痛苦：「啊........啊......啊......啊......嗯........」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「舒服吗？」董叔叔状似得意地问着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哎呀......舒......舒服死了......哼......哼......我好久没....尝到这滋味了......美死了.......」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他不停的抽抽送送，迅速的挺动着。妈也扭动着屁股，迎合他的抽插。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;董叔叔一阵比一阵猛烈的抽插，妈的yīn户许多水流了出来，妈紧紧搂着他娇喘吁的浪道：「啊......好美......好美.......哼......哼.......美死我了......用力插吧......快......快用力.......」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;董叔叔听了他的话，更加疯狂的抽插着，一阵阵的水直流到沙发。董叔叔一面抽插一面问：「美吗......浪货......我的东西如......何......比你那死鬼......丈夫......谁强？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊......你比他......强多了......你才是我的......亲丈夫......好好情人......你永远不离开我吧......嗯.......哼.......」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;董叔叔听了更加得意的狠狠干着，插得妈死去活来，两个乳房不停地摆动着，一身白肉也摇动着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;我又看了好一阵子，感到脸红心跳，下体好像有什麽东西流出来，用手一摸，湿湿的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;於是我赶紧回房，蒙上被子，不再去看他们，希望能赶快睡觉。可是客厅的那一幕，总是呈现在我眼前，尤其是董叔叔的身体那种样子真是令人感到惊奇。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;也不知道过了多久，我是怎麽入睡的，等我醒来己是第二天了，匆匆吃完饭就上学去了。人虽在课堂上，可是脑子里总是昨夜的那一幕，昏昏沈沈的挥之不去。也不知道怎麽办。一直等到教英语的老师喊我的名字时，才突然一惊，手足无措的站起来，竟然不知道老师喊我起来是为什麽？好尴尬哦！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;这时候，突然一阵吵闹，原来已经下课了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;回到家里一个人也没有，静悄悄的。我把书包放在床上，人跟着也躺下去，昨晚的情又一一呈现在脑彩里，心里感到一阵烦闷，却不知是为什麽？<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;心想何不乘家里没人，去看看董叔叔的房间。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;於是我偷偷走进了他房间，睡床、书桌、椅子、衣橱，还算整齐。我打开书桌的抽屉斗，只见表面零乱的放了些卫生纸、烟盒等杂物。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;我顺手翻动了一下，在卫生纸底下还放了几本书，翻开一看，原来是黄色小说，还相当的吸引人呢！再翻下去，呀！还有彩色照片，全是两个人的，和昨天夜里所看到的一模一样。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;只见照片里都是洋人，一共八张，有各种不同的形状，有白人也有黑人，黑人真可怕，活像大猩猩一样，他那个东西也特别粗壮。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;白色女长得不错，身材也很标准，只是她的姿态一点也不雅观，两腿举得高高的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;黑人跟白人在一起，格外显得黑白分明，八张都看完了，又翻了几次书，书里的故事是述议男女情节的，很诱人，想继续看下去，却又担心他们回来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;我只得依依不舍的把书放回原位。回到房里，果然没一会妈就回来了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;然後董叔叔也跟着回来了，吃过晚饭後，妈说要去看个朋友，想换个工作，临走时对我说：「小洁，我可能要很晚才能够回来，你好好在家里做功课，然後早些睡觉，不要等我。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;说完妈就走了。我呆呆望着她的背影消失。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;功课？我那有心做功课，满脑子尽是董叔叔房间里的小说和那几张相片，心想是不是自己将来也会做这种事？做这种事的时候是什麽感觉？将来我会跟怎样的男人做这种事呢？<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一连串的问题在问自己，却又无法解答，突然听到有喊我：「小洁，想什麽？连叫两声都没听见？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;原来董叔叔已经走到我面前来了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他走到书桌旁的双人床坐下，两只眼睛瞪着我好像要看穿我似的。我心想他是不是猜到我想什麽了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;我不觉羞愧的低下头，却见我制服上衣有两个扣子松开了，半个乳罩都露出，我赶忙扣好，并说：「没想什麽。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;董叔叔大概有三十二、三岁，高高的个子，还不令人讨厌的脸，更有一付很雄壮的身体，他还在瞪着我看。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;其实我的身体还真不赖，虽然只有十六岁，可是发育得非常好，记得还只是初一的时候，胸部已经隆起来了，初二时已经要戴乳罩了，要不然走起路来，一跳跳的不雅观。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「小洁，今天你是不是动过我的抽屉斗？还看了我的书？」董叔叔一句一字的问。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;我听了不觉脸一热。本想说没有，可是由於心虚，居然默默的点头。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「其实也没什麽，这是每个人要做的事，为什麽可以做，却不能看也不能说？你也已经长大了，对这方面的事，也应该有所了解，是吗？」董叔叔温和的说。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;真出乎我意料之外，反而叫我不知怎麽回答，也许他猜中我心意，所以他又接着说道：「性，本身是很美的，也是人生必经之路，与其盲目地追，不如先认清再走，岂不更好？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他说的似乎蛮有理，我不觉点点头，轻轻问道：「既然这麽说，那要怎样才能认清这条路呢？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「这个不难，首先要认清男人和女人，你自己是女性，你认识你自己吗？比方说，你每月月经出来的地方，是不是跟你小便地方在一起？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他这麽一说，连我也感到迷糊了，只怪我生理卫生没读好，其实那时候所有的学生哪好意思认真的学啊！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;董叔叔又接着说：「可不是，你果然不知道，现在让我告诉你吧，这是两个器官，管小便的是尿道，管月经的是yīn道，也叫生殖器官，除了排每个月的月经外，还可以接纳男人的阳物，也叫做性器官。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他看答不出来，又补充说了一大篇，这些话我的确不懂，虽然昨夜我看见了怎麽接纳yáng具的情形。但我还是要问个清楚：「那怎麽接纳呢？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「所谓接纳，就是性交，外国人称为做爱，男人把他已经硬了的yáng具插到女子yīn道里，然後上下抽动，彼此都产生快感，然後男人达到高氵朝时，就会shè精，性交到这个时候，算完全结束了。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他一口气说了这麽多，说得我心跳加速，这时我心里有个怪念头，还没来得及思考，就冲口而出：「那麽昨晚你和妈就是在做爱吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「你怎麽知道？」他吃惊地问。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「我看见了。」我羞惭地低头。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「好吧，既然你全看见了，我也不妨告诉你，那就是所谓性交，其实我也用不着瞒你，你妈妈已经没有丈夫，而我还没有结婚，彼此需要，彼此安慰，并不是见不得人的事情，你说是吗？再说当年还是我先认识的你妈妈，只是你爸爸抢先和你妈妈结婚了而已！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「我不知道，只是我不明白，你的东西那麽硬，平常怎麽看不出来呢？」我傻气地问。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「平常它当然是软软的，只有在性欲高涨时才会硬的。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「那你现在硬不硬？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他轻轻摸了我的头一下说：「小鬼，因为刚才看到你的胸部，所以硬了。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;说着说着，他站了起来，把长裤拉链拉开，从他的内裤里把他的东西拿出来托在手上。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;啊！又硬又大，好像比咋天晚上看到的还要大，他要我用手摸摸，我害怕不肯，可是他拉我的手去摸。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;说真的，我虽然害怕，可是也很想摸摸看。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;就在这样半推半就中，他的东西已经在我手中，硬硬热热的，还一跳提跳的，挺好玩。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;突然，他把我搂在怀里，右手伸进我上衣里，从乳罩缝里摸着我的奶头。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;立刻一阵痒痒的，麻麻的，说不出的感觉袭上心头，我不觉扭动了身体。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他接着抱起我，往床上一放，低下头来吻着我，另一手却伸到裙子里面去不断的摸索起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;我本能的放了他的东西，去推他的手，谁知不推还好，这一推竟把他的手推到内裤里去了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他的手摸到了我那个地方，真使我又急又羞。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;突然一股奇异的快感传来，使我觉得怪舒服的。这时的我，既不甘心被他摸，却又没勇气推开他，矛盾极了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;又一会儿，我又觉得内裤被他脱下来了，他分开了我的大腿，低头来吻我那地方。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;哎呀！这种感受，真是笔墨难以形容，总之，那一份又麻又痒的感觉，真使人觉得应该马上停止，可是又希望继续下去。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;忽然门铃响了！我们两人都吓了一大跳，马上分开，整理好衣服。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他吩咐我继续躺在床上，假装睡觉。他去开门，原来是妈回来了。只听见妈说：「跑了一天，累死了，哦！对了，小洁睡了没有？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「早睡觉了。」董叔叔答道。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「好吧，我也累了，先去洗澡了。」妈说。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;这时候，董叔叔快步走到我房间里，悄悄地对我说：「小洁，刚刚滋味不错吧，我真的很喜欢你，不要以为我只是玩玩而已。明天下午你请假，我在校门口等你，准十二点半，嗯？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;说完，也不等我回答就走出我的房间去了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;我心里烦得很，一方面觉得不应该这样，可是另一方面又觉得何以妈可以，我不可以，矛盾极了，而刚才那种滋味，又使我有一种跃跃欲试的感觉，我不知道该怎麽办才好。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;这时候突然隐隐约约的听见妈妈说：「死样，猴急什么啊？不要啦！」接着就是房门摔上的声音。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;这时候的我才放平心境，悄悄的拿了内衣裤，去洗澡，关上浴室的房门後，脱光衣服才发现三角裤湿了一大片，原来是他刚才摸我时流出来的，黏黏腥腥的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;抬起头来看见镜子里的我，虽然才只十六岁，可是乳房却鼓鼓的，像半个皮球一样。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;我常自得的皮肤白嫩，往下看，细细的腰，平平的肚皮，再下面呈倒三角形一片稀疏黑毛。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;唉！这一付美丽的胴体，为什麽以前都没发现呢？我轻叹。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;难怪叔叔只看了我的奶，东西就会发硬。想起董叔叔就自然想起他的手指，他的舌头，还有他又硬又热的东西。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;我不自觉的用手摸那地方，虽然也有一股异样的感觉，可是缺乏那种又麻，又痒的滋味。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;我轻轻的抚摸着，也像他一样上下钻动着，渐渐的缓慢而加速，快感逐渐上升，於是越来越快。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;不知过了多久，我全身一阵抖颤，才觉得手酸酸的，而两条腿也站得发麻，为了怕妈发现，匆匆洗了个澡，回到房里，侧头就睡，但越想越睡不着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;过了不久，妈妈忽然进了我的房间。我连动都不敢动，假装已经睡着。妈妈在我床头站了一下也没开灯，轻轻的又走了出去。我心里一动，妈一定是来看看我睡着了没有，现在确定了，他就可以去和董叔叔做那事了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她前脚才走出门，我就轻轻的起床。她走到客厅，原来董叔叔已在客厅等着。董叔叔也有点埋怨：“哎呀，你啊，反正我们的事早晚要她知道啊。刚才都要开始了，还要转移什么战场啊，真是的。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;妈妈也没有说话，只是顺势和他搂在一起接了个长吻，接着就在长沙发坐了下来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;叔叔很自然的先脱了自己的睡衣，傍晚那个形象又呈现在我的眼前。它一样的坚挺，一样的雄伟，挺立在他的两腿之间，意态激昂向我示威似的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;接着他将妈的睡衣裤脱掉，妈虽然三十几岁了，可修长的身材依然那麽迷人。妈的三围适度，给人一种均称而丰满的视觉美，接着她自除下了胸罩，两个丰硕的乳房，突地露了出来，比我的大了两倍，却一点也没有下垂的现象。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;董叔的手分别各握一只，不停的抚摸着，我突然有一股妒忌的意思袭上心头，如果妈今晚不回来，也许此时他正跟我玩这游戏呢！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;妈像忍受不了太多的愉快，终於「嗯......嗯......」的出声了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;妈同时用一只手伸到他那东西去，一把抓个正着。先是一松一紧的捏弄着，接着上下套弄，另一只手自动的把仅有的三角裤脱下来。两腿之间一片乌黑，比我的茂盛多了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;两个全裸的人儿拥抱在一起，他在下面，她在下面，仍不停的彼此玩弄着，两人都发出哼声。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;董叔好像是知道我在偷看似的，有意延长玩弄的时间，更故意把重要的部份朝外，似乎要让我看得更清楚些。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;现在两个人的景像使我心惊胆跳，他用手指插进她的身体里面，一进一出的，而她更自动的分开两腿，并且臀部上上下下配合他的动作。没一会她说：「大鹏，放进去吧，难过死了！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「好，不过今天要换一个花样？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「好嘛！反正随你好了，好人，快插进去吧！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「好，你在上面，这叫倒浇腊，你跟那死鬼玩过没？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哼！死鬼他是天生色鬼，什麽花样都要玩，他还买了许多奇奇怪怪的东西来助兴呢，好人，别谈这些吧，我受不了啦！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;说罢，他果然仰躺下来，他的那个东西高高的举着，妈用手扶正，骑了上去，「嗯！」声叫了一下。他的东西就滑了进去了，接着就一上一下套弄着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;由於妈妈一上一下套弄着，胸前两个硕大的乳房也跟着一上一下摇摆着，只看得我两腿发软，不自主的右手伸进三角裤摸了下。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;哎呀！原来跟下午他摸我时一样有许多水，我的手随着妈的动作而动，她快我也快，她慢我也慢。只听见妈又说：「好大鹏，你真行，今天好舒服，刚刚觉得一阵酸麻，哦......真舒服，呀哦......我动不了......你来动动吧！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;妈说完就伏在他身上不动，由於他这一伏，奇妙的景象呈现在我眼前。从後看去，好像她阴部含了一根大香肠一样，大部分都吃进去了，只留下根部，可是在根部下端长满了杂草。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他看她不动了，就一下坐过来，接着又站了起来，两人仍然没有分开，她的双手绕着他的脖子，两腿夹着他的腰。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他的两手托着她的臀部，就这样在客厅中来回走着，走一步挺一下，挺一下她便「嗯」一声。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;也不知走了多少圈，最後他把她又放回到沙发上，将她两条腿抬到肩上，用力的抽插起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;因为太用力，沙发椅上发出了支支之声，没一会，他不动了，几乎是同时两人都长吁了一口气。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「好大鹏......今天你可真厉害呀，我总共来了三次高氵朝，真是太舒服了！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「比你那死鬼怎麽样？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「你为什麽老是提死鬼呢？其实他的本事你又不是不知道，那回你们两个人一同去玩一个歌女，事後他都告诉我了，他有多少的本事你自己亲眼目睹过了，还问我干吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;董惊讶的叫道：「什麽？他居然把那回两个人玩歌女的事都告诉你啦！其实那次他相当厉害呢，先是他说让他先来，我在旁边看戏，结果演得太精彩了，忍不住就叫那个歌女用嘴把我的吃出来了。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他顿了顿，又道：「而他还在埋头苦干呢，而且越战越勇，最後又把我看得火起了，正好他完了，就由我接班。说真的他的本事事真不少呢！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;妈白眼他含笑说：「其实那次不算什麽。他说还有一次你们两个人居然想到我家来一起玩我呢，有没有这回事？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「这也不是什麽坏事，现在我们不搞上了吗，其实三人小组才有意思呢，如果有机会让你试试，恐怕你会乐此不疲呢！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「我才不干呢。做爱有人在旁边看，多难为情！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;董叔哈哈大笑了起来：「哈哈......才不会呢，有人看更会增加情趣，他不仅看，还可以参与工作呢，如果是二男一女的三人小组，女人最舒服，男人最刺激，如果是二女一男的三人小组，男人舒服透顶了。怎麽样，那天我们试试？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;妈好像被说动了，因为她没有立刻回答，默默的想了好一会，才呐呐含羞的说道：「好吧！不过这种事情一定要保密才行，若是给别人知道了，那还了得。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「放心吧，好人儿！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「很晚了，我今又太累了，想睡觉了！」妈说罢站了起来，才站直就说：「哎呀，要死的，腰酸头也痛，都是你整的。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「别得了好处还怨人，刚才你在上面自己都不知道有多用劲，其实我还想梅开二度呢，你看，它又起来了。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;果然他的东西又坚硬起来了，好像比刚才大些，妈妈见了用手摸一下，低下头来轻轻吻了下说：「好弟弟，明晚再来，今天实在受不了......」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;妈说完就拿了衣服，回了她的房间。我也赶紧回到床上，很长时间才睡着。			
+			<div align="center">
+				<a href="javascript:postError(805033,12448);" style="text-align:center;color:red;">章节错误,点此报送(免注册)</a>,
+				报送后维护人员会在两分钟内校正章节内容,请耐心等待。
+			</div>
+		</div>
+		<div class="bottem2">
+			<a href="javascript:;" onclick="addBookMark(805033,12448,'1');">加入书签</a>
+						<a href="/12/12448/" target="_top" class="pre">上一章</a>
+						←
+			<a href="/12/12448/" target="_top" title="" class="back">章节列表</a>
+			→
+						<a href="/12/12448/805035.html" target="_top" class="next">下一章</a>
+						<a href="javascript:;" onclick="addBookMark(805033,12448,'1');">加入书签</a>
+		</div>
+		
+	</div>
+</div>
+
+<script language="javascript">
+if(typeof addBookMarkByJs!= 'undefined' &&addBookMarkByJs instanceof Function)
+	addBookMarkByJs(805033,12448,'1');
+</script>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<script src="/layui/layui.js"></script>
+<script>
+layui.use(['element', 'form', 'layer'], function(){
+	var element = layui.element
+	,form = layui.form
+	,layer = layui.layer;
+	
+	
+});
+</script>
+
+</div>
+
+</div>
+
+
+<div class="footer">
+	<div class="footer_link">
+		&nbsp;新书推荐：
+				<a href="/117/117161/">超级人生陈平江婉</a>、
+				<a href="/117/117159/">最後一人</a>、
+				<a href="/117/117158/">轮回剑谱</a>、
+				<a href="/117/117155/">超完美神豪</a>、
+				<a href="/117/117154/">蛮人修仙传</a>、
+				<a href="/117/117153/">皇明天子</a>、
+				<a href="/117/117151/">洪荒之鲲鹏绝不让位</a>、
+				<a href="/117/117142/">海拉病毒</a>、
+				<a href="/117/117141/">西游之我可以签到诸天</a>、
+				<a href="/117/117138/">网游之逍遥仙魔</a>、
+				<a href="/117/117132/">作秦始皇的乖女婿</a>、
+				<a href="/117/117124/">我能追踪万物</a>、
+				<a href="/117/117123/">精灵之这个捕虫少年稳如老狗</a>、
+				<a href="/117/117109/">仙路茫然</a>、
+				<a href="/117/117108/">朱门贵女守则</a>、
+				<a href="/117/117107/">开局血赚的火影</a>、
+				<a href="/117/117104/">赶在春风之前拥抱你</a>、
+				<a href="/117/117103/">影视世界当导演</a>、
+				<a href="/117/117102/">豪横人生从捡破烂开始</a>、
+				<a href="/117/117101/">为师决不赴考</a>、
+				<a href="/117/117100/">莽明</a>、
+				<a href="/117/117096/">贫僧法海佛门世尊</a>、
+				<a href="/117/117095/">名侦探世界的警探</a>、
+				<a href="/117/117090/">诸界天灾上线</a>、
+				<a href="/117/117086/">霍格沃茨的诸天法爷</a>、
+				<a href="/117/117083/">出门撞见妖</a>、
+				<a href="/117/117081/">从文艺兵到娱乐宗师</a>、
+				<a href="/117/117078/">从火影开始抽卡</a>、
+				<a href="/117/117077/">为师我乐意</a>、
+				<a href="/117/117071/">都市无敌杀神秦浩楚嫣然</a>、
+			</div>
+	<div class="footer_cont">
+	<p>本站所有小说为转载作品，所有章节均由网友上传，转载至本站只是为了宣传本书让更多读者欣赏。</p>
+	<p>Copyright © 2017 一世书城 All Rights Reserved. </p>
+	<script>tj();</script>
+	</div>
+	<p></p>
+	<p>欢迎收藏本站 <a href="/api/sitemap.xml" style="color: #FF0000;" target="_blank">网站地图</a></p>
+</div>
+
+
+</body>
+</html>
