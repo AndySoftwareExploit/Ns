@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>7 - 一世书城</title>
+    <meta name="keywords" content="7" />
+    <meta name="description" content="您正在一世书城(www.14txt.net)小说网阅读由姐弟合欢创作的小说《7》最新章节- 7。" />
+	
+	<link rel="stylesheet" href="/layui/css/layui.css" />
+	<link rel="stylesheet" href="/static/css/xiaoshuo.css" />
+	<script type="text/javascript" src="/static/js/jq.min.js"></script>
+	<script type="text/javascript" src="/static/js/Post.js"></script>
+	<script type="text/javascript" src="/static/js/wap.js"></script>
+	<script type="text/javascript" src="/static/js/bqg.js"></script>
+	<script type="text/javascript" src="/static/js/index.js"></script>
+	
+<script language="javascript">
+
+if(isMobileBrowser())
+{
+    document.location.href='https://m.114txt.cc/12/12448/805045.html';
+}
+
+var prevpage="/12/12448/805043.html";
+var nextpage="/12/12448/805047.html";
+var index_page = "/12/12448/";
+var bookId,chapterId;
+
+function keypage()
+{
+	var event = document.all ? window.event : arguments[0];
+	if (event.keyCode==37) document.location.href = prevpage;
+	if (event.keyCode==39) document.location.href = nextpage;
+	if (event.keyCode == 13) document.location.href = index_page;
+}
+
+document.onkeydown = keypage;
+
+var speed = 5;
+var autopage;
+var night;
+var currentpos, timer;
+var temPos = 1;
+
+$(document).ready(function(){
+	
+	if(typeof(nextpage) != "undefined" ) {
+		
+		autopage = getCookie("autopage");
+		if(autopage==1) {
+			$('#autopage').attr("checked", true);
+			speed = getCookie("scrollspeed");
+			scrollwindow();
+		}
+	}
+	
+	bgcolor = getCookie("bgcolor");
+	setBGColor(bgcolor);
+	
+	font = getCookie("font");
+	setFont(font);
+	
+	size = getCookie("size");
+	setSize(size);
+	
+	fontcolor = getCookie("fontcolor");
+	setColor(fontcolor);
+	
+	width = getCookie("width");
+	setWidth(width);
+	
+	night = getCookie('night');
+	if(night==1) {
+		$("#night").attr('checked', true);
+		setNight();
+	}
+	
+
+	
+});
+
+document.onmousedown = sc;
+document.ondblclick = scrollwindow;
+
+function scrollwindow()
+{
+	timer=setInterval("scrolling()", 100/speed);
+}
+
+function sc()
+{
+	clearInterval(timer); 
+}
+
+function scrolling()
+{
+	currentpos = document.body.scrollTop;
+	window.scroll(0,++currentpos);
+	if (currentpos != document.body.scrollTop){
+        autopage = getCookie("autopage");
+        if(autopage==1) document.location.href = nextpage;
+		sc();
+	}
+}
+
+function setBGColor(bgcolor)
+{
+	$('#wrapper').css("background-color", bgcolor);
+	setCookie("bgcolor", bgcolor, 365);
+}
+
+function setFont(font)
+{
+	$("#content").css("font-family", font);
+	setCookie("font", font, 365);
+}
+
+function setSize(size)
+{
+	$("#content").css("font-size", size);
+	setCookie("size", size, 365);
+}
+
+function setColor(fontcolor)
+{
+	$("#content").css("color", fontcolor);
+	setCookie("fontcolor", fontcolor, 365);
+}
+
+function setWidth(width)
+{
+	$('#content').css("width", width);
+	setCookie("width", width, 365);
+}
+
+function setNight()
+{
+	if($("#night").attr('checked')==true) {
+		$('div').css("background-color","#111111");
+		$('div,a').css("color","#939392");
+		setCookie("night",1,365);
+	} else {
+		$('div').css("background-color","");
+		$('div,a').css("color","");
+		setCookie("night",0,365);
+	}
+}
+
+function setSpeed(ispeed)
+{
+	if(ispeed==0)ispeed=5;
+	speed=ispeed;
+	setCookie("scrollspeed", ispeed, 365);
+}
+
+function setAutopage()
+{
+	if($('#autopage').is(":checked") == true){
+		$('#autopage').attr("checked",true);	
+		setCookie("autopage",1,365);
+	}else{
+		$('#autopage').attr("checked",false);
+		setCookie("autopage",0,365);
+	}
+}
+
+</script>
+
+</head>
+<body>
+<div id="wrapper">
+<div class="ywtop">
+	<div class="ywtop_con">
+		<div class="ywtop_sethome">
+			<a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('https://www.114txt.cc');" href="#">将一世书城设为首页</a>
+		</div>
+		<div class="ywtop_addfavorite">
+			<a href="javascript:window.external.addFavorite('https://www.114txt.cc','一世txt电子书 全本txt电子书免费下载 完本txt小说免费阅读 - 一世书城')">收藏一世书城</a>
+		</div>
+		<div class="nri">
+						<form name="mylogin" id="mylogin" method="post" action="/index.php?s=/web/index/login">
+				<div class="cc">
+					<div class="txt">账号：</div>
+					<div class="inp"><input type="text" name="uname" id="uname"></div>
+				</div>
+				<div class="cc">
+					<div class="txt">密码：</div>
+					<div class="inp"><input type="password" name="pass" id="pass"></div>
+				</div>
+				<div class="frii">
+					<input type="submit" class="int" value=" ">
+				</div>
+				<div class="ccc">
+					<div class="txtt"></div>
+					<div class="txtt"><a href="/index.php?s=/web/index/reg">用户注册</a></div>
+				</div>
+			</form>
+					</div>
+	</div>
+</div>
+
+<div class="header">
+	<div class="header_logo">
+		<a href="https://www.114txt.cc">一世书城</a>
+	</div>
+	<div class="header_search">
+		<form name="mysearch" id="mysearch" method="post" action="/index.php?s=/web/index/search">
+			<input class="search" id="bdcsMain" name="name" type="text" maxlength="30" value="可搜书名和作者，可少字但别输错字。" onfocus="this.style.color = '#000000';this.focus();if(this.value=='可搜书名和作者，可少字但别输错字。'){this.value='';}" ondblclick="javascript:this.value=''">
+			<input type="submit" class="searchBtn" value="搜索" title="搜索">
+		</form>
+		
+	</div>
+</div>
+
+<div class="clear"></div>
+
+<div class="nav">
+	<ul>
+		<li><a href="/">首页</a></li>
+		<li><a rel="nofollow" href="/index.php?s=/web/index/bookcase">我的书架</a></li>
+		
+		<li><a href="/xuanhuan/">玄幻小说</a></li>
+		<li><a href="/xianxia/">仙侠修真</a></li>
+		<li><a href="/dushi/">都市小说</a></li>
+		<li><a href="/lishi/">历史小说</a></li>
+		<li><a href="/wangyou/">网游小说</a></li>
+		<li><a href="/kehuan/">科幻小说</a></li>
+		<li><a href="/qita/">其他小说</a></li>
+		
+		<li><a rel="nofollow" href="/index.php?s=/web/index/gj">阅读轨迹</a></li>
+		
+		<li><a href="/wanben/1/">全本小说</a></li>
+		<li><a href="/paihangbang/">排行榜单</a></li>
+		<li><a href="/xiaoshuodaquan/">小说大全</a></li>
+	</ul>
+</div>
+
+<div id="main">
+
+<div class="content_read">
+	
+	<div class="box_con">
+		<div class="con_top">
+			
+			<div id="page_set">
+				<select onchange="javascript:setFont(this.options[this.selectedIndex].value);">
+					<option value="宋体">字体</option>
+					<option value="方正启体简体">默认</option>
+					<option value="黑体">黑体</option>
+					<option value="楷体_GB2312">楷体</option>
+					<option value="微软雅黑">雅黑</option>
+					<option value="方正启体简体">启体</option>
+					<option value="宋体">宋体</option>
+				</select>
+				<select onchange="javascript:setColor(this.options[this.selectedIndex].value);">
+					<option value="#000">颜色</option>
+					<option value="#000">默认</option>
+					<option value="#9370DB">暗紫</option>
+					<option value="#2E8B57">藻绿</option>
+					<option value="#2F4F4F">深灰</option>
+					<option value="#778899">青灰</option>
+					<option value="#800000">栗色</option>
+					<option value="#6A5ACD">青蓝</option>
+					<option value="#BC8F8F">玫褐</option>
+					<option value="#F4A460">黄褐</option>
+					<option value="#F5F5DC">米色</option>
+					<option value="#F5F5F5">雾白</option>
+				</select>
+				<select onchange="javascript:setSize(this.options[this.selectedIndex].value);">
+					<option value="#E9FAFF">大小</option>
+					<option value="19pt">默认</option>
+					<option value="10pt">10pt</option>
+					<option value="12pt">12pt</option>
+					<option value="14pt">14pt</option>
+					<option value="16pt">16pt</option>
+					<option value="18pt">18pt</option>
+					<option value="20pt">20pt</option>
+					<option value="22pt">22pt</option>
+					<option value="25pt">25pt</option>
+					<option value="30pt">30pt</option>
+				</select>
+				<select name="scrollspeed" id="scrollspeed" onchange="javascript:setSpeed(this.options[this.selectedIndex].value);">
+					<option value="5">滚屏</option>
+					<option value="1">最慢</option>
+					<option value="2">慢2</option>
+					<option value="3">慢3</option>
+					<option value="4">中4</option>
+					<option value="5">中5</option>
+					<option value="6">中6</option>
+					<option value="7">快7</option>
+					<option value="8">快8</option>
+					<option value="9">快9</option>
+					<option value="10">最快</option>
+				</select>
+				<select onchange="javascript:setBGColor(this.options[this.selectedIndex].value);">
+					<option value="#E9FAFF" style="background-color: #E9FAFF;">背景</option>
+					<option value="#E9FAFF" style="background-color: #E9FAFF;">默认</option>
+					<option value="#FFFFFF" style="background-color: #FFFFFF;">白雪</option>
+					<option value="#000000" style="background-color: #000000;color:#FFFFFF;">漆黑</option>
+					<option value="#FFFFED" style="background-color: #FFFFED;">明黄</option>
+					<option value="#EEFAEE" style="background-color: #EEFAEE;">淡绿</option>
+					<option value="#CCE8CF" style="background-color: #CCE8CF;">草绿</option>
+					<option value="#FCEFFF" style="background-color: #FCEFFF;">红粉</option>
+					<option value="#EFEFEF" style="background-color: #EFEFEF;">深灰</option>
+					<option value="#F5F5DC" style="background-color: #F5F5DC;">米色</option>
+					<option value="#D2B48C" style="background-color: #D2B48C;">茶色</option>
+					<option value="#C0C0C0" style="background-color: #E7F4FE;">银色</option>
+				</select>
+				<select onchange="javascript:setWidth(this.options[this.selectedIndex].value);">
+					<option value="95%">宽度</option>
+					<option value="95%">默认</option>
+					<option value="85%">85%</option>
+					<option value="76%">75%</option>
+					<option value="67%">65%</option>
+					<option value="53%">50%</option>
+					<option value="41%">40%</option>
+				</select>
+				翻页<input type="checkbox" name="autopage" id="autopage" onchange="javascript:setAutopage();" value="">
+				&nbsp;
+				夜间<input type="checkbox" name="night" id="night" onchange="javascript:setNight();" value="">
+			</div>
+			<a href="https://www.114txt.cc">一世书城</a> &gt; <a href="/12/12448/" title="娇淫青春之放纵">娇淫青春之放纵</a> &gt; 7		</div>
+		<div class="bookname">
+			<h1>7</h1>
+			<div class="bottem1">
+				<a href="javascript:;" onclick="addBookMark(805045,12448,'7');">加入书签</a>
+								<a href="/12/12448/805043.html" target="_top" class="pre">上一章</a>
+								←
+				<a href="/12/12448/" target="_top" title="" class="back">章节列表</a>
+				→
+								<a href="/12/12448/805047.html" target="_top" class="next">下一章</a>
+								<a href="javascript:;" onclick="addBookMark(805045,12448,'7');">加入书签</a>
+			</div>
+			<div class="lm">
+				&nbsp;热门推荐：
+								<a href="/12/12448/">娇淫青春之放纵</a>、
+								<a href="/98/98624/">逢床作戏(H)</a>、
+								<a href="/111/111169/">淫液香水系统</a>、
+								<a href="/14/14155/">斗破苍穹之淫宗肆虐</a>、
+								<a href="/75/75210/">乱仑合集(一)</a>、
+								<a href="/11/11812/">【斗破苍穹-淫宗肆虐】第七卷（全）大结局</a>、
+							</div>
+		</div>
+		
+		<div id="content" deep="3">
+			<p>
+				&nbsp;&nbsp;&nbsp;&nbsp;本网页使用IDM站点抓取，仅保留.html格式网页不保留.css层叠样式表，对于阅读的障碍我们深表歉意。<br/><br/>
+			</p>
+			&nbsp;&nbsp;&nbsp;&nbsp;「嗯……没有……爸压的你难过吧！来脚放下来。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅让女儿紧夹他腰的脚放下后就抱着晓莲娇小的肉体翻身躺在床上，他让晓莲软柔身体躺在他身上，ròu棒则还插在女儿的mī穴里享受着，手轻轻抚着女儿散乱的秀发，而晓莲则满足的趴在父亲的胸口，手指也不停的在父亲rǔ头上轻轻的抚摸着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲！你会不会怪爸爸？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「不会啊！我好喜欢爸爸、好爱爸爸！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸爸也好爱、好爱晓莲！不过爸爸是说，晓莲会不会怪爸爸和你上床做爱呢？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「不会！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;听到女儿肯定的答案后，秦毅的心整个安了下来！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他想或许女儿也和他一样喜欢上父女乱伦的快感吧！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「我爱爸爸！所以爸爸要我做什么我都愿意！就妈妈一样！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;听到女儿提起死去的老婆，秦毅不禁想到，要是老婆没死，她会同意这件事吗？他想肯定不会的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「而且我也喜欢和爸爸做爱！每次做爱，爸爸都把我干得好舒服、好爽！我好喜欢爸爸干我的感觉！」晓莲兴奋的用手撑着父亲的胸抬起头继续的说：「我好喜欢爸爸用大ròu棒干我的小mī穴喔！我爱死爸的大ròu棒了！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅一下子不敢相信这是他十五岁女儿所说的话，但一会他又想到这不就是他一手教出来的女儿吗？<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;看着女儿稚嫩的脸庞、天真的笑容，他也笑了！没错晓莲是他一手调教出来的！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸也好喜欢晓莲的小mī穴！爸也好爱干晓莲的mī穴！」秦毅将女儿的头按回自己的胸膛后继续说：「晓莲不但是爸的好女儿，也是爸的骚女儿、淫荡的女儿！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸！你好讨厌喔！竟然说我淫荡！」晓莲一边撒娇的说着，一边享受着父亲的手轻抚着自己屁股的快感。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「好、好，爸不说了！时间不早了，起来吧！我们去洗一下澡吧！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯～我要爸抱我去！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「那有什么问题！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;说完后，秦毅坐了起来，他拉着女儿的双脚来到他的腰，爬起来后，便抱着晓莲走去浴室，而晓莲则是双腿勾在父亲腰上，整个人贴在父亲宽厚温暖的胸膛上，她的心里充满了幸福的感觉，对她来说眼前这个男人不但是他的父亲，更是最爱的男人，虽然她才十四岁，但她的心里早认定父亲是她最爱的男人了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;来到浴室后，秦毅双手伸到晓莲的腋下把晓莲抱了下来，就在秦毅的ròu棒抽离女儿的mī穴时，晓莲mī穴里流出大量的液体，大量的液体不但顺着晓莲的双腿流了下来，甚至「哗啦、哗啦」的直接流到地板上，让晓莲有点不好意思，但随即一想到那是父亲的jīng液，父亲这样毫无保留的将jīng液全射进她mī穴里，不正是代表父亲对她的爱吗？一想到这晓莲更觉得幸福无比，脸上也露出甜甜的笑容。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「好女儿！你在笑什么？」秦毅把女儿抱了下来让她坐在浴缸的边缘。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「没有啊！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「还说没有？告诉爸爸什么事那么好笑？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅让女儿坐好后，双手放在女儿的膝盖上的蹲在女儿面前，他看着他这心爱的女儿笑起来的模样感觉真是像死去他的老婆！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「我只是想到爸爸刚刚把所有的jīng液全射进女儿的穴里，就感到好幸福，你看晓莲的穴还流着爸爸的jīng液呢？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;听到女儿这么说，秦毅也低下头看着女儿还有点肿的微红yīn唇确实正是缓缓的流出他刚刚所射的jīng液，他双手推开女儿的双腿，将头伸进女儿的大腿里，他看女儿原本饱满的阴阜因为他的挤压而显得平坦，mī穴更因为他的抽插而有些红肿，mī穴口上的yīn唇更流出他的jīng液和女儿的yín水，女儿mī穴里所散发出来的骚味不时的漂到他鼻子里，他忍不住的伸出舌头开始舔女儿的mī穴。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯……啊……喔……爸……好美啊……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅双手将女儿的腰往自己脸上推，舌头就在女儿的大yīn唇上舔着，一会儿后，他的舌头伸进女儿的mī穴里舔着女儿的小yīn唇，他仔细的舔着女儿的小yīn唇上的每一部份后，又将舌头伸到女儿的yīn蒂上舔着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……啊……就是那儿……啊……好……舒服啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;父亲温暖的舌头如触电般的舔舐，让晓莲的身子忍不的一颤一颤的，原本撑在浴缸边的手，也来到父亲的头上，她紧捉着父亲的头发，忍不住的双脚将父亲的头夹得更紧了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……好啊……好舒服……好美啊……啊……爸……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;最后秦毅的嘴整个罩住女儿的小yīn唇，他开始拼命吮着女儿mī穴里所流出来的aì液，舌头则伸入女儿的mī穴里，像ròu棒抽插一般的进出的舔着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯……爸……不要舔了……嗯……再舔……女儿就受不了了……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;听到女儿的话后，秦毅也兴奋的想和女儿再干一次，但一想到时间真的太晚了！明天女儿还得上课，他的嘴才依依不舍的离开女儿的mī穴才抬起头来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲！时间不早了！我们赶快洗洗，明天你还上课呢！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「讨厌啦！已经放假啦！爸弄得人家好想再干一次喔！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;看着女儿撒娇的样子，他没想到才十五岁的女儿性欲会变这么大！但他想这一切都是他的关系吧！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「不行！今天太晚了！明天爸再好好干你好吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哦～不要啦！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「好啦！爸的乖女儿，明天爸爸周休，爸带你去玩，到时候我们再好好的干，好不好？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸你说的喔！不准赖皮喔！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「不会啦！爸不会赖皮的，来～我们赶快洗洗！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;说完后，秦毅站了起来，他拿着莲蓬头将水调小后，就将莲蓬头冲向女儿的xiāo穴，他先洗掉女儿mī穴口上的黏液，然后将手指插进女儿的yīn道里轻轻挖着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……你怎么这样洗……哦……这样叫女儿怎么受得了啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲一边扭着身体，一手也忍不住的捉住父亲的ròu棒上下搓揉着，很快的父亲在她手里的ròu棒也坚硬了起来！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲，来，换你帮爸爸洗了！」秦毅将自己坚硬的ròu棒挺到女儿的面前。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲一手捉着父亲的ròu棒后，马上就张开她的樱桃小口将父亲的ròu棒含住，她一会吸、一会含、一会舔的舔着父亲的大ròu棒，弄的秦毅飘飘然的，让秦毅心里不停的想着再干一次、再干一次！但当他看了一下手上的手表已经快走到二点了！他不得不放弃再干女儿一次的念头！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「好了！晓莲！爸爸帮你擦一擦，我们回去睡觉了！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅帮女儿擦完后，就抱着女儿回到房间，他抱女儿丢上床后，自己也跟着爬上床，他把女儿抱在怀里，让她躺在自己的胸口上，他的手温柔的在女儿细致的皮肤上爱抚着，而晓莲则静静的躺在父亲的胸口享受着父亲爱抚的快感，同时手也玩着父亲胯下那根他心爱的粗大ròu棒，这是他们父女每晚上床后嬉闹时所玩的游戏，也是他们父女唯一的游戏。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他们父女都没讲话，只是赤裸裸的躺在床上享受着乱伦欲海的快感，直到他们睡着！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;夏天的阳光总是来的比软快，从窗外洒进来阳光差点让秦毅睁不张开眼！他看一下时间才快六点，想到昨天和女儿搞到快二点，难怪女儿还没醒来，看着躺在身边的女儿，脸上清秀的脸庞，仍有着少女的稚气，谁想像得到她昨晚淫荡的表现呢？<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他轻轻的掀开盖在女儿身上的棉被后，就手撑着自己的下巴，开始欣赏着女儿的身体，这是他例常性的工作，每天早上只要他比女儿早起来，他就会这样静静的看着女儿丰满的胴体，晓莲没有任何疤痕的雪白肌肤，及肩的长发和粉白的颈子，都让他为之着迷！尤其是她身上散发出的那种少女独特的淡淡幽香，更让他疯狂！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅仔仔细细地欣赏着女儿身体的每一部份，当他的眼光来到女儿的乳房上时，他突然发现女儿的乳房好像又变大了！他想或许是因为还在发育所以长的比较快吧！但一会他又想到可能是因为他经常搓揉的关系吧！他忍不他的笑了！是啊！自从和女儿发生乱伦的性关系后，他就几乎天天搓揉女儿的乳房，难怪女儿的乳房长的这么快！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;接着他的视线慢慢的往下移，不久映入他眼里的是女儿那长着稀疏阴毛的饱满的阴阜，饱满的阴阜中间有条些微湿润的粉红色小肉缝，每次看着女儿那些微稀疏的阴毛反而使得雪白饱满的阴阜看起来更加诱人！他总忍不住的叹赞！一想到女儿的mī穴随时为自己的ròu棒而开启，他就忍不住激动起来，胯下的ròu棒也忍不住的坚硬起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「唉～」他叹了口气。对于自己的ròu棒老实的坚硬起来，他想到一年前要不是因为它，他和女儿关系应该只是父女而已，女儿现在也还是个什么也不懂的小女孩！他记得那天所发生的事，那是他老婆死了一年多的某一天，那一天他照例在看完晚间新闻时就到浴室洗澡，正当他洗好泡在浴缸里时，女儿闯了进来……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸！我和你一起洗好不好？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「什么？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女儿的提议，着实让他吃惊！以往老婆在的时候，女儿总是和老婆一起洗，要不然就是她自己洗，他没想到女儿会主动的想和他一起洗澡！他想或许是因为老婆死了，所以女儿才会想和他一起洗澡吧！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;看着女儿背对着他慢慢的脱掉自己身上的衣服，他知道他已来不及拒绝了！而且也没理由拒绝，但女儿已经十四岁了，正开始发育，他怎能和女儿一起洗澡呢？但随即他又想到她是他女儿，一起洗澡应该没什么好大惊小怪的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;当他看到晓莲把脚抬了起来把内裤脱到了脚底下时，他发现女儿的小屁股好像已经变大了，而且变得更圆润，更洁白，两股间的裂缝，也不再只有白色，隐隐的一条红线透出一股只有小女孩才有的气息。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲转过身走过来时，那种惊为天人的感觉让秦毅忍不住的仔细打量着，他看着女儿细嫩、纤瘦的身体，全身没有多一寸脂肪，胸前的乳房明显的增大了，只是乳晕还是娇人的嫩红，圆圆的肚脐下，平坦的小腹直通到迷人的三角区，饱满的阴阜还是寸毛未生，一道粉红色细缝直透内里，实在令他忍不住的赞叹着。但父亲的身份与最后的一线理智在提醒他，晓莲是他的女儿。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;当晓莲来到父亲面前，看着父亲不停的摇头时，她好奇的问：「爸！你在干嘛？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「没、没有！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅抬头看着女儿全身一丝不挂的站在他面前，一时之间他楞住了！晓莲那清纯的脸庞、惹人怜爱的水汪汪大眼睛配上高高的鼻梁和樱桃般的小嘴，让秦毅情不自禁的吞了口口水！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他看着女儿就像她母亲一样有着一身雪白的肌肤，更让他心动的是晓莲那十四岁才刚发育的胸部，由于体形纤瘦没有多馀的脂肪，使的她的乳房看起来比一般同年纪的女孩还来的大些，浑圆半球形的乳房和她死去的母亲一样是属于水滴形的，只不过比她母亲更加的鲜嫩欲滴，尤其是女儿乳房上两颗乳尖微微的向上翘着，两颗粉红色的乳晕就像鲜嫩的樱桃般的诱人，纤细的腰中央有可爱的小肚脐，让人忍不住的想舔它一舔。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;不知为什么秦毅的心里紧张了起来，虽然他一直告诉自己眼前的这个女孩是他女儿，但女儿诱人的肉体还是让他忍不住的继续往下看，接着他看到女儿平坦的小腹下有着饱满的阴阜，上面则长着细细的嫩毛！饱满的阴阜上一条细嫩的粉红色裂逢从中剖开，使得整个yīn户看起来就像散发着一股处女的诱惑似的，再往下就是一双修长的美腿，更使整个她身躯看起来是那么的完美无瘕，那么的令人想一亲芳泽。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸！你好奇怪喔！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲没理父亲怪异的眼神，就抬脚走进浴缸，她跨过父亲的腿后慢慢的坐下去，她将臀部坐在父亲的大腿根上，细滑的背则紧贴着父亲的胸膛。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「喔～好舒服喔！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅不时闻到女儿身上所散发出来的幽香，他的双手像找不到可以安放的地方似的不知往那伸，最后他不得以只好将双手放在浴缸旁。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸！你后面放什么东西啊！一直顶着我！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;听到晓莲的话后，秦毅吓了一跳，他赶紧拿着毛巾盖住自己早不知在什么时候就坚硬的大ròu棒上！但还是阻止不了好奇的晓莲转身，她将手伸到盖着父亲坚硬ròu棒的毛巾下。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「喔～」当女儿的小手握住他坚硬的大ròu棒时，秦毅不住的叫了出来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哇！什么东西？这么硬！」晓莲好奇的将毛巾给拿开，当他看到父亲坚硬粗长的ròu棒直挺挺的站立在那时，她像发现宝一样的惊呼：「哇！爸，你的下面怎么跟我长的不一样！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲的双手一前一后的握住了父亲的巨大坚硬的ròu棒，坚硬而火热的新鲜触感令晓莲的双手忍不住好奇的一会捏、一会握的。女儿细嫩的小手握着ròu棒的快感，让秦毅的ròu棒忍不住的抖动起来！他发觉自己的ròu棒就像要撑破似的涨着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「好硬、好粗喔！爸，你的怎么和我的不一样呢？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……因……因为爸是……哦……是男人……哦……所以和你不一样……哦……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲好奇的双手不停的在父亲坚硬的ròu棒捏揉着，她的手甚至在父亲的guī头上摸着，让秦毅的ròu棒涨的更硬，甚至硬的有点发痛！他看着女儿，心里想着要是她不是他女儿而是他老婆多好，甚至是别的女人也好。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「好可爱喔～好像乌龟的一样还会缩回去。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲的手玩了一会后，发现父亲的ròu棒上的guī头还会缩回去，她兴奋用手握着父亲的ròu棒上下的搓揉着！一会后，秦毅发觉自己真的忍不住了！自从老婆死后，他已经一年多没接触过女人，如今ròu棒让女儿的手这么一握早就坚硬如铁，再让女儿玩下去，恐怕会忍不住的射出来，于是他赶紧爬起来走到浴缸外！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「好了！别玩了，出来吧，爸帮你洗澡！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哦～」秦毅在晓莲走跨出浴缸站后，就用着将莲蓬头冲洗着女儿的身体，接着他要女儿转过身去，用了些沐浴乳涂在女儿背上，他慢慢的擦洗着女儿光滑的背。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸！我们好像是第一次一起洗澡喔！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「是啊！以前都是妈妈和你一起洗的嘛！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;由于女儿的身高和自己有点差距，所以秦毅不得不蹲了下去，他的手来到女儿的小屁股上，看着女儿娇小但结实的小屁股，秦毅忍不住的用双手捏着，他慢慢的上下搓揉着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸！你在干吗？怎么洗这么久！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「没、没有！」秦毅心虚的说完后，双手便往女儿的腿洗下去，一会后，他洗完后，便对女儿说：「好了！转过来吧！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;乳型好美好美，是，更漂亮的是rǔ头好小，就这么看着晓莲柔顺的把身转过来，少女幼嫩的乳房正好对着他，晓莲淡淡桃红色的乳晕，小巧的rǔ头尖尖翘翘的点在雪白的乳房上，让秦毅忍不住的咽了一下口水！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他没想到女儿发育得这么快，乳房长得以比一般同年龄的女孩还大一些，他伸着颤抖的手的慢慢的从女儿的脖子洗下去，慢慢的他的手来到了女儿的胸部，他轻轻的握着女儿的乳房时，双手马上传来了女儿乳房的柔软与弹性，这柔软的感觉他已差不多快遗忘了，他的双手像怕弄痛女儿似的轻握着女儿的乳房在上下画圆般的揉着，看着女儿的乳房随着他的双手而变形，他忍不住的加重了力道捏着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;突然间他的手掌发觉到女儿小小的rǔ头竟然有点变硬的感觉！他心里不禁想到难道才十四岁的女儿会有快感？他讶异的抬头看着女儿，他更不敢相信他所看到的，因为他看女儿的脸已不知在什么时候变绯红了，而且呼吸也慢慢的急促了起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;发现到这种变化后，秦毅的手赶紧离开女儿的乳房，虽然他很想继续下去，但他深怕继续下去会出问题，会做出对不起女儿的事，接着他的手快速的经过女儿的细腰，来到达女儿平坦的小腹，看着女儿饱满的阴阜上那条粉红色的裂缝，他的心不知为何的加速跳着，额头也不断的冒出汗来，女儿那漂亮的裂缝让他刚刚的警告消失无纵了！他无法控制的直盯着女儿的裂缝看，手也不断的在女儿光滑的小丘上徘徊。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸！你干吗？怎么满头大汗的！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「没……没事……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女儿的声音让他从迷网中惊醒了过来，他的手略过女儿的阴阜，直接洗着女儿的双腿！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸！你怎么没洗这里！妈妈说好女孩这里一定要洗乾净的！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「是……对……妈妈说的对，不过那里你自己洗！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「喔～」秦毅站起来转身拿莲蓬头，当他转过来时，正好看见女儿蹲在下面用手轻轻的洗着自己的小mī穴，虽然样子很不雅，但却充满了淫秽的味道！从上面他正好可以看到女儿mī穴微微开启的样子，更可以清楚的看见女儿mī穴里的yīn唇！娇嫩的粉红色大yīn唇让他离不开视线了，手里莲蓬头所冲来的水不断的打在女儿的身上！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸！等一下啦！我还没洗好，先不要冲水啦！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲看父亲还是不停的将水冲到她身上，于是她抬起头看着父亲，她看着楞站着的父亲，她不知道发生了什么事，但当她看到父亲坚硬的ròu棒时，她的玩兴又起了，她双手又握着父亲粗长的ròu棒套弄着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哦……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅看着女儿柔软的手在他ròu棒上套弄着，可爱的脸庞上显着天真无邪的表情。浑圆有弹性的小乳房偶尔在空中上上下下的荡漾，幼嫩红润的mī穴，包着鲜嫩欲滴的yīn唇，一时之间秦毅迷网了，他彷佛看到他死去的美丽老婆正在蹲在下面玩弄着他的大ròu棒！他忍不住的闭上双眼享受着这美丽的快感！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……好啊……哦……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;接着晓莲灵光一现，她将头伸到父亲的ròu棒前，她用嘴吻着父亲那巨大的guī头，然后像舔冰棒似的舔着父亲巨大的ròu棒。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……晓……晓莲你干什么，不要！快停下来！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;温热舌头舔着ròu棒的激烈的快感让秦毅吓了一跳，当他睁开双眼发现蹲在下面的女儿竟然用舌头舔着他坚硬的ròu棒时，他吓了一跳，强烈的道德感让他不得不阻止女儿！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸，为什么？我看过妈妈也对你这样做过啊！而且你还叫妈妈用力呢？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;说完后晓莲没理父亲，就张开她的樱桃小嘴，将父亲涨的巨大的ròu棒塞入口中，但尤于晓莲的嘴小只能勉强塞进父亲巨大的guī头和一小截ròu棒。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哦……嗯……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲含着父亲的ròu棒后，似懂非懂的用上下含着父亲的ròu棒，嘴里的小舌头也不时的绕着父亲巨大guī头舔着，被湿热的肉壁包着ròu棒的快感让秦毅忍不住的呻吟着，女儿偶尔不小心碰到ròu棒的牙齿，反而更加深他的快感，他感觉到自己的ròu棒正激烈的跳动着！他忍不住的跌坐在地上！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸！我和妈妈做的是不是一样？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;看着女儿俏皮的模样他再也忍不住了！他抱起女儿，让女儿的双腿跨过自己的脚后，然后让女儿坐在自己的大腿上。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲！爸忍不住了！爸爸好难受，让爸爱你一次好不好？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸！你干嘛？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅曲张着脚让女儿的身体往后倾躺在他的双腿上后，他伸出他颤抖的双手从女儿乳房下面将晓莲整个乳房撑起来，他感觉到女儿的乳房虽然小但却充满了柔软度和弹性，他忍不住的握着女儿的乳房用力搓揉着，手指也捏着女儿小巧的粉红色rǔ头搓动着！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊！爸，你干什么？好痛喔！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅双手握住女儿的双乳不停的搓揉捏着，看着女儿两颗粉红色樱桃般诱人的rǔ头忽隐忽现的像是呼唤他似的，他忍不住的低下头含住其中一个rǔ头，用舌尖轻轻的舔着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……不要啦……好奇怪喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;看到父亲含着自己rǔ头的晓莲，害怕的推着父亲的头，但这样却让秦毅更觉得有意思，接着他用牙齿轻轻咬住女儿的的乳尖，舌尖则绕着女儿的rǔ头不停的画圈舔着，他的手也滑入女儿的双腿之间后，手指就停在女儿的裂缝的上端，当他的指尖接触到女儿小小的yīn蒂时，晓莲像触电般的震了一下！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……嗯……你弄到晓莲那里了……喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅用食指按着女儿的yīn蒂，不断的上下搓弄着，中指也不停的摩擦着女儿的嫩穴裂缝，让从末有过这种经验的晓莲不知如何是好，她不停的扭着身体，躲开父亲嘴和手！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸……不要弄了……啊……我好奇怪喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;奇妙的感觉冲击着晓莲，她忍不住用力推开父亲的头娇喘着。看着女儿绯红的脸娇喘可爱模样的秦毅，忍不住的扶着女儿的下巴往女儿的唇上轻轻的吻着，当他们父女的四片唇在刹那间合拢时，晓莲身体僵硬的眼睛睁得大大的，她从来也未你过这种滋味，惊慌中她感觉到父亲的舌头钻进了她的嘴里，正不停的搅和着她的舌头，突然之间，一种奇妙的甜蜜感觉涌上晓莲的心头，让她闭上了眼，忘了父亲的双手还在她的乳房和腿间的mī穴揉搓着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「唔……嗯……嗯……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;父亲的狂吻，让晓莲渐渐的感到全身无力，她的舌头随着父亲的舌头而翻动着，甚至被父亲吸进嘴里吸吮着，早熟的她当然知道父亲在干吗？一想到父亲正热吻着她，而且这是自己的初吻，她的心里不禁起了一阵荡漾。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯……啧……啧……嗯……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅疯狂的吻着女儿的嘴唇，拼命的吸吮着女儿的口水，舌头则伸入女儿的嘴里打着转着、搜索着、翻搅着女儿的舌头，甚至将女儿的舌头吸进自己的嘴里吸吮着，手则不断的在女儿的rǔ头上捏着、mī穴上揉着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸～我……我的感觉好奇怪喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲！爸爸弄得你舒服吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅的手指还是捻着女儿的rǔ头，手掌则揉压着女儿的小小的乳房。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「舒服是舒服！可是也觉的好难受。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸让你更舒服好不好？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「怎么弄？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅指着浴缸的边沿上说：「来！你先坐在这把双脚打开！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲听话的从父亲的身上站了起来，她天真坐在浴缸上，把腿张得开开，看着正望着她mī穴的父亲。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅看着女儿双脚打开的坐在他面前，原本闭合的粉红mī穴也微微的张开，粉红色的大yīn唇和小yīn唇像等不及似的露出在他眼前，小小的yīn蒂略微的突出在mī穴的裂缝上，秦毅真的忍不住了，他跪在女儿的面前，深深的吸了口气后，把头埋入女儿的隐处，慢慢把脸贴向眼前那迷人的mī穴，他用力的嗅着女儿mī穴里所散发出来的那股处女香味。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸！你干什么，怎么把头伸到那里？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;看着女儿粉红色有点湿润的mī穴裂缝，秦毅忍不住的伸出舌头，他用舌尖快速的由下往上的在女儿的裂缝舔了一下，让坐在缸边的晓莲也跟着颤一下！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……嗯……你怎么舔那里……啊……不要……那里好脏……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一感觉到父亲正用舌头舔着自己的mī穴，晓莲心中乱了，她害怕用手推着父亲的头，想把父亲的头推开，但父亲不但没有离开，反而用手抱着她的腰，将她推向自己。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸……不要啦……喔……好奇怪喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅舔了一下女儿的mī穴后，发觉到女儿处女的骚味在他嘴里慢慢的散开，不知为什么他觉得女儿的味道真是美极了！他又将舌头伸向女儿的mī穴，在女儿的大yīn唇上慢慢的舔着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……不要弄了……嗯……好痒喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;从没经历过这种事的晓莲，根本不知道父亲在做什么，但mī穴让父亲这么一舔，让她感觉自己的mī穴里像有什么东西在爬似的痒了起来！她很想推开父亲，但又不想让父亲离开。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯……爸……嗯……不要……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅用心的舔着女儿柔软的yīn唇让，甚至连yīn唇上的细小邹褶他都仔细的舔着，接着他用舌尖轻轻的推开了女儿那洁白光滑的小yīn唇后，舌尖继续的舔着女儿的的小yīn唇。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……不要……爸……嗯……我……我……好难过喔……嗯……好像要尿尿了……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;第一次，晓莲的mī穴里流出了黏稠的处女蜜汁，她忍不住地用双腿将父亲的头夹紧了！但还是阻止不了黏糊糊的aì液从她mī穴深处里的涌出，使得晓莲的mī穴开始湿濡起来。蜜汁散发的那股骚味让秦毅激动不已，他把头埋入女儿的双腿间，舌头贪婪的吮吸着亲生女儿的aì液。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸爸……不要啦……啊……好痒……不要舔了啦……晓莲要尿尿了……嗯……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;强烈的快感让晓莲忍不住的弓起了身子，mī穴也不自觉的挺向父亲的脸，让秦毅更恣意的舔着，他品你着女儿的mī穴第一次所流出来的蜜汁，他的心亢奋得不能再亢奋了，胯下的ròu棒涨的不能再涨，连guī头也涨的发痛，于是他抱着女儿曲膝坐在地上，他将女儿的双腿分开架在自己的大腿上，让女儿靠在自己的双腿坐着后，他将ròu棒前端的guī头抵在女儿娇嫩的xiāo穴口。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸！你弄得我好难过喔。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲！来爸让你舒服！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅一手手指分开女儿粉嫩mī穴上的yīn唇，让女儿的aì液慢慢的泊泊而出，另一手握着自己的ròu棒用guī头抵住女儿的mī穴口，他用着guī头上下的摩擦着女儿的yīn唇。看着父亲握着自己粗壮的那根东西不停的磨着的晓莲，虽然她不知父亲在做什么，但她的yīn唇早已湿润了，阻止不了的aì液不断的从她mī穴里流出来，沾湿了父亲的guī头，彷佛在迎接父亲似的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸……不要弄了……嗯……晓莲心里好奇怪喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;父亲的guī头不停的摩擦着yīn唇让晓莲觉得mī穴不断传来刺激性的麻痒，不由得让她扭起腰来，仅管她不知道怎么辨，但早熟的女性本能却让她的mī穴里涌出大量的蜜汁，yīn唇上窜起的强烈电流更让她不自主的将头往后仰，同时她的心里不断的想着怎么辨？<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「喔……爸……我好难过喔……啊……不要弄了……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅看女儿的mī穴里的aì液越来越多，就连他的guī头都沾满了女儿那湿答答的aì液后，他想应该可以了吧！接着他将guī头顶着女儿的xiāo穴口，然后挺起guī头微微向女儿的mī穴里挺进，当他的guī头插进女儿狭小紧凑的mī穴时，他可以感受到guī头被女儿的yīn唇紧紧包着的感觉，那像海绵般柔软的yīn唇包着的快感阵阵的传到秦毅的大脑，让他兴奋的忘了女儿才只有十四岁，不但是个处女，mī穴更末成熟到可以容纳他那又粗又长的ròu棒，他兴奋的挺腰，让ròu棒继续插入女儿的mī穴。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……」晓莲的喉咙里发出了凄惨的叫声，她感觉到自己的mī穴正被某样巨大的东西侵入，使的她狭小的mī穴有如同被撕裂般的剧痛瞬间扩张开来，她用手推着父亲的胸膛，想阻止父亲的后续动作。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「不要……好痛……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅慢慢的将ròu棒插入女儿的mī穴，直到guī头顶在一层薄膜，他的直觉告诉他这是女儿的处女膜，他没想到女儿的第一次会是给了他这个做父亲的，但随即想到身为父亲的他可以得到女儿的第一次，他就兴奋的使劲挺腰一送，将他粗大的ròu棒顶开女儿狭窄的肉缝，直朝女儿的mī穴插入！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……痛死我了……爸……快抽出去……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;嫩穴撕裂般的疼痛让晓莲忍不住的用双手捶打着父亲的胸膛，痛入心痱的感觉更让她流下眼泪，她感觉到自己的mī穴像被烧烫的铁棒给插入似的涨开，她想将它挤出去但没辨法，粗壮的东西就是不肯出去，让她没得选择，只能将它这样的夹着！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲！对不起！爸太用力了，是爸不好，爸爸不动了，忍一会就好了！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;因疼痛而面部肌肉扭曲的晓莲，让秦毅心疼不已，他将女儿抱在怀里，手不停的拍着她的被背安抚着女儿！同时也感受着女儿mī穴里皱褶的嫩肉不知是因为排斥ròu棒的插入而还是欢迎ròu棒的到来而蠕动夹着ròu棒的美妙滋味。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……好痛喔……爸拿出来……我不弄了……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;仅管父亲不停的安慰，晓莲还是只觉自己的mī穴像快被撑裂似的疼痛，她轻轻的哭泣着，同时感觉自己mī穴里多了根粗壮的东西，而那根粗壮的东西就将她整个狭小的mī穴塞的满满的、涨涨的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「你、你……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅抱着女儿不停的在女儿的耳边安慰着，等到晓莲的哭声小点时，他才让女儿离开他的怀抱，他将晓莲盖在她脸上的秀发往后拨，看着女儿流泪的样子，秦毅忍不住的吻着女儿的所流下的泪水，他不断亲吻着晓莲的脸，偶尔吻着女儿的唇，跟着猛然的含住女儿的左耳，轻柔的咬了起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「还痛吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「一点点！」晓莲委曲的说。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「对不起！都怪爸爸！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸！我们这是不是做爱啊？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅没想到女儿已经了解男女之间的事了！他不知道该如何回答女儿，一想到他夺走了女儿宝贵的第一次，真觉得对不起女儿！一时之间，他有点后悔了，甚至恨自己为何会如此的冲动！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸～！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯！晓莲！我们是在做爱，爸对不起你！爸不应该和你做爱的！但爸爸太爱你了！所以忍不住的想和你做爱！你原谅爸爸好不好？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「我不怪爸爸！我也知道！我和爸爸不能做爱的，以前我有问过妈妈，妈妈跟我讲了很多！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲！你真的不怪爸爸？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一听到晓莲这样说，不知为什么秦毅觉得安心不少！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯！而且我也爱爸爸，我想做爸爸的太太！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「为什么？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;虽然秦毅知道每个小女孩总会天真的说长大后要做父亲的老婆，但他还是很好奇女儿的真正含意！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「因为妈妈说过，男人都会想做爱，所以我做爸爸的太太后，就可以和爸爸做爱了！爸也不用忍的那么辛苦了！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲体贴的话，让秦毅想当的感动！但一想到父女乱伦是不容于社会的，而且让人知道了，不但害了女儿，就连自己也惨了！他忍不住的抱住女儿娇小的身体，在她耳边说：「可是？我是你的爸爸，要是让别人知道，是会害了你，而且也……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸～只要我们不说就没人知道了！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;是啊！不说就没人知道了！但他怎么对的起自己的良心呢？秦毅忍不住的这样想。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸～我爱你！你也像爱妈妈那样爱我好不好？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲！爸的好儿女！爸会好好爱你的！爸保证会好好爱你的！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;说完后，秦毅双手捧着晓莲的脸，热烈的吻着晓莲的唇，晓莲也主动的迎合着父亲的吻，而且由于刚刚的经验，所以她又滑又软的舌头像小蛇一样伸进了父亲口里。他们父女深情的拥吻着，浓浓的情意和超越父女乱伦禁忌的异样快感，让他们恣情的开始享受着父女心灵和肉体上的交融快感。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲，还痛吗？」秦毅关心的问。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯～不痛了，可是有点酸，有点涨。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅双手抱着女儿的背后爬了起来跪在地上，他让晓莲双腿打开的平躺在地上，他低头看着和女儿已经完全结合在一起的下体，并没有看到自己的ròu棒，只看见女儿的mī穴被自己的ròu棒撑开的样子，mī穴口上的两片yīn唇紧紧的夹着他的ròu棒，他知道他的ròu棒己经完完全全全的插入女儿的mī穴里了！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「那爸动动看喔！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅双手捉着晓莲双腿的膝盖关节，慢慢的将腰往后退，轻轻的拉出插在女儿mī穴里的ròu棒，他的动作轻轻柔柔的，像怕戳破女儿幼嫩mī穴里的黏膜似的轻轻抽出ròu棒。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯……爸……啊……慢一点……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲感觉到自己原本涨裂的mī穴也跟着空了起来，自己的心也随着父亲ròu棒的退出而被拉出似的，一时之间她感觉到有种莫名的空虚，心里更不知为什么又非常的渴望父亲能来满足她莫名的空虚。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……嗯……晓莲好难受喔……喔……怎么辨……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲！你放心，爸会让舒服的！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;没听到女儿再次喊痛的声音，让秦毅放心了许多，他又慢慢的挺着腰，将粗长的ròu棒插进女儿紧凑的mī穴里，他低头看着自己的ròu棒慢慢的插进女儿温暖的mī穴紧紧夹着，不知为什么他感到异常的兴奋。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……好啊……怎么会这样……嗯……喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;随着父亲的ròu棒再次的进入，让晓莲原本感到莫名空虚的心又得到了充实，同时mī穴也又感受到饱涨的感觉，她的心也有种说不出的满足感！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……嗯……晓莲好奇怪喔……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女儿肥嫩的mī穴让秦毅的ròu棒非常的舒爽，他忍不住慢慢的在女儿紧凑的mī穴里抽送着ròu棒，认真的享受着自己的ròu棒戳开女儿黏稠mī穴的美妙滋味。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯……啊……爸……喔……我好难受……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;看着女儿开始有点急促的呼吸和细小的呻吟声，秦毅知道女儿开始享受乐趣了，他没想到女儿这么敏感，第一次做爱就会有快感！接着他想到他死去的老婆<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……喔……爸……好奇怪……啊……我……嗯……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;狭小、紧凑的少女嫩穴紧紧的包覆着热呼呼的ròu棒，让秦毅无法像以前干老婆一样的快速抽插，但女儿温暖而紧绷的mī穴和他ròu棒上处女的血，让秦毅的兽性大发，他忘了对女儿的承诺，他将女儿的双脚往上推后，开始忘情激烈的抽插起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲，爸好爱你！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「痛……嗯……爸……轻一点……啊……好痛……嗯……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲赤红着脸轻呼着，她张开双腿的娇小身体似乎完全承受不起高大魁梧的父亲疯狂的抽送，虽然她不停的呼喊求饶，但秦毅就像没听见一样的在她mī穴里猛抽送着坚硬的ròu棒。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……你那个……喔……好大……啊……好痛……我受不了……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲……嗯……忍一下……啊……待会就好……」秦毅喃喃说着，ròu棒抽插的动作也越来越起劲。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;不一会，晓莲感觉刚刚的痛苦减少了，但mī穴里却感到阵阵的酸痒，而且是随着父亲ròu棒的抽插而酸痒起来，她忍不住的扭着屁股。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……喔……啊……爸……好奇怪的感觉……啊……又酸……啊……又痒的……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲……喔……舒服吧……嗯……快……摇一下你的屁股……啊……会更舒服的……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲听话的连忙挺起她的小屁股，把mī穴凑上来迎合父亲的ròu棒，不一会，她就觉得mī穴随着自己的摇摆而更加的似酸非酸，似痒非痒，一阵阵舒服的感觉直透上来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……怎么会……啊……好舒服喔……爸……为什么会这样……喔……好美喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅的动作越来越粗暴，简直就像是要彻底吞噬女儿粉柔娇嫩的躯体一般的在女儿的mī穴里猛抽着ròu棒，让他的ròu棒一次又一次的插进女儿的mī穴里，更让浴室里不停的响起「啪、啪」的声音。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「……晓莲……嗯……爸干得你舒服吗……啊……爸的ròu棒插得你爽吗……喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「喔……爸……你干得我……好舒服喔……啊……你干得……好爽啊……喔……怎么会……啊……这么美……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;mī穴里强烈的快感不停的冲击着晓莲，让晓莲感觉到全身酥麻不已，她情不自禁双手紧抱着父亲的腰，同时将她浑圆结实的屁股不住向上挺好迎合父亲坚硬的ròu棒，好获得了更加强烈的快感。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸……啊……我……嗯……好舒服喔……啊……为什么会……啊……这么舒服……啊……太好了……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲mī穴里的蜜汁不停的流出来，让秦毅的ròu棒更顺畅的抽送着，同时mī穴里的处女嫩肉，更是不停配合着秦毅ròu棒的动作，不时忽深忽浅的紧缩着，嫩肉强大的力道，着实令他感到讶异。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲……啊……你的mī穴好嫩……嗯……干得爸好爽……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸……啊……我也好爽……喔……怎么会这样……啊……好美喔……啊啊啊……爸……怎么辨……我要尿尿了……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅知道女儿快高氵朝了，于是他将晓莲的双脚往上推向女儿的身体，同时往下压下身子，开始狂抽猛插起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哦……晓莲……那不是要尿尿……喔……那叫泄精……啊……爸也要射给你了……嗯……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……喔……太舒服了……怎么辨……啊……我要尿……尿了……啊……忍不住了……啊……啊……尿出来了……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲双手紧紧的搂住父亲，子宫里喷出一股股的阴精，全都浇在父亲的大guī头上，mī穴里嫩肉的邹褶更像造反似的蠕动着，让秦毅的ròu棒也跟着颤抖起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲……啊……爸要射给你了……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅将晓莲的双脚放下来，整做人趴在晓莲的身上，他用力抽插几次后，就将ròu棒整根插入女儿的mī穴里，让guī头顶住女儿的子宫口后，用力一揉「滋」、「滋」的把一股忍了一年多的大量浓稠灼热的jīng液全射进女儿的mī穴处。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一会后，秦毅翻身，让女儿躺在他身上，他看着脸色潮红香汗淋漓的瘫软在他身上的女儿，爱怜的问：「还痛不痛？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲没有没答父亲的话，她只是紧闭着双眼摇着头，脸上还露出一副满足的神情，对她来说刚开始时，真的让她痛不欲生，但随之而来的感觉却是让她无法形容的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「舒不舒服？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯～」听到女儿的回答后，秦毅的心里五味杂陈，他的手顺着女儿光滑的房滑了下去，来到女儿的屁股上，他轻轻的抚着女儿的屁股，体会着女儿紧紧的xiāo穴紧夹着锁他慢慢软缩的ròu棒。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「以后还想不想再要？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯！」晓莲喘息着再次的点头后，脸色嫣红的躲进父亲宽阔的胸膛里。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲娇嫩的脸庞和两个小小的柔软乳房紧靠着宽阔的胸膛的感觉，再加上手中的腰肢与圆圆屁股的触感，让秦毅再次传来兴奋的感觉，还插在女儿mī穴里正逐渐缩软的ròu棒又慢慢的坚硬了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯～爸，你的那个又硬了。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「没辨法！晓莲太漂亮了吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅双手抱着女儿的屁股挺动了几下，刚想再次干女儿时，转念想到女儿是第一次，再干下去恐怕她娇嫩的身子经受不起，于是他体贴的抱起女儿坐起来！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「来～爸帮你冲乾净！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅抱起坐在他双腿上的女儿，同时看着女儿的mī穴被他ròu棒撑开的样子，随着他ròu棒的抽出，晓莲mī穴里夹杂着jīng液的蜜汁，像山洪爆发似的流了出来，看着女儿有点红肿的yīn唇，秦毅不仅有点怪自己刚刚的暴行，同时想着下次要小心点了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;将女儿冲乾净后，秦毅裸着身体将女儿抱回床上，他斜靠在床头柜上让女儿趴在他宽阔的胸膛上，双手顺着女儿优雅的背部曲线，慢慢的滑向女儿翘凸的臀股之间，他轻轻的抚摸着，而晓莲则慵懒的趴着享受父亲的爱抚，手也好奇的玩着父亲的坚硬的大ròu棒，直到他们父女累了睡着了！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;如果说秦毅没有后悔过，那是骗人的事上，隔天一起床，想到昨晚的事他就后悔了！他看着躺在身旁身材娇小的女儿，他那还没成熟的女儿，他不仅后悔万分！他后悔自己昨天的兽行！但看着微弱的阳光照射女儿那全身雪白的肌肤的诱人模样，真的让他很陶醉，他忍不住的伸手抚着女儿正发育着的身材。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯～爸！早。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「早！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸几点了？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「六点多而以！再睡一会吧！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯～睡不着了！」晓莲爬起来趴在父亲的身上。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲！还会痛吗？」一想到昨晚疯狂的插着女儿幼小的嫩穴，秦毅担心的问。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「不会了！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲碰在秦毅的身上，手又伸到他的胯下玩弄着秦毅坚硬的ròu棒，秦毅则一手抚摸着晓莲的脸，一手在她的背上爱抚着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「你知道我们昨天晚上是在干嘛吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「知道！我在和爸爸做爱！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「会不会怪爸爸？」秦毅讷讷的问着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「不会！只要爸爸以后好好爱我就好了！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「会的！爸爸会好好爱晓莲的！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;说完后，秦毅双手捧起晓莲的脸，重重的吻着晓莲！晓莲也很快的吸吮着父亲伸进来的舌头，他们父女忘情的吻着，直到他们感到不能呼吸才分开！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「起床吧！该去换洗了！待会爸送你去上学！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯～」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「真是的！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲大胆的在父亲的guī头上吻了一下后就爬起来坐在床上，她在房间四处找不到她的衣服后，才想起昨天没穿就上床了衣服，于是她起床走到浴室。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;坐在床上的秦毅看着女儿穿着有点紧的胸罩时，才想到女儿的胸罩是老婆帮她买的，都是一年前的了，看来是该帮女儿重买！买什么样式的好呢？<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸！你还不起来吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哦～来了！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;听到女儿的叫声后，秦毅不仅觉的自己有点荒唐竟然会到想帮买什么样式的内衣，他笑了笑后，爬起床走向浴室！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;来到女儿的身后，秦毅双手抱着女儿说：「乖女儿！爸改天帮你买几件新内衣好不好？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「为什么？」晓莲柔顺的将背靠在父亲的身上。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「你的内衣太小了！穿着不舒服，而且会影响你的身材！」秦毅双手将女儿的乳房托起后，双手用力的捏着，同时嘴也吻着晓莲的脖子。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「你喜欢什么样的款式？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「那爸你呢？什么款式最你喜欢？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅不晓得才经过昨天，女儿会变的更成熟了！连女人的内衣会剌激男人，她都懂！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「连这个你多懂啊？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「妈妈有教过我！以前洗澡时，妈都会教我！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「真是的，你妈妈怎么都教你这些啊？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「妈妈说这些对女人很重要的！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;听到女儿这么一说！秦毅才想，难怪老婆生前这么懂的引诱他，连她死了一年多，他还是无法将她忘记！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸！你的那个好硬喔！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「你妈没教你，爸爸的这个叫什么吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「妈还来不及教就……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一提到已死去的母亲，晓莲有点忍不住地难过起来，秦毅当然也有相同的感觉，只不过为了不让女儿更难过，所以秦毅没表现出来！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「好了！别难过，以后换爸爸来教你！爸这叫大ròu棒！你的就xiāo穴穴或叫mī穴，男人的ròu棒要硬了才能插进女人的mī穴里。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「那昨晚我怎么会好像要死了一样，还会忍不住尿尿了呢？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「那不是尿！那叫aì液或蜜汁！女人做爱时会流出来的aì液，好方便男人的ròu棒插穴，而当女人舒服的时候就会流出更多的aì液！到了女人高氵朝的时候，女人就会忍泄了！懂吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哦～爸，那你和妈妈做爱时，妈妈会不会也泄了呢？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「会！每次做爱时，你妈妈泄会好几次呢！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一听到母亲做爱可以泄好几次，晓莲忍不住忌妒的说：「爸爸不公平！为什么我才泄一次，妈妈却可以泄好几次呢？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;看着女儿嘟着嘴唇的模样，秦毅忍不住的吻了一下后才说：「傻孩子！你是第一次，所以爸爸不太敢干太久，爸怕你会受不了！而且女孩第一次做爱就有高氵朝算特别了呢！有的女人，干了好几次还不会有高氵朝呢！」秦毅喘了口气后继续的说：「再说爸也一年多没干过了，晓莲又那么漂亮，小mī穴又紧、又嫩，爸爸一下忍不住就全射给你了！下次爸爸一定让你多泄几次好不好？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯！爸，那下次你要让我也和妈妈一样都泄几次喔！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;听到晓莲这么一说，秦毅心里很高兴，毕竟能让女儿亲自要求他这做父亲的感觉就是不一样！但随即他想到了另一件事，他整个人吓了一大跳！他想到女儿会不会怀孕！昨晚女儿的紧凑mī穴让他爽的忘了女儿会不会怀孕，就将jīng液全射进女儿的子宫里！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲！爸昨晚没想到！你的初经来了吗？」秦毅紧张的问。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「十三岁就来过了！妈妈还跟我说过，女孩子有了月经之后，就可以生小孩了！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「惨了！你这个月的月经来过了吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅没想到女儿的初经这么早就来了，一想到昨晚将忍了一年多的jīng液全射进女儿的mī穴里而且射的那么多、那么深，秦毅忍不住的担心起来！他不是害怕自己，而是怕被人知道后，女儿如何面对别人异样的眼光！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲察觉到父亲的些微变化后，好奇的问：「爸！怎么了？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「没有！对了！你还没告诉我你的月经来了没？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「前两天刚刚结束！怎么了？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;（那应该还不会怀孕！）秦毅松了一口气，毕竟父亲让女儿怀孕可不是件小事，到时候不仅他会失去女儿，而且也会让女儿一辈子抬不起头来，他又将女儿紧紧的抱住。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「以后爸会小心点！时间不早了！快准备一下，该上学了！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲并不知道父亲在讲什么所以好奇的问：「小心什么？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「小心不要让爸的宝贝女儿怀孕啊！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「怎么会怀孕？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「男人将jīng液射进女人的mī穴里后，精子和卵子结合就会怀孕了！然后过十个月后就会生小宝宝了！懂吗？好了，快来不及了！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一直沉醉在想着和女儿第一次做爱的情景的秦毅，脸上不知不觉露出开心的笑容！突然间晓莲的双脚动了一下，她的双脚曲张开来，mī穴也随着脚的张开而微微开启着，这让秦毅眼睛为之一亮，他的将头伸到女儿的双腿之间，他看着女儿的mī穴，虽然这mī穴已让他探访了一年多，但还是让他忍不住的盯着看！盯着女儿那漂亮、诱人的mī穴，他觉得女儿的mī穴更肥嫩了！就像多汁的蜜桃似的让他忍不住想咬一口，他趴在床上将头伸的更接近女儿的mī穴，闻着女儿mī穴的骚味，慢慢的他的思绪又回第一次帮女儿买内衣的时候了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;那是在和女儿发生性关系的几天后，他利用上班中午休息时买的，他特地到百货公司帮女儿挑内衣，他买了好几套，有的成熟妩媚的也有妖艳大胆的，当然也有适合晓莲穿的清纯可爱的！当然他是用送给女朋友的名义买的！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;回到家中后，他并没有马上拿出来送给女儿，他打算等晚上洗澡时再拿出来送给女儿，他让女儿先做功课，自己则去做饭，自从老婆死后，他就自己下厨，等到他们吃完饭后已经快七点了！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸！我先回房将功课做完，待会再来陪你！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;看着女儿蹦蹦跳跳的回到房间后，秦毅也起来收拾桌子，将厨房收拾完后，他就来到客厅看电视，看了一会新闻后，他发觉自己根本就没辨法静下心来，整个脑海里不断地浮起女儿那还没发育完全的娇小肉体，和那令他魂牵梦引的水嫩mī穴，他发觉自己忍了一年多的性欲，在经过上次和女儿做爱过后，非但没有减少，反而烧得更旺盛！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他拿着摇控器不停的转台，眼睛则不停的看着女儿的房门，希望女儿赶快出来陪他！好次几他忍不住的站起来打算到女儿的房里时，他又告诉自己不可以为了私欲而担误女儿做功课！他笑自己为何会像年轻的小伙子一样的性急！笑自己已经快四十岁了，还像十七、八岁的小子一样没定力。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;不知什么时候，晓莲已经来到秦毅的身后，她双手你着父亲的双眼，俏皮的说：「爸！想不想我？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「想！想死了！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅拉开晓莲的手后，转头看着女儿清纯娇羞的模样，秦毅忍不住的在女儿的唇上亲了一下。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「快过来陪爸爸吧！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲对着父亲露出个甜蜜的微笑后，就让父亲的手牵着绕过沙发，当她走到秦毅身旁时，秦毅猴急的用手抱着她，让晓莲坐在他的大腿上紧紧的抱着她。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸爱死你了！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸！我也好想你喔！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲将上半身转过去双手环着父亲的脖子，她抬起头送上自己的唇，秦毅也用着自己乾燥的嘴唇在女儿的唇上轻啄几下后，就像忍了很久似将嘴贴在女儿的唇上，他狂热又饥渴般的吻着女儿，双手也不停的在晓莲的身躯上抚摸，最后他的手来到晓莲的衣服上，他一手解开女儿校服上的钮扣，另一只手则伸到女儿的学生裙下抚摸着晓莲一双白嫩的玉腿。晓莲双手紧紧的抱着父亲的脖子，回应着父亲的吻，她用力的吻着父亲的唇，轻的咬着父亲伸进来的舌头。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他们父女俩尽情的深吻，嘴里的舌头紧紧缠绕在一起，相互吸吮着，说不出的快感让他们父女抱的更紧了，直到双方都有点气喘才松开双唇，离开女儿的唇后，秦毅开始用心的爱抚着女儿的乳房，他的手伸进女儿的衣里，隔着胸罩捏着女儿的乳房。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯……爸……喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲坐在父亲的腿上，上衣的钮扣早被父亲解开了好几颗，雪白的的乳房隐约的露出来，腰上的学生裙被撩起了一大片，一双白嫩的玉腿毫不遮掩的翘在沙发上，她情不自禁的双腿紧夹着父亲的手。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「咦～这不是你妈的内衣吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅发现晓莲穿着死去老婆的内衣，虽然不是很合身，但却增加了些微的成熟风味，他的手也从胸罩的缝细伸了进去。原本抚摸大腿的手也来到晓莲的mī穴上，他隔着内裤轻轻的在晓莲的mī穴上抚摸着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲！你怎么会穿你妈妈的内衣呢？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯……因为……嗯……妈的内衣……啊……比较漂亮嘛……喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;接着秦毅将女儿的内裤略为拨开后，就将手指头就伸了进去，他用中指在晓雯的mī穴裂缝上不断的抚着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸今天帮你买了漂亮几套内衣，待会再拿给你好不好？现在先让爸爸看你穿什么样的内衣？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;说完后，秦毅让晓莲坐在沙发上，他蹲在女儿的面前，将她的双腿拉开后，再把晓莲的裙子又往后撩起来，看着女儿穿了一件细带系着几乎透明的薄纱小内裤，他没想到女儿会挑这件来穿，整个mī穴都看的一清二楚的，连微凸的小丘上最隐密的两片肉唇则清晰突印在薄薄的布上。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哇～晓莲！你真会穿，竟然挑你妈妈最性感的内衣穿。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯……爸……不要看了嘛……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅将手指伸上女儿那突起的小丘上戳按着，然后他的手指按着女儿裂缝上下的搓揉着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……喔……爸……轻一点……好痛……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲的身子也开始不安份的扭着，mī穴里的蜜汁也慢慢的流出来，蜜汁沾湿了晓莲的内裤，秦毅握着女儿的双脚往上轻轻拉起来，他把头埋进女儿的双腿之间，隔着薄纱小内裤轻轻的舔着晓莲mī穴上的裂缝。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……好痒喔……喔……晓莲好痒……嗯……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲整个人倒躺在沙发上，她的双脚被父亲高高的拉起，mī穴也跟抬起来，mī穴里骚痒的感觉让她忍不住的不断将mī穴抬向父亲的脸。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯……啊……怎么这么痒……喔……女儿受不得了……嗯……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅将女儿的的双腿架在肩膀上，手指拉着女儿的内裤两旁的带子，将女儿的内裤给脱掉后，他又扒开女儿的双腿，看着晓莲已有蜜汁的mī穴，秦毅马上凑上嘴亲吻着女儿的mī穴。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲，捉着自己的脚。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「喔……嗯嗯……痒死我了……爸……为什么我会这么痒呢……啊……不要停……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲双手捉着自己的脚整个人瘫在沙发上面，但她的mī穴却高高的撑起，她不断的上下摆弄着腰，希望可以让骚痒的mī穴得到舒解。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸……啊……我好痒喔……为什么……啊……受不了了……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅用舌头顶开女儿mī穴上那条裂缝后，不断的舔着女儿的mī穴，同时他的手也在脱掉自己上来的衣服后，也伸到女儿的mī穴上，他用手指轻轻捏着女儿的yīn蒂揉着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……啊……好啊……爸……喔喔……好痒喔……嗯……我受不了了……喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸的好女儿，来吧！爸也受不了了！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅站了起来，将还挂在自己身上的衣服脱掉后，拉起躺在沙发上的女儿。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「来！把裙子脱掉！爸今晚要让你泄死！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲听话的将脱掉裙子，露出她可爱的小圆臀，他站在父亲的面前等着父亲的动作。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸！不是要到房间吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「不用了！今天在这干好吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「在这怎么干？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸会教你的！来坐在爸的大腿上！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;看父亲双脚打开顶着自己坚硬的ròu棒坐在沙发上后，晓莲抬脚跨过父亲的双脚乖乖的坐父亲的大腿上。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「然后呢？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅一手抱着晓莲的腰，然后缓缓褪去女儿的校服，解开胸罩后，看着女儿那青稚但已经显出曲线的身体，少女微微隆起，酥滑的乳房、窈窕的细腰，全身光滑柔嫩的肌肤映着光泽，看得秦毅的眼睛都快喷出火来了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲！握着爸爸的ròu棒，慢慢的插进你的mī穴里！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲听话的用手握着父亲的ròu棒时，惊呀的说：「爸！你的ròu棒好粗、好长喔！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「喜不喜欢？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯～最喜欢爸爸的大ròu棒了！又硬又烫的」晓莲手握着父亲的ròu棒，让ròu棒上的guī头顶在自己的mī穴口上后，慢慢的挺腰，秦毅一手搂着女儿，一手握着自己坚硬直挺的大ròu棒，在女儿的引导下慢慢的将ròu棒插进女儿的嫩穴里！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊！……爸……慢……慢一点……你的ròu棒……好大……啊……人家受不了……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;mī穴上一阵痛楚让晓莲不得不紧闭双眼皱起了眉头，她感觉到父亲坚硬又粗大的ròu棒正缓慢的进入她的mī穴里，虽然有点疼痛，但那种充实的满足感也从mī穴里传来，就像那晚一般的令她着迷！，她缓慢的挺腰，感受自己mī穴里的嫩肉将父亲坚硬、粗长的ròu棒包裹住的感觉。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯……爸……喔……轻一点……嗯……好涨喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅慢慢的将ròu棒插进女儿那紧凑的mī穴里，他可以感觉到女儿mī穴里的湿热，虽然那天就帮女儿开了苞，但女儿的mī穴还是很紧，尤其是mī穴里的嫩肉完全把他的ròu棒包裹住，那种温暖、紧缩的感觉，是他所梦想的！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……喔……你的ròu棒好粗喔……嗯……把我撑死了……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「还会痛吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「不会了！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「那爸要干你了喔！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅双手捉着女儿的腰，开始慢慢的摆腰，让插在女儿的mī穴里的ròu棒活动起来！晓莲则双手环抱着父亲的脖子细细的体会父亲的ròu棒在自己mī穴里抽插的挤压感，她注视着父亲，感受父亲ròu棒上的guī头刮过嫩ròu棒的美感。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……好舒服……嗯……我好舒服喔……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲……嗯……扭一下你的屁股……哦……这样会更舒服的……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲依照着父亲的话，开始配合着父亲的抽动，扭着她那肥嫩的屁股动了起来。不一会，她就发现mī穴里的快感果然增加了，她忍不住淫叫起来：「啊……爸……这样真的好舒服……啊……女儿的xiāo穴好痛快……嗯……爸……快……啊……再用点力……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;听到女儿的要求秦毅那有不答应的，他双手紧捉着女儿的腰，更加用力抽插着女儿的小mī穴，一时之间，客厅里「卜滋、卜滋、」的插穴声不断，形成一股有节奏的乐章。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哦……我的好女儿……爸这样干你爽不爽……嗯……屁股再抬高点……对……啊……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……好爽喔……爸……你干得人家好舒服……用力……啊……晓莲的xiāo穴好喜欢被……喔……爸爸的……啊……大ròu棒干喔……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲努力的扭动着小屁股，配合着父亲ròu棒的抽插，mī穴里的蜜汁也不断的流出，让秦毅的ròu棒更顺畅的抽插着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……你插得我……好舒服喔……啊……xiāo穴舒服死了……啊……怎么会这样……爸……啊……再用力……我好舒服……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;看着女儿表现得比上次还热情，脸上更露出欢愉的满足表情，秦毅知道女儿不但了解男女的性爱乐趣，更沉醉在性爱的欢愉里了！他让屁股离开沙发上半站着，兴奋的用着ròu棒狠狠地干着女儿的mī穴。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「喔……啊……好啊……爸爸……再用力……啊……爸爸……女儿好美……好舒服……喔……女儿好爽啊……啊……爸爸好棒…………」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;强烈的快感的让晓莲整个人往后仰，但她的双手捉着父亲的手，她的腰更不断的挺着，将mī穴送往父亲的坚硬大ròu棒上迎合着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「女儿啊……嗯……爸怎么用力干你……喔……爽不爽啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爽啊……爸……啊……怎么这么爽……啊……再用力……啊……舒服死我了……啊……爸……快……我忍不住了……啊……女儿要尿了……啊……尿出来了……啊……出来了……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;在父亲的一阵疯狂抽送之后，晓莲喷出了她的第一道蜜汁，她将整个mī穴贴在父亲的阴毛上，让父亲的ròu棒深深的插入她的mī穴里，mī穴里的嫩肉也不停的一缩一缩的吸吮着父亲的ròu棒。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……好舒服喔……尿得好舒服喔……啊……怎么会这么舒服呢……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「乖女儿！那不叫尿，叫泄精！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「对！泄精……泄得我好舒服啊……泄得我好爽……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;看着女儿的mī穴因为插着自己的ròu棒而涨满的模样，秦毅的心里充满了成就感，尤其是晓莲被插得通红的mī穴，更是让他兴奋莫名，他抱着晓莲后在客厅的地毯上躺下。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲！来～这次换你自己动！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯……爸怎么弄……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸会帮你的……来……先上下动……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲听话的跨蹲在父亲的身上，她双手撑着父亲的胸膛，随着秦毅撑在她的大腿内侧的双手上下动作，而慢慢的抬起屁股让ròu棒抽出mī穴后，再慢慢的将屁股放下，让ròu棒再次的插入mī穴里！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……嗯……你插得我……啊……好深……喔……好舒服喔……啊……慢……点……啊……晓莲的心……啊……都被你插透了啦……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;父亲的ròu棒随着自己的上下抬动而插进又抽出的，让晓莲忍不住的呻吟着，这种由自己撑握的插穴速度和方向的主动快感，更让晓莲不停的抬臀扭腰让ròu棒想插那里就插那里。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……好啊……爸……这样好爽喔……啊……好棒喔……啊……太舒服了……爸……晓莲好舒服……喔……晓莲爱死你了……啊……怎会这么美呢……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅双手托着晓莲的屁股上下抬着，同时抬着头看着女儿将自己坚硬直立的大ròu棒给插进去mī穴后，再直直的将大ròu棒给抽出来，他更兴奋的抬着手，让女儿的mī穴更快的插着他的ròu棒。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「喔……嗯……爸……人家好舒服喔……对……啊……快一点……啊……再重一点……哦……喔……我的好老爸……啊……大ròu棒哥哥……啊……你插得人家……喔……舒服死了……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;挡不住强烈快感更让晓莲不停的加速抬起屁股，好让在mī穴里的ròu棒能更快速的抽动，偶而父亲将承托她的双手放掉让她跌坐下来，ròu棒完全插入她的mī穴时，更让她住语无伦次的大叫：<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……对……爸……嗯……快一点……啊……再快一点……用力插……啊……对……舒服死了……喔……好爽……好美喔……啊……啊……爸……你的大ròu棒……插死我了……啊……啊……爸插死女儿了……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「你这个小骚货……嗯……爸……哪插得死你呀……快自己用力摇吧……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;看着女儿随着ròu棒的抽插而被撑大的mī穴，mī穴里的蜜汁更顺着ròu棒而流淌下，不但沾湿了他的阴毛更沾湿了他的睾丸，秦毅将手伸到女儿的mī穴上，用手指沾些女儿的蜜汁，拿到鼻子闻。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯……啊……爸……喔喔……我最爱的大ròu棒爸爸……啊……女儿真很爽……啊……好棒喔……爸……啊……晓莲快爽死了……啊……大ròu棒爸爸……啊……我……我快要泄出来了……喔……快……快出来了……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲爽得整个人趴在父亲的身上，她紧紧的搂着父亲，粉嫩的翘臀更是使劲的往下压用力的抵住父亲的大ròu棒小搓呀、磨呀的品味着的强烈高氵朝。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哦……好爸爸……嗯……女儿好爽喔……啊……好舒服……晓莲给你插死了……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;听到女儿这么说后，秦毅笑着抬起晓莲的脸，用力的亲吻晓莲那鲜红欲滴的双唇，他将舌头伸入女儿的口中，如蛇般的搅弄女儿的丁香小舌，一口一口的汲取，自女儿口中流出的香甜津液。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「怎么？爽不爽？爸说会让你多泄几次的吧！」秦毅骄傲的说。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯……真的好爽……嗯……爸……我都全身无力了……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「我们到房里干吧！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅坐了起来后，他把女儿的双脚架在手臂上，然后把女儿抱起来，他并没有将插在女儿mī穴里的ròu棒抽出来，反而是一边走、一边在女儿的mī穴抽送着ròu棒。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……你好厉害……嗯……喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲双手紧紧的抱住父亲的脖子，主动的送上香吻，她将父亲的舌头吸嘴里后，不停的吸吮着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;来到房间后的秦毅，并没有将女儿抱上床，他双手抱着女儿的脚，腰部前后摆动，让ròu棒不停的插着女儿的mī穴。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……好啊……嗯……用力……快……喔……再用力……啊……爸……嗯……我爱死你的大ròu棒了……啊……爸的大ròu棒……干得女儿好爽喔……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啪、啪」的声音不断的从他们父女的下体传出！「滋、滋」的声音更从晓雯的mī穴里响起！秦毅除了摆动抱着女儿的脚之外，他的腰也跟着用力的向前挺着，不继的将ròu棒插进女儿的mī穴里！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……啊……爸……我飞上天了……啊……爸……我好舒服喔……啊……再用力点喔……啊……xiāo穴好爽喔……喔……再来……啊……我的好爸爸……啊……你的干我好爽喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲双手抱着父亲的脖子，屁股随着父亲的手不断的往前挺，mī穴里的蜜汁就像山洪爆发似的从子宫深处流出来，她感觉到自己mī穴里的嫩肉就像怕父亲的ròu棒抽走似的紧紧的夹住不放！嘴里更不由自主的淫叫着！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……你的ròu棒好硬啊……喔……干得人家好舒服……啊……好爽啊……啊……大ròu棒爸爸……插死女儿了……啊……好舒服喔……啊……好爽喔……喔……爽死晓莲了……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女儿娇小的身躯并不会让秦毅感到沉重，相反的他抱着晓莲屁股的双手却越来越快的前后摆动着，让自己的ròu棒也跟着快速的在女儿的mī穴里抽插着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……啊……好舒服……啊……爸……你好会干……啊……干得晓莲好爽……不要停……啊……大ròu棒爸爸……啊……太爽……啊……舒服死了……爽死我了……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;在父亲的抽插之下，晓莲已不知道泄了多少次，虽然她还不很清楚什么是高氵朝，但她却喜欢这种因高氵朝而暂时失神的感觉，更喜欢自己的mī穴紧紧的包住父亲粗大的ròu棒的美感。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……用力……啊……对，就是那里……啊……用力插……喔……插死xiāo穴了……啊……美死了……喔……大ròu棒爸爸……干得女儿好舒服……啊……再来……用力……啊……我要……我要死了……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;看着满脸红潮，媚眼如丝的女儿，秦毅知道好儿又泄了，他把女儿放倒在床上后，接着举起她的双腿，一面亲吻女儿的脚指缝，一面用ròu棒徐徐的抽送着女儿的mī穴。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲……嗯……怎样sāo穴……爽吗……」秦毅一边喘着气，一边问。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯……爽死了……哦……好舒服……啊……爸……舒服死了……啊……磨……磨得好舒服……啊……爸你好厉害……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅看晓莲已连续三次高氵朝了，全身都快虚脱，因此他以较温和的方式，把插入穴中的ròu棒顶着女儿的子宫，藉着腰力旋转的磨着，让女儿可以喘口气，又可以使她保持兴奋状态。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「爸……我好舒服……好美……啊……你快一点……嗯……我好美……好舒服喔……啊……快……快插我啊……啊……爸……用力的干我小嫩穴……用力的干我……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅先将女儿的双腿挂在他肩上并拿颗枕头垫在她的臀部上，然后他慢慢倒向女儿的身上后，就前后的晃动着屁股，让ròu棒在女儿的穴里来回的抽插起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……啊……你插得好深……喔……干得晓莲好爽啊……啊……女儿的小嫩穴又酥……又麻……啊……爽死我了……喔……快……就这样……干吧……快……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲双手紧紧的抱着父亲的背，不停的在父亲的耳边淫叫，她不断的催促着父亲，屁股更不断的扭动着抬起来配合父亲ròu棒的抽送。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「喔……爸……不行了……啊……女儿快被……你的大ròu棒……干死了……啊……大ròu棒爸爸干死我了……啊……真的爽死了……啊……小嫩穴爽死了……喔……喔……用力……快……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;听女儿骚淫的叫声，秦毅心中的欲火更涨了。他紧压着女儿的肉体，屁股拼命的左右狂插，ròu棒狠狠的干着女儿的小mī穴，guī头次次都撞击到女儿的子宫颈上。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……嗯……我爱……爱死你了……啊……爸……再用力的……干……啊……用力干女儿……啊……妈死了……快爽死了……啊……插死我了……啊……晓莲的小嫩穴……爽死了啊……快……再快一点……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅从ròu棒感到女儿的mī穴就像活的一样，mī穴里的嫩肉包围着ròu棒不停的收缩颤抖着，甜美的蜜汁一波又一波的冲向他的guī头，更让他舒服的垫起脚来，猛力的插起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……女儿……喔……你的xiāo穴……啊……好紧……好棒喔……爸爸干得好爽……嗯……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸你也好棒啊……啊……干得我好爽啊……对……就是这样……啊……爸……用力干……女儿的xiāo穴……啊……女儿的xiāo穴快美死了……啊……不行了……喔……我好爸爸……啊……女儿真的爽死了……啊……快……不行……了……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲不断的感受到父亲那粗长像烧红铁条的ròu棒，在自己的mī穴深处花心上插进抽出的，阵阵的酥爽感觉，让晓莲身子也不停的颤抖着，mī穴里的蜜汁更像春潮初涨的从yīn唇缝流出来，屁股一次又一次的挺动，使自己的mī穴和父亲的ròu棒更密合。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……大ròu棒爸爸……喔……你干得……啊……我好爽……啊……xiāo穴美死了……喔……啊……用力……爸再用力……晓莲的xiāo穴要爽死了……哦……大ròu棒爸爸……用力的干……啊……快……女儿快爽死了……喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅从女儿子宫里强烈的收缩和一股股浓热的蜜汁知道女儿又快高氵朝了，于是他更疯狂的抽送ròu棒，他像是要将自己的ròu棒全塞进女儿的mī穴似的狠狠的干着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;啊……我快不行了……哦……爸……晓莲好爽喔……啊……爸快用力的干我……哦……快……用力一点……喔……对……爽死我了……快……喔……ròu棒干得我好爽……喔……xiāo穴快被爸干死了……啊……xiāo穴忍不住了……啊……xiāo穴爽死了……啊……爸……我……泄了……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲……快……嗯……爸也要射了……快顶……哦……屁股快顶上来……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲强烈的收缩和浓热的蜜汁让秦毅也忍不住地像爆开的水闸，弓着背把浓稠的jīng液激射入女儿的mī穴深处，他将积了三天的热精全都喷浇在女儿的子宫里后，便放下女儿的脚整个人压在女儿的身上，感受着女儿蜜汁和他的jīng液混合在一起，温暖的包含着他ròu棒。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;激烈的高氵朝更让晓莲全身热得发烫，她双手紧紧抱着父亲急促的娇喘着，美丽的娇脸蛋上，呈现出满足的表情，两片湿润的香唇微微开启，一条香舌不断自己舔着嘴唇。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;从此以后秦毅开始每天调教着女儿，用着粗硬的ròu棒在自己女儿幼嫩的xiāo穴里开疆辟土，而晓莲也每天毫无保留用着自己的mī穴接纳父亲的ròu棒。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲有些湿润的粉红色小肉缝，让秦毅回到了现实，他的手忍不住的伸到女儿的小肉缝上，他先轻轻的抚摸着女儿的mī穴后，再将手指慢慢的插进女儿的mī穴里轻轻的挖弄，另一手也搓揉着女儿的yīn蒂。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「嗯……啊……嗯……啊……好啊……好舒服啊……嗯……爸……啊……好美喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「晓莲！你醒来了？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「喔……是啊……爸……你这样弄……啊……女儿怎么还睡得着……嗯……爸……别停嘛……人家好舒服呢……快……再来啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「来～你也帮爸吹吹吧！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;说完后，秦毅转个身将下体移到女儿的面前，而他的脸也贴在女儿湿润的花蕊上，他又将手指伸进女儿的mī穴里挖弄着，同时一边也用舌头舔着女儿那慢慢充血的yīn蒂。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……啊……对……爸……就是那儿……啊……好啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲一手握着父亲硬挺的ròu棒上下套弄了一会后，就张开她那樱桃小嘴将父亲坚硬的ròu棒含进嘴里，不停的来回的套动父亲的ròu棒yáng具，嘴里也发出「嗯、嗯」的满足声音。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅看女儿粉红的mī穴早已经湿透了，于是插在女儿mī穴里的手指，便像ròu棒般的抽插起来，这更让晓莲陶醉其中，mī穴里的蜜汁也如泄洪般的分泌出来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……嗯……好啊……爸……啊……好舒服……喔……好爽啊……快用力……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲一兴奋，似乎忘了吸吮父亲的ròu棒，但她的手还是握着父亲的ròu棒上下套弄着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爸……快……嗯……快用你的……喔……大ròu棒……插女儿的小嫩穴吧……啊……我忍不住了……啊……我要爸的大ròu棒……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅知道时间不早了，所以他赶紧抽出手指爬下床，他站在床边拉着女儿的双腿将它拉开，看着女儿mī穴里的yīn唇已经微微翻开，蜜汁正汩汩的流出，他挺着ròu棒，将guī头抵住女儿的小嫩穴，来回拨弄着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……啊……爸……快……快将ròu棒插进……喔……我的sāo穴……嗯……女儿的骚好痒……啊……痒死我了……嗯……爸……快干我吧……求求你……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲不停的抬起屁股，用yīn蒂和yīn唇不断的磨擦着父亲的guī头，mī穴上的mī穴更沾湿了父亲的guī头，但父亲就是没将ròu棒插进她骚痒的ròu棒里。她抬起头，看着父亲的ròu棒正不停的磨着嫩穴口，于是晓莲伸手握住父亲的ròu棒，对准自己的mī穴口，说：「我的好爸爸……嗯……不要再逗我了……嗯……快……插进来……干我吧……女儿的sāo穴快痒死了……喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲不停的抬起mī穴往父亲的guī头上塞的想解决mī穴里的酸痒，可是父亲就是不肯将ròu棒插进去，于是她又将mī穴凑上去，用两片yīn唇含住父亲的guī头后，便慢慢的轻磨慢搓。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……好痒喔……爸……晓莲快痒死了……快来吧……嗯……晓莲要爸的大ròu棒……喔……爸……快来……帮女儿止止痒……啊……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;你德感觉灼热的yīn唇正紧夹着他的guī头不停的磨着，让他也酥痒起来，于是屁股往前一挺，「滋」一声，将ròu棒整根插进女儿的mī穴里。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……好美喔……啊……嗯……爸……你的ròu棒好大……好长……喔……好硬喔……插得……啊……我舒服极了……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲被父亲的ròu棒用力的插入后，觉得自已的xiāo穴涨的满满的，mī穴被ròu棒挤的张开绷得紧紧的，一种充实而麻痒的感觉袭上心头。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……真是美极了……啊……爸……你插吧……嗯……插死我好了……啊……不要停……啊……用力……啊……再用力干你的女儿……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……晓莲……哦……你xiāo穴好湿……好热……好紧……啊……爸爱死你了……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅的ròu棒被女儿窄紧的mī穴紧夹着，让他陶醉不已，guī头更传来一阵阵酥爽的感觉，他开始卖力的挺送屁股，让插在女儿mī穴里的ròu棒进进出出，他时深时浅，时快时慢的干着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……爽啊……爸……啊……我爱你……啊……快……我还要……啊……用力啊……我好爽啊……真好爽……啊……爸……再来……用力再插……啊……用劲插……插死我好了……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;晓莲双手抱着父亲的腰，感受着父亲的抽插，而每父亲的ròu棒抽出外面时，晓莲就感到一股莫名的空虚感涌上心头，可是当父亲的ròu棒再重重插入直抵花心时，晓莲的mī穴内就又觉得既饱满和充实，但晓莲就是爱这种感觉！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊……好爸爸……啊……我的心被你……啊……被你弄得好爽……好舒服……喔……啊……爸……你插到我的花心了……啊……插得我好美……啊……好爽喔……」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;秦毅急急的抽送着ròu棒，晓莲也不停的扭动细腰，一顶一挺的迎合父亲的ròu棒，就这样，他们父女俩用最原始的父女乱伦性爱，展开了他们的一天。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;殊不知，他们父女两人的‘早晨狂野曲’被两只美丽的大眼睛尽收眼底，她是房间里女孩的表姐----程万宗的女儿，17岁的美丽女孩程倩。			
+			<div align="center">
+				<a href="javascript:postError(805045,12448);" style="text-align:center;color:red;">章节错误,点此报送(免注册)</a>,
+				报送后维护人员会在两分钟内校正章节内容,请耐心等待。
+			</div>
+		</div>
+		<div class="bottem2">
+			<a href="javascript:;" onclick="addBookMark(805045,12448,'7');">加入书签</a>
+						<a href="/12/12448/805043.html" target="_top" class="pre">上一章</a>
+						←
+			<a href="/12/12448/" target="_top" title="" class="back">章节列表</a>
+			→
+						<a href="/12/12448/805047.html" target="_top" class="next">下一章</a>
+						<a href="javascript:;" onclick="addBookMark(805045,12448,'7');">加入书签</a>
+		</div>
+		
+	</div>
+</div>
+
+<script language="javascript">
+if(typeof addBookMarkByJs!= 'undefined' &&addBookMarkByJs instanceof Function)
+	addBookMarkByJs(805045,12448,'7');
+</script>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<script src="/layui/layui.js"></script>
+<script>
+layui.use(['element', 'form', 'layer'], function(){
+	var element = layui.element
+	,form = layui.form
+	,layer = layui.layer;
+	
+	
+});
+</script>
+
+</div>
+
+</div>
+
+
+<div class="footer">
+	<div class="footer_link">
+		&nbsp;新书推荐：
+				<a href="/117/117159/">最後一人</a>、
+				<a href="/117/117158/">轮回剑谱</a>、
+				<a href="/117/117155/">超完美神豪</a>、
+				<a href="/117/117154/">蛮人修仙传</a>、
+				<a href="/117/117153/">皇明天子</a>、
+				<a href="/117/117151/">洪荒之鲲鹏绝不让位</a>、
+				<a href="/117/117142/">海拉病毒</a>、
+				<a href="/117/117141/">西游之我可以签到诸天</a>、
+				<a href="/117/117138/">网游之逍遥仙魔</a>、
+				<a href="/117/117132/">作秦始皇的乖女婿</a>、
+				<a href="/117/117124/">我能追踪万物</a>、
+				<a href="/117/117123/">精灵之这个捕虫少年稳如老狗</a>、
+				<a href="/117/117109/">仙路茫然</a>、
+				<a href="/117/117108/">朱门贵女守则</a>、
+				<a href="/117/117107/">开局血赚的火影</a>、
+				<a href="/117/117104/">赶在春风之前拥抱你</a>、
+				<a href="/117/117103/">影视世界当导演</a>、
+				<a href="/117/117102/">豪横人生从捡破烂开始</a>、
+				<a href="/117/117101/">为师决不赴考</a>、
+				<a href="/117/117100/">莽明</a>、
+				<a href="/117/117096/">贫僧法海佛门世尊</a>、
+				<a href="/117/117095/">名侦探世界的警探</a>、
+				<a href="/117/117090/">诸界天灾上线</a>、
+				<a href="/117/117086/">霍格沃茨的诸天法爷</a>、
+				<a href="/117/117083/">出门撞见妖</a>、
+				<a href="/117/117081/">从文艺兵到娱乐宗师</a>、
+				<a href="/117/117078/">从火影开始抽卡</a>、
+				<a href="/117/117077/">为师我乐意</a>、
+				<a href="/117/117071/">都市无敌杀神秦浩楚嫣然</a>、
+				<a href="/117/117070/">随身带个修仙系统</a>、
+			</div>
+	<div class="footer_cont">
+	<p>本站所有小说为转载作品，所有章节均由网友上传，转载至本站只是为了宣传本书让更多读者欣赏。</p>
+	<p>Copyright © 2017 一世书城 All Rights Reserved. </p>
+	<script>tj();</script>
+	</div>
+	<p></p>
+	<p>欢迎收藏本站 <a href="/api/sitemap.xml" style="color: #FF0000;" target="_blank">网站地图</a></p>
+</div>
+
+
+</body>
+</html>
