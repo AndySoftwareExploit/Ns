@@ -31,8 +31,8 @@ H Passage generator
   
 娇淫青春
 > A really huge long H Novel. Teacher-Student, Parents-Kids, classroom, Park, rooms and else! <br>
-[Click to read](https://andysoftwareexploit.github.io/Yellow-Novels/Novels/jyqc/1.html)  
-> Attention! The Pages of the novel was download by IDM, so your reading will have a small problem. And you need to change the Chapter by Enter web address Manual.
+[Click to read!!!](https://andysoftwareexploit.github.io/Yellow-Novels/Novels/jyqc/1.html)  
+> Attention! The Pages of the novel was download by IDM, so your reading will have a small problem. And you need to change the Chapter by Enter web address Manual. <br> Way to next chapter: https://……/3.html ——> https://……/4.html <br> Do you know?
 
 ### Write by myself
 
