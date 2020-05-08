@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>9 - 一世书城</title>
+    <meta name="keywords" content="9" />
+    <meta name="description" content="您正在一世书城(www.14txt.net)小说网阅读由姐弟合欢创作的小说《9》最新章节- 9。" />
+	
+	<link rel="stylesheet" href="/layui/css/layui.css" />
+	<link rel="stylesheet" href="/static/css/xiaoshuo.css" />
+	<script type="text/javascript" src="/static/js/jq.min.js"></script>
+	<script type="text/javascript" src="/static/js/Post.js"></script>
+	<script type="text/javascript" src="/static/js/wap.js"></script>
+	<script type="text/javascript" src="/static/js/bqg.js"></script>
+	<script type="text/javascript" src="/static/js/index.js"></script>
+	
+<script language="javascript">
+
+if(isMobileBrowser())
+{
+    document.location.href='https://m.114txt.cc/12/12448/805049.html';
+}
+
+var prevpage="/12/12448/805047.html";
+var nextpage="/12/12448/805051.html";
+var index_page = "/12/12448/";
+var bookId,chapterId;
+
+function keypage()
+{
+	var event = document.all ? window.event : arguments[0];
+	if (event.keyCode==37) document.location.href = prevpage;
+	if (event.keyCode==39) document.location.href = nextpage;
+	if (event.keyCode == 13) document.location.href = index_page;
+}
+
+document.onkeydown = keypage;
+
+var speed = 5;
+var autopage;
+var night;
+var currentpos, timer;
+var temPos = 1;
+
+$(document).ready(function(){
+	
+	if(typeof(nextpage) != "undefined" ) {
+		
+		autopage = getCookie("autopage");
+		if(autopage==1) {
+			$('#autopage').attr("checked", true);
+			speed = getCookie("scrollspeed");
+			scrollwindow();
+		}
+	}
+	
+	bgcolor = getCookie("bgcolor");
+	setBGColor(bgcolor);
+	
+	font = getCookie("font");
+	setFont(font);
+	
+	size = getCookie("size");
+	setSize(size);
+	
+	fontcolor = getCookie("fontcolor");
+	setColor(fontcolor);
+	
+	width = getCookie("width");
+	setWidth(width);
+	
+	night = getCookie('night');
+	if(night==1) {
+		$("#night").attr('checked', true);
+		setNight();
+	}
+	
+
+	
+});
+
+document.onmousedown = sc;
+document.ondblclick = scrollwindow;
+
+function scrollwindow()
+{
+	timer=setInterval("scrolling()", 100/speed);
+}
+
+function sc()
+{
+	clearInterval(timer); 
+}
+
+function scrolling()
+{
+	currentpos = document.body.scrollTop;
+	window.scroll(0,++currentpos);
+	if (currentpos != document.body.scrollTop){
+        autopage = getCookie("autopage");
+        if(autopage==1) document.location.href = nextpage;
+		sc();
+	}
+}
+
+function setBGColor(bgcolor)
+{
+	$('#wrapper').css("background-color", bgcolor);
+	setCookie("bgcolor", bgcolor, 365);
+}
+
+function setFont(font)
+{
+	$("#content").css("font-family", font);
+	setCookie("font", font, 365);
+}
+
+function setSize(size)
+{
+	$("#content").css("font-size", size);
+	setCookie("size", size, 365);
+}
+
+function setColor(fontcolor)
+{
+	$("#content").css("color", fontcolor);
+	setCookie("fontcolor", fontcolor, 365);
+}
+
+function setWidth(width)
+{
+	$('#content').css("width", width);
+	setCookie("width", width, 365);
+}
+
+function setNight()
+{
+	if($("#night").attr('checked')==true) {
+		$('div').css("background-color","#111111");
+		$('div,a').css("color","#939392");
+		setCookie("night",1,365);
+	} else {
+		$('div').css("background-color","");
+		$('div,a').css("color","");
+		setCookie("night",0,365);
+	}
+}
+
+function setSpeed(ispeed)
+{
+	if(ispeed==0)ispeed=5;
+	speed=ispeed;
+	setCookie("scrollspeed", ispeed, 365);
+}
+
+function setAutopage()
+{
+	if($('#autopage').is(":checked") == true){
+		$('#autopage').attr("checked",true);	
+		setCookie("autopage",1,365);
+	}else{
+		$('#autopage').attr("checked",false);
+		setCookie("autopage",0,365);
+	}
+}
+
+</script>
+
+</head>
+<body>
+<div id="wrapper">
+<div class="ywtop">
+	<div class="ywtop_con">
+		<div class="ywtop_sethome">
+			<a onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('https://www.114txt.cc');" href="#">将一世书城设为首页</a>
+		</div>
+		<div class="ywtop_addfavorite">
+			<a href="javascript:window.external.addFavorite('https://www.114txt.cc','一世txt电子书 全本txt电子书免费下载 完本txt小说免费阅读 - 一世书城')">收藏一世书城</a>
+		</div>
+		<div class="nri">
+						<form name="mylogin" id="mylogin" method="post" action="/index.php?s=/web/index/login">
+				<div class="cc">
+					<div class="txt">账号：</div>
+					<div class="inp"><input type="text" name="uname" id="uname"></div>
+				</div>
+				<div class="cc">
+					<div class="txt">密码：</div>
+					<div class="inp"><input type="password" name="pass" id="pass"></div>
+				</div>
+				<div class="frii">
+					<input type="submit" class="int" value=" ">
+				</div>
+				<div class="ccc">
+					<div class="txtt"></div>
+					<div class="txtt"><a href="/index.php?s=/web/index/reg">用户注册</a></div>
+				</div>
+			</form>
+					</div>
+	</div>
+</div>
+
+<div class="header">
+	<div class="header_logo">
+		<a href="https://www.114txt.cc">一世书城</a>
+	</div>
+	<div class="header_search">
+		<form name="mysearch" id="mysearch" method="post" action="/index.php?s=/web/index/search">
+			<input class="search" id="bdcsMain" name="name" type="text" maxlength="30" value="可搜书名和作者，可少字但别输错字。" onfocus="this.style.color = '#000000';this.focus();if(this.value=='可搜书名和作者，可少字但别输错字。'){this.value='';}" ondblclick="javascript:this.value=''">
+			<input type="submit" class="searchBtn" value="搜索" title="搜索">
+		</form>
+		
+	</div>
+</div>
+
+<div class="clear"></div>
+
+<div class="nav">
+	<ul>
+		<li><a href="/">首页</a></li>
+		<li><a rel="nofollow" href="/index.php?s=/web/index/bookcase">我的书架</a></li>
+		
+		<li><a href="/xuanhuan/">玄幻小说</a></li>
+		<li><a href="/xianxia/">仙侠修真</a></li>
+		<li><a href="/dushi/">都市小说</a></li>
+		<li><a href="/lishi/">历史小说</a></li>
+		<li><a href="/wangyou/">网游小说</a></li>
+		<li><a href="/kehuan/">科幻小说</a></li>
+		<li><a href="/qita/">其他小说</a></li>
+		
+		<li><a rel="nofollow" href="/index.php?s=/web/index/gj">阅读轨迹</a></li>
+		
+		<li><a href="/wanben/1/">全本小说</a></li>
+		<li><a href="/paihangbang/">排行榜单</a></li>
+		<li><a href="/xiaoshuodaquan/">小说大全</a></li>
+	</ul>
+</div>
+
+<div id="main">
+
+<div class="content_read">
+	
+	<div class="box_con">
+		<div class="con_top">
+			
+			<div id="page_set">
+				<select onchange="javascript:setFont(this.options[this.selectedIndex].value);">
+					<option value="宋体">字体</option>
+					<option value="方正启体简体">默认</option>
+					<option value="黑体">黑体</option>
+					<option value="楷体_GB2312">楷体</option>
+					<option value="微软雅黑">雅黑</option>
+					<option value="方正启体简体">启体</option>
+					<option value="宋体">宋体</option>
+				</select>
+				<select onchange="javascript:setColor(this.options[this.selectedIndex].value);">
+					<option value="#000">颜色</option>
+					<option value="#000">默认</option>
+					<option value="#9370DB">暗紫</option>
+					<option value="#2E8B57">藻绿</option>
+					<option value="#2F4F4F">深灰</option>
+					<option value="#778899">青灰</option>
+					<option value="#800000">栗色</option>
+					<option value="#6A5ACD">青蓝</option>
+					<option value="#BC8F8F">玫褐</option>
+					<option value="#F4A460">黄褐</option>
+					<option value="#F5F5DC">米色</option>
+					<option value="#F5F5F5">雾白</option>
+				</select>
+				<select onchange="javascript:setSize(this.options[this.selectedIndex].value);">
+					<option value="#E9FAFF">大小</option>
+					<option value="19pt">默认</option>
+					<option value="10pt">10pt</option>
+					<option value="12pt">12pt</option>
+					<option value="14pt">14pt</option>
+					<option value="16pt">16pt</option>
+					<option value="18pt">18pt</option>
+					<option value="20pt">20pt</option>
+					<option value="22pt">22pt</option>
+					<option value="25pt">25pt</option>
+					<option value="30pt">30pt</option>
+				</select>
+				<select name="scrollspeed" id="scrollspeed" onchange="javascript:setSpeed(this.options[this.selectedIndex].value);">
+					<option value="5">滚屏</option>
+					<option value="1">最慢</option>
+					<option value="2">慢2</option>
+					<option value="3">慢3</option>
+					<option value="4">中4</option>
+					<option value="5">中5</option>
+					<option value="6">中6</option>
+					<option value="7">快7</option>
+					<option value="8">快8</option>
+					<option value="9">快9</option>
+					<option value="10">最快</option>
+				</select>
+				<select onchange="javascript:setBGColor(this.options[this.selectedIndex].value);">
+					<option value="#E9FAFF" style="background-color: #E9FAFF;">背景</option>
+					<option value="#E9FAFF" style="background-color: #E9FAFF;">默认</option>
+					<option value="#FFFFFF" style="background-color: #FFFFFF;">白雪</option>
+					<option value="#000000" style="background-color: #000000;color:#FFFFFF;">漆黑</option>
+					<option value="#FFFFED" style="background-color: #FFFFED;">明黄</option>
+					<option value="#EEFAEE" style="background-color: #EEFAEE;">淡绿</option>
+					<option value="#CCE8CF" style="background-color: #CCE8CF;">草绿</option>
+					<option value="#FCEFFF" style="background-color: #FCEFFF;">红粉</option>
+					<option value="#EFEFEF" style="background-color: #EFEFEF;">深灰</option>
+					<option value="#F5F5DC" style="background-color: #F5F5DC;">米色</option>
+					<option value="#D2B48C" style="background-color: #D2B48C;">茶色</option>
+					<option value="#C0C0C0" style="background-color: #E7F4FE;">银色</option>
+				</select>
+				<select onchange="javascript:setWidth(this.options[this.selectedIndex].value);">
+					<option value="95%">宽度</option>
+					<option value="95%">默认</option>
+					<option value="85%">85%</option>
+					<option value="76%">75%</option>
+					<option value="67%">65%</option>
+					<option value="53%">50%</option>
+					<option value="41%">40%</option>
+				</select>
+				翻页<input type="checkbox" name="autopage" id="autopage" onchange="javascript:setAutopage();" value="">
+				&nbsp;
+				夜间<input type="checkbox" name="night" id="night" onchange="javascript:setNight();" value="">
+			</div>
+			<a href="https://www.114txt.cc">一世书城</a> &gt; <a href="/12/12448/" title="娇淫青春之放纵">娇淫青春之放纵</a> &gt; 9		</div>
+		<div class="bookname">
+			<h1>9</h1>
+			<div class="bottem1">
+				<a href="javascript:;" onclick="addBookMark(805049,12448,'9');">加入书签</a>
+								<a href="/12/12448/805047.html" target="_top" class="pre">上一章</a>
+								←
+				<a href="/12/12448/" target="_top" title="" class="back">章节列表</a>
+				→
+								<a href="/12/12448/805051.html" target="_top" class="next">下一章</a>
+								<a href="javascript:;" onclick="addBookMark(805049,12448,'9');">加入书签</a>
+			</div>
+			<div class="lm">
+				&nbsp;热门推荐：
+								<a href="/12/12448/">娇淫青春之放纵</a>、
+								<a href="/98/98624/">逢床作戏(H)</a>、
+								<a href="/111/111169/">淫液香水系统</a>、
+								<a href="/14/14155/">斗破苍穹之淫宗肆虐</a>、
+								<a href="/75/75210/">乱仑合集(一)</a>、
+								<a href="/11/11812/">【斗破苍穹-淫宗肆虐】第七卷（全）大结局</a>、
+							</div>
+		</div>
+		
+		<div id="content" deep="3">
+			<p>
+				&nbsp;&nbsp;&nbsp;&nbsp;本网页使用IDM站点抓取，仅保留.html格式网页不保留.css层叠样式表，对于阅读的障碍我们深表歉意。<br/><br/>
+			</p>
+			&nbsp;&nbsp;&nbsp;&nbsp;思颖也响应，俩人互相贪婪的吸吮对方的舌头，离开时发出轻脆的声响，然后她和他互望，同时露出会心的微笑。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;大鹏吸吮着思颖的rǔ头，丰满的乳房随着思颖的动作像木瓜一样晃动，勃起的rǔ头像熟透了的葡萄，他贪婪的用舌头舔舐，再含在嘴里吸吮。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;在插入的情形下吸吮rǔ头，给了思颖强烈的刺激，她的yīn道随着那种性的冲动而产生抽搐，就像一张婴儿嘴巴似的吮吸着插在里面的ròu棒。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“还要，还要吻我的乳房。”思颖几乎忘我的浪叫，屁股猛烈颠波，大鹏的yīn茎几乎被她从yīn道里甩脱。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“静一点好不好？会传到外面去啦！”受不了思颖的呻叫，大鹏终于停下来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“听到有什么关系？他们不是也在做这种事吗？啊！又掉出来了！好极了！rǔ头痒痒的，我下面也酥酥麻麻。好舒服哦！”思颖继续浪叫，根本不把他的提醒放在心上。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“摸我的屁眼。”思颖突然提出奇妙的要求：“把手指插进去！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;大鹏觉得新奇，一只手慢慢从她背后从尾骨向屁股沟摸过去，手指踫到肛门，就在那里揉搓，慢慢的插入一个指头。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;思颖的淫浪声更大，全身就像波浪一样摆动。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“死啦！我要死啦！你把我插死吧！”思颖两条嫩白的手臂紧紧抱住男人，好象呼吸都困难的样子。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;这时候大鹏也开始兴奋，他紧紧闭着眼睛，把一切精神集中在下腹部，从身体涌出的快感像波浪一样扩散。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他觉得很热，全身都很热。下腹部也骚痒，可是那种感觉真舒服。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;大鹏终于忍不住说：“我快要射了！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“好哇！我也要和你一起泄身了！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“哦！啊！”大鹏的手臂开始颤抖，同时开始猛烈喷射。思颖感受到他在shè精时，自己也立刻产生飘舞在空中的幻觉。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“太好了！我知道你射进来来啦！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;两个人的身体在一起揉搓着，不停的发出哼声…<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;在餐厅里，玉秀的脑子有一段时间好象空白，直到感觉屁股很凉才醒过来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她用失神的表情仰望着天花板，然后向四周环视。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“哎呀！这里是周先生的家里！”她突然恢复正常意识，急忙站起来整理衣服。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;房间里祇有她一个人，慢慢的，终于能完整的回忆过去的一切情形。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她被思颖叫来周家，喝自己冲的茶以后，意识就开始迷幻，以后的事情就像做梦一样，但她清楚记得自己的双腿光溜溜的举在半空…<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于是，她想到刚才自己的身上发生过很严重的事，她已经被奸淫，而那男人是思颖的丈夫周杰，但她又记起周杰把yīn茎插入她的肉体后令她产生非常甜美的快感和兴奋，她清楚的记得自己还爽得大声呻叫出来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;认真又老实的玉秀，精神正在崩溃，她惊慌的想穿好衣服，可是找不到自己干净的衣服，她的衣服完全是皱纹，到处是污迹。还有一股强烈的味道。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她也是过来人，很快就知道那是jīng液的味道，周杰的jīng液沾满她贴身的内衣。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她不禁低头望向自己的下体…<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;完了！肉桃儿似的yīn户已经有点儿红肿，粉红色的肉缝正溢出男人的jīng液！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;怎么办呢？现实摆在眼前，她已经对不起丈夫了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;惊慌的玉秀也顾不得穿好衣服，勉强把衣服的前襟一拉，就跑到厕所，她取出厕纸来，坐在马桶上擦拭着下体。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;黏稠的乳白色液体沾在厕纸上，还参杂着她自己的yín水。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“啊！该怎么办呢？对她来说，和丈夫以外的男人性交当然还是第一次。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;厕所是暂时的个人空间，她竭力使情绪安定，心情上也恢复一些平静。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;可是，她身体深处的一种完全新的感觉出现在记忆里，玉秀自己都感到惊讶：没想到和别的男人性交是这么激烈又舒服…<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;刚才在椅子上是很不舒服的姿势，可是在周杰插入她的肉体里，她是双手扶着椅背努力抬起下体向他迎凑，她还清楚的记得自己曾经不断叫出内心爽快美感。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;我怎么会那样呢？她开始沉思：虽然那是不守妇道的行为，可是从另外的角度想，如果我一生都没有尝试过这样美妙的事，岂不也很可惜吗？<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她反复想了又想，仍然百思不得其解，她觉得还是先回家再说了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;从厕所出来，突然见到周杰在一个房间的门口对她招手。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周杰的召唤好象有一股不容她反抗的力量，玉秀身不由己移步过去。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周杰把她拉进另一个房间，脸上露出淫笑：“刚才很刺激吧！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我要回去了！”玉秀转身想走。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“你还不明白吧！那是因为你太纯真了，所以和我通奸后虽然很享受，但也感到非常苦恼！但是我还要告诉你，你老公和我老婆也正在隔壁的房间里干这种风流事。我现在就带你过去看看。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“啊！什么？”思颖一怔，很快又说：“哦…我不想看…”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;可是周杰以充满信心的口吻说：“我知道你口是心非，实际上是很想去看看的。我估计她们一定仍旧赤裸拥抱在一起，你跟我来吧。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周杰强拉她出房，向另一个房间门口拖行过去。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;思颖的房间刚才没有关好，现在是微微开的。周杰把食指放在嘴唇上示意不要玉秀发出声音，俩人继续悄悄的走过去，把眼睛靠在门缝上。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;玉秀的身体在颤抖了，牙齿踫得卡吱卡吱响。周杰瞪了她一眼，但止不住她颤抖，她觉得自己的脸像用冰水洗过一样凉，好奇心使她跟到这里，可是又不敢向房间里看，周杰的粗壮手臂把她捉住，想逃走也没有办法。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;就在这时，她听到思颖迷人的哼声，她忍不住用双手蒙住耳朵，但还是听到从床上传来男女的声浪和肉体摩擦的音响。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;房间里的两个人，不知是不是没有发觉，还是太投入，完全不理会这一边，仍然正在气喘吁吁的“肉搏”。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;大鹏高高抱起思颖的一条腿，压在思颖的身上摇动屁股，思颖的头用力向后仰，头发散乱的露出淫浪的表情，丰满的大腿在男人的肩上，另一条腿勾住了大鹏的屁股。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;大鹏发出很大哼声抽插时，思颖的肚子也随着他的抽插在起伏，在颤抖，抓住大鹏肩头的手指陷入他的肌肉里。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“噢…啊！”大鹏发出忿怒般的声音，眼睛注视前面的空间。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他快shè精了！玉秀虽然用手蒙脸，但还是从手指缝看出去，她是大鹏的妻子，所以知道他发出那种声音时，就是表示快要shè精了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她不禁惊异：我老公怎么可以射在思颖的身体里呢？但玉秀很快又想到，刚才周杰也是在她的yīn道里shè精的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;大鹏的动作更激烈了！玉秀看到他的yīn茎因为沾上思颖的yín水在闪闪发光，粗硬的大yáng具在思颖ròu洞里进出的景像清楚可见。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;思颖的yīn道淫液浪汁横溢，还流过肛门，滴下床上。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我要射了！”大鹏也大吼一声，下半身拼命向思颖压过去，思颖则高高地举起还在颤抖的大腿，她的脚趾肉紧得缩拢着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;就在大鹏shè精时，思颖也达到性高氵朝。二个人的身体重叠在一起，彼此都汗水淋漓的急促的呼吸。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;玉秀在心里想：自己总算没有昏过去！亲眼看到丈夫和思颖性交，这并不是做梦，因为从自己的yīn道里流出的yín水也正顺着大腿往下淌。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;玉秀已经没办法看下去，她匆匆逃离周家，回到自己家里。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一连几天，大鹏和玉秀谁也不愿意先提起那天晚上的事，俩人似乎进入冷战时期。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;这一天，大鹏下班的时间比平时晚了一些，玉秀比平时丰富的备好晚餐，吃饭的时候，她不但露出笑容，也说一些家里发生的事情，这种举动不禁让大鹏松了一口气。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;到了睡觉的时候，玉秀用很小的声音说：“今晚和以前一样，好吗？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“是不是要…”大鹏一面换睡衣一面问。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“不可以了吗？”玉秀打断他的反问。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“当然可以，我们是夫妻嘛！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;自从在周杰家发生那件事以后，大鹏一直没有向妻子求欢。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;这时，在旁仰卧的玉秀轻轻的闭上眼睛。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“玉秀！”大鹏用温柔的声音轻声叫她，然后靠近她的身体：“好久没有了。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“老公，很对不起…”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“别道歉，把身体转过来吧。”大鹏把玉秀抱在怀里接吻。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;玉秀立刻把舌头伸过来，这样的小动作在她来说也是很少有的事，尝到的唾液和柔软舌头的感触都非常美妙，大鹏立刻勃起了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我要来了。”大鹏开始脱自己的睡裤和内裤：“你也脱吧。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“好难为情。”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“又说这种话，又不是第一次了！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一直以来，都是大鹏几乎强迫的扯下玉秀的内裤，今晚玉秀终于第一次亲自动手把自己脱得一丝不挂。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;大鹏抬起上身凝视玉秀的肚脐和和光滑的耻部，然后把嘴压在她的大腿根上尝到少许咸味，他一面抚摸乳房一面分开大腿。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;大鹏的心里非常兴奋。他觉得妻子今晚和过去不一样了。她不但不再挣扎，而且她还一面扭动屁股，自己分开了大腿，并用一只手玩弄大鹏的ròu棒。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;玉秀的柔软手掌握住已经挺硬的ròu棒，大鹏的呼吸也急促起来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“要插进去了。”从侧卧拥抱的姿势把她推过去仰卧。大鹏今晚想用正常姿势。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他虽然已经知道要让yīn户偏低的玉秀产生快感，最好是用“狗仔式”，可是大鹏也很想试一试和周杰性交过的玉秀在正常姿势时会有什么反应。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;大鹏把她的腿用力分开，竖起膝盖。光滑的肉缝完全看清楚。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他用手指玩弄一下yīn唇，就把ròu棒对正浅红色的逃缝插进去，玉秀轻轻哼了一声，就立刻开始扭动屁股向他迎凑！这样的反应对大鹏来说也是非常少见的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;不久前因为妻子像木偶一样使大鹏感到不满足，可是今晚好象玉秀也开始采取主动了，大鹏当然联想到她和周杰交媾的事，他认为面前的实际才是最重要的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;祇要两夫妇能满足性欲，根本就不需要偷情。他和太太之间，就因为玉秀对性交太迟钝，所以才会让周杰和思颖她们有可乘之机。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;大鹏继续不停的扭动屁股使他的yīn茎更深插入，ròu洞里已经相当的湿润，深插时还能感觉玉秀的阴肌在颤抖和收缩。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;向外拔出时，玉秀也会肉紧的发出哼声把大鹏搂紧，两人呼吸急促，大鹏的胸部和肚皮也因为汗水而湿润。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;没多久，大鹏达到兴奋的极点。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“玉秀，要射了！”大鹏的ròu棒用力顶在子宫上，猛烈地向她yīn道里shè精。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;玉秀的身体也像波浪一样起伏，发出了好听的叫声。虽然很快就结束，但夫妇俩都感到非常满足。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“玉秀，你好象和过去完全不一样。”大鹏一面擦额头的汗一面看着妻子。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“不要这样看人嘛！”玉秀把脸转过去。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“是不是因为周杰？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;没有听到玉秀的回答。不过大鹏深信是因为周杰的影响。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;在周杰家的餐厅里，玉秀简直就像妓女一样淫荡的姿势和浪叫声，如今仍鲜明的留在大鹏的记忆里。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;受到周杰的奸淫后，玉秀也许变成了真正的女人。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;可想到这里大鹏又突然惊慌了，难道自己的性技没办法让玉秀满足吗？<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我和周杰，谁的技巧好呢？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“你这样问…太过份了。”玉秀性交后红润的脸色突然苍白了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“告诉我嘛！”大鹏温柔的把她搂抱。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“我怀疑我是因为喝了他的茶…可能他下了药。”玉秀软软的让他抱着。“不错！这件事思颖已经告诉我了，不过…你不怨恨周杰，对不对？”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;玉秀把棉被拉到头上，没有再回答。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;并不知道其中内情的马洁，在爸爸妈妈的介绍下，认识了周杰夫妻两个。经过一段时间的相处，大家更是比较的融洽。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“Ohhh……Ahhh……Mmmm……”客厅里桌上的DVD开着，电视机画面上的男女正用着夸张的姿势将两人的性器官接合在一起，ròu棒在xiāo穴里面抽出又插入，一次又一次，那女生淫荡地喊着，整间房间的气氛变得有些诡异。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;房间里的地毯上、床上、梳妆台上，胡乱的丢着周杰和自己的亲妹妹周燕的鞋子、衣物及内衣裤。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;而大床上，周燕仰面斜横在大床上，双脚微分并不时的抬起、放下。肉色的长统袜也只是胡乱的卷在足踝和小腿上。周杰轻轻爱抚周燕那赤裸的胴体，抚摸周燕的秀发、嫩软的小耳、桃红的粉额，双手放肆的轻撩，游移在那对白嫩高挺、丰硕柔软的乳房上，并揉捏着像红豆般细小可爱的rǔ头。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;不多时，周燕的rǔ头变得膨胀突起，周杰将周燕那双雪白浑圆的玉腿向外伸张，乌黑浓密、茂盛如林的三角丛林中央凸现一道肉缝，穴口微张，两片yīn唇鲜红如嫩。周杰伏身用舌尖舔着吮着那花生米粒般的阴核，更不时将舌尖深入周燕xiāo穴里舔吸着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“嗯……哼……啊……啊……”周燕不由自主的发出阵阵呻吟声，“哥……哥……………啊我好…真的好空虚啊……啊…，来给我……我们再来……快啊..亲哥哥……啊…弄我…….啊……哼……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;xiāo穴泌出湿润yín水，使得周杰欲火高涨、兴奋异常，左手拨开周燕那两片鲜嫩的yīn唇，右手握住自己粗大的**巴，对准了那湿润的肥穴嫩Bī，周杰臀部一耸，猛然挺入，“滋...”偌大的**巴全根尽没xiāo穴。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“啊……啊……啊……啊……啊…快啊…象以前我们…啊在家一样…干我…干…亲妹妹……啊……啊……”周燕满脸通红，在周杰眼里显得妩媚迷人，反而更加把劲的用九浅一深把**巴往肉紧的xiāo穴来回狂抽猛插，插得久旱的周燕阵阵抽动。狂热的抽插竟引爆出周燕那久未挨插的xiāo穴所深藏的春心欲焰，周燕完全崩溃了，淫荡春心迅速侵蚀了周燕。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;寂寞很久的xiāo穴怎受得了那真枪实弹的**巴狂野抽插，身体生理起了涟漪，渐渐淫欲快感冉冉燃升，刺激和紧张击着全身细胞，周燕感受到xiāo穴内的充实，敏感的阴核频频被碰触，使得周燕快感升华到高峰。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“啊……喔……”激发的欲火使得周燕那xiāo穴如获至宝，肉紧地一张一合的吸吮着guī头，周燕那两个多月未挨插的那xiāo穴窄如处女，令周杰乐得不禁大叫：“喔……好妹妹……你的xiāo穴好紧……夹得哥哥好爽啊……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“喔……好……好棒……哥哥……你真厉害！……哥哥……你还和以前一样啊…啊……喔……喔……人家…亲妹妹……快不行了……啊……啊……嗯……啊……哥哥哥哥……好哥哥哥哥……用力，再用力……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;**巴犀利的攻势，使周燕舒畅得呼吸急促，双手环抱住周杰，周燕的肥臀上下扭动迎挺着周杰的抽插，粉脸霞红羞涩地娇叹：“啊哈……啊哈……呀呀呀呀……嗯呀……嗯呀……再用力……加油……不要停……不要停…这么长时间…没和亲……亲哥哥…啊做爱了…搞烂妹妹的yín穴……插爆它……再用力！”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕的肥臀随着周杰的抽插不停地挺着、迎着，九浅一深或九深一浅、忽左忽右地猛插着，点燃的情焰促使周燕暴露风骚淫荡本能，浪吟娇哼、朱口微启频频频发出消魂的叫春：“喔……喔……太爽了……好……好舒服……xiāo穴受不了了……哥哥哥哥……你好神……啊……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;强忍的欢愉终于转为治荡的欢叫，春意燎燃、芳心迷乱的她已再无法矜持，颤声浪哼不已：“嗯……唔……啊……你再……再用力点……亲哥哥哥哥……不要停……啊……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周杰闻言大乐，连番用力地抽插**巴，粗大的**巴在那已被yín水湿润的xiāo穴如入无人之地抽送着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“喔……喔……亲……亲哥哥哥哥……美死妹妹了……用力插……啊…射进来…啊…哼……妙极了……嗯……哼……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕眯住含春的媚眼，激动的将雪白的脖子向后仰去，频频从小嘴发出甜美诱人的叫声，空旷已久的xiāo穴在粗大的**巴勇猛的冲刺下连呼快活，脑海里只充满着鱼水之欢的喜悦。**巴被又窄又紧的xiāo穴夹得舒畅无比，周杰改用旋磨方式扭动臀部，使**巴在肥穴嫩Bī里回旋。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕的xiāo穴被周杰又烫、又硬、又粗、又大的**巴磨得舒服无比，暴露出淫荡的本性，顾不得羞耻舒爽得呻吟浪叫着，兴奋得双手紧紧搂住周杰，高抬的双脚紧紧勾住周杰的腰身，肥臀拼命的上下扭挺以迎合**巴的研磨。周燕已陶醉舒畅得忘了是被亲周杰周杰在奸淫，而把周杰当作爱人！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;浪声滋滋、满床春色，xiāo穴深深套住**巴，周燕被周杰插得娇喘吁吁、香汗淋淋、媚眼微闭、姣美的粉脸上显现出性满足的欢悦。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“哎……好……好爽……亲哥…哥…哥哥，你……你可真行……喔……喔……受……受不了啊…我又找回我们…以前做爱…啊…用力..的感觉啊……喔……哎哟……你的东西太……太大了……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;浪荡淫狎的呻吟声从周燕那性感诱惑的小嘴频频发出，湿淋淋的yín水不断向外溢出，沾湿了床单，两人双双恣淫在肉欲得激情中！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕嘴角溢着淫笑：“亲爱的哥…哥哥…哥……你满意吗……你痛快吗……”<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;“嗯……嗯……你真行啊……喔……哥哥太……太爽了……唉唷……”周杰被周燕挑逗得心跳加剧、血液急循、欲火烧身、全身一畅、精门大开，滚烫的jīng液“卜、卜”地狂喷注满xiāo穴，周燕的穴内深深感受到这股强劲的热流。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;原来啊，周杰的妹妹周燕也在这所城市上班，26岁的她有着开放的性格，外号就叫做「万人插」，新潮、大方、浪荡，为了好好的享受男人，至今还没有固定的男友，更别说谈婚论嫁了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;这天来给哥哥送东西，恰好哥哥一个人在家。闲聊中就随手把放在抽屉里的A片拿出来看，早就有过数次狂欢的兄妹二人，自然而然的……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周杰兄妹激情过后，因周燕不愿意自己和哥哥的事让嫂子亲自撞见，告辞要走。周杰也不挽留，送妹妹出门，在门口恰好遇见了马洁，就趁机介绍了自己的妹妹周燕给她认识。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;马洁有一个高中的同学叫于惠，高中毕业后在一家公司上班，竟然和周燕是最好的同事朋友，她们还租住在一起。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;这一下，马洁和周杰他们的关系变的更好起来，整个假期里有时间就和周燕她们腻在一起，有时候还在那过夜。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;这天，是个星期六，下午的时候和周燕、于惠一起逛街到晚上。在她们的那个小屋里休息了一下，天色就已经暗了下来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕忽然想起什麽似的道∶「马洁，你晚上有空吗？我邀你跟我们去夜总会玩。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;马洁道∶「好啊！我还没有去过夜总会呢！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕说∶「我们三个人先和三个风度翩翩的男士去吃个晚饭，大夥再去夜总会玩。是我朋友。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;六点正，她们就各自穿着最漂亮的衣服，一起步出宿舍坐上了计程车直接开到饭店集合。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;下了车就看到三个很健壮的男士在门口等候她们。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕道∶「林凯、江先生、沈先生，我们大伙先进去用餐，然後再边吃边聊介绍认识，各位有意见吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;其中一名一直看着马洁的男士道∶「是，是，小姐们请。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;浩浩荡荡的六个人，就一块儿的步入饭店。男士们大方的点着酒菜，不久侍者把酒菜送过来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕首先说道∶「我帮你们介绍一下，我表哥江凌……<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他们互相点头，微笑着。那个林凯坐在周燕的身边，而江凌坐在马洁身旁，小惠的身旁坐着沈宏。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他们三个人喝着酒，吃着菜，也不时敬着女士们。马洁也喝了两杯，周燕的酒量很好！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯不时敬周燕的酒，此时，周燕已满脸通红，媚眼生春了，林凯的手轻经移到了周燕的大腿上。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;慢慢的┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯轻轻的摩擦周燕的大腿，周燕被他摩擦的似乎十分受用的眨着她那对水汪汪的大眼睛。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;此时，周燕大腿张开了些，使林凯的行动能更加方便深入。林凯就越过她的三角裤，直摸到小河潺潺的地方。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯的手在她的阴核上扣弄着，又不时的揉搓周燕那两片肥厚的yīn唇，使她的yīn户深处有了某种变化。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;猛地┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一股yín水直淌出来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;弄了林凯满手都是yín水，他两腿之间的阳物，也不由自主的高翘起来，涨大的直欲破裤而出。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕此时也从桌底伸过雪白的玉手，在林凯的大腿磨擦、挑逗着，慢慢又放到已硬涨的**巴上。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她一摸到即会心一笑，她这一笑使林凯的胆子大了不少，林凯此时就更加挑逗性的在阴核上扣弄。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕猛地俏脸飞红，身子一颤。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;与周燕、林凯同桌的人都各自吃着酒菜，聊着天，并没有注意到他们桌子底下的勾当。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;此时┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕已被林凯挑逗得欲火如焚，浑身都趐、麻、酸、痒，尤其是那潺潺流水的yīn户尤甚┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕此时十分需要肉体上的享受。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;於是┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕实在忍耐不住了，她说道∶「于惠、马洁，我有点累了，身体不大舒服，想先回去休息一下。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠一看周燕的俏脸飞红，呼吸也急促，于惠与她共事了两年，又怎会不知道这个同事好友的心事┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠笑着说∶「周燕，那你就回去休息一下吧。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕就对林凯说道∶「林凯，你送我回去吧！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯马上站起来，但林凯他在站起来之前，先用他的外衣放在手上，以便遮住自已裤子上的帐蓬。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠打趣着说∶「你们快去吧，再迟就来不及了。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯与周燕来到她们租住的小屋，进入了周燕的房间时。他一关上门就迫不及待的吻住了她那火热的嘴唇。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「唔┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕也狂热的反应他。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯的手已经十分不安份的在周燕的全身上下探索着，而周燕的手也在林凯的背部摩搓着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;此时┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕很艺术性的摩擦着林凯的背部，连带的，林凯狂热的动作也慢了下来，变得十分斯文的爱抚她。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯十足绅士风度的轻轻解开了周燕胸前的扣子。一粒、两粒、三粒┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;终於她的上衣散了开来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕的里面是一件雪白的乳罩，不知道是因为周燕的乳房太过於大呢？抑是乳罩的罩杯太小，使周燕的乳房大半露在外面。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯这一看不由得他血脉贲张，心跳加速了起来，耐不住伸出手去，打开了小燕的乳罩┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;蓦地┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕的两只坚挺、浑圆、雪白的乳房跳弹了出来，两只乳房地顶端就是两粒如樱桃的rǔ头。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;看得林凯爱不释手的轻轻揉搓了起来。但是林凯似乎仍嫌不够，就俯下头去用嘴含住了樱桃。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;接着，他又缓缓的吸吮着rǔ头，再把舌尖舔弄着周燕的乳晕四周轻巧的打转着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕被他吸吮得一张樱桃小口，忍不住娇哼出声∶「哼┅唔┅唔┅」两只媚眼已眯成一条线。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯的手又缓缓游了下去，直到了那早已春潮泛滥的桃源洞口，他在芳草栖栖的洞口又一阵揉搓。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯此时进一步的又把她粉红色的三角裤给缓缓拉下来，先摸了滑腻腻的一手，林凯才又把她的裙子卸了下来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他的眼前呈现了一个雪白如玉的裸体美女，身材是凹凸分明，该凸的地方凸，该凹的地方凹。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯此时以他平生最快的速度，脱去了他的长裤、上衣、内裤，把衣服丢得满地都是。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;那┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;早已青筋暴跳，怒不可遏的大yáng具，此时已脱颖而出，guī头有如一个初生小孩的拳头。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;而且又硬又热。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕现在微微眯着一对媚眼，一看到他那根又大又粗的yáng具，芳心一阵乱跳，连吞了几口口水。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他只是呆立原地，因为他已被眼前的美色所惑！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕见林凯他久久没有行动，就张开了那双水灵灵的眼睛，故意吸口气，挺挺那原已超大的胸脯，再故意的娇吟∶「唔┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯此时才如梦初醒，身子猛的一震，就连连吞了好几口口水，笑笑就往床上美人走去。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕看见他走了过来，就张开了她的双臂，春花般的脸上泛出了一股笑容，那笑似乎是纯洁无邪的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕这人真可谓∶「天使般的脸孔，魔鬼般的身材。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯猛的一把握住了周燕的那对豪乳，嘴也吻住了那两片带笑的嘴唇，他觉得其乳大而软。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕被吻的几乎喘不过气来，只好用手在林凯的大yáng具上，来回的抽动，使原本粗硬的yáng具尤甚。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「唔┅」周燕娇吁着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯此时粗鲁的在周燕的全身上上下下各部门活动，他这粗矿的作风，反而使她有无限快感。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕浪吟道∶「唔┅林凯┅唔┅别嘛┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕搔痒的全身趐麻畅快，尤其是从乳房传来的快感，便直传到yīn户深处使她阵阵骚痒。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;此时┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕已是欲火烧晕了头，她的大豪乳更是高高低低的上下起伏，樱桃小口不时哼出令人神伤的声音。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「唔┅喔┅我痒┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯不愧是一个调情胜手，他知道如何使一个女人更加需要，此时，他的手已移到了重地┅yīn户。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯他狠狠的扣弄，摩搓着那粒涨大如花生的yīn蒂，来回的一阵按摩，使周燕的春潮泛滥。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她的眼睛此时已水沈沈的一片，饥渴的看着他，林凯心知她已十二万分的需要┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;於是，他更加用力地吸吮乳晕。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕喘道∶「喔┅唔┅林凯┅我┅人家会痒┅死了┅你别再逗我了┅快┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯故意问道∶「周燕，你哪边痒？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕红着脸道∶「里面嘛┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯又用劲的搓搓yīn蒂，再道∶「哪里痒呀？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕全身颤抖着说∶「xiāo穴┅唔┅人家的┅làang穴痒嘛┅林凯你这死人┅你快点┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯又道∶「快？快什麽呀，不讲我怎麽知道。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕不管了，她浪呼呼的说∶「人家要你插嘛┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯十分得意的笑了一笑，就猛一翻身骑到了周燕的雪白玉体上，先长长的接一个热吻。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;正当两人在热吻时，周燕已经神不知鬼不觉的将腿叉开来，并濒濒将yīn户凑上迎接大yáng具。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;热吻後，周燕笑着说∶「请你快插入吧。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;凯笑道∶「好∶我进去了，你准备好了没有？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕道∶「放马过来！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕话声方落，林凯已经猛然的就将他的大yáng具朝她的yīn户洞口，狠狠的顶了进去。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「滋┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕的娥眉轻皱，身体向後退避，娇哼着∶「哦┅死了┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯此时低头一看，自已那根紫红，粗大的大yáng具，已经整根插入了周燕的yīn户内了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他只觉得大yáng具guī头的顶端顶到了她的芯，而大yáng具整根被包得紧紧的滋味十足。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;而周燕被林凯这猛然一插，并且一插就是猛的到底了，使她感到即舒畅又痛快。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕本已欲火如焚，饥渴万分，极想好好的享受一下人生乐趣，却不料yáng具粗大得使她一下子吃不消。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她叫道∶「哎哟┅我不要了┅林凯┅你先拔掉一些┅我涨痛死了┅唔┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯道∶「你刚刚不是要我插你吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕道∶「刚刚是刚刚┅现在人家┅不要了嘛┅你先抽出┅快嘛┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯听周燕这麽叫，知道她是真的很痛，连忙伏在她的身上不动，yáng具却在她的洞内直跳动。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕本来是想推开林凯的，但见他没再轻举妄动的意思，只是静静的伏着，她也就作罢了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;但是┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;不对呀！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕觉得她的yīn户内似乎有东西在跳似的，周燕不信的看看林凯，而他也没有动呀┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;但┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;怎麽？yīn户又在动了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她突然想到ròu棒还停留在ròu洞内跳动。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯却若无其事的热吻着她的脸颊。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;此时┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕的脸、嘴、心口、手脚，全身都直发烫，她的嘴唇乾燥，心猛跳，yín水更是泉涌而出。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕娇吟道∶「唔┅哎哟┅我好难受┅林凯┅我的全身┅直发烫┅好难受┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯这个花丛胜手，他又怎麽会不知道这女人的需要，可是，此时他存心要吊她的胃口。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯道∶「周燕，好啊！我可要抽出了。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯边说边把yáng具拔出了周燕的yīn户，而周燕的嘴本来还直叫不要，现在却挺着下半身怕他真的拔掉ròu棒。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;但┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯还是将ròu棒拔离了ròu洞。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕猛觉得她的ròu洞顿然空洞，使她空虚难受，偏偏又骚痒得直透心口。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;此时┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕宁愿塞得满满的涨痛，也不愿意空荡荡的难过、骚痒，於是，她濒濒挺凑ròu洞。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕浪吟道∶「林凯┅我好痒呀┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯一手狠狠的揉搓她那双巨大的丰乳，又用手探向周燕那湿淋淋的xiāo穴。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕忍不住了，她呻吟道∶「哎哟┅林凯┅快嘛┅这次┅我不管了┅你插死我┅也没有关系┅快干死我吧┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯又道∶「周燕，你要了？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她浪吟道∶「亲哥┅我好想┅好想你的┅好好的插吧┅我的小làang穴┅好吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯笑道∶「好！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯的语音一顿，他的大ròu棒又齐根没入了，周燕那湿淋淋的làang穴拼命的挺向ròu棒迎合。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;噗吱┅噗吱┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕闭着双眼浪叫道∶「唔┅好舒服┅这一下┅我真的很舒服┅哦┅太痛快了┅唔┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女人就是这麽奇怪，可不是吗？当你不给她时，她偏偏要，当你要给她时，她却不要了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;不知哪位文人曾讲过，女人像影子，当你追她时，她就逃避你，当你躲开时，她会回头来追你。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;上帝创造女人不是让男人了解的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;话说┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯看到周燕那付满足的样子，心中十分得意，如果女人不想要的，单方面弄起来就没有意思了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;男人就喜欢看女人满足的样子。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯心中一高兴，更是使尽吃奶的力量加快速度抽插起来，把周燕抽的yín水如浪潮般的顺屁股沟流下来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯下面的大ròu棒，死命的乱顶乱撞起来，把周燕整个人魂飞魄散，屁股直摇摆。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「唔┅哦┅爽死了┅我的天┅好舒服哦┅宝贝┅林┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕浪叫连连。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;虽然，周燕的一双大乳房，被林凯捏的隐隐作痛，但下体的ròu洞却被猛烈的抽插得十分舒畅。所以，她更觉得十分兴奋。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯全身使力的猛烈抽插百馀下，忽然改变了战术。改使九浅一深的战术吊她的胃口。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;没几下，周燕就娇喘连连了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;因为，他的九浅一身一直在逗弄着周燕，所以周燕挺起下半身使ròu洞尽量的挺高。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯又一下子插了到底。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哦┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕娇喘着说∶「唔┅我这一┅下子┅真的爽死了┅我会活活的被你┅弄死┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哦┅别这样┅别这样┅逗人家┅我好痒┅请狠狠的用力插吧。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯并不理会她的要求，仍旧以九浅一深的战术应敌。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕此时真的全身骚痒难耐，忽然使力甩开双腿，紧紧地勾住他上下起伏的臀部。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯此时已不能抽得太高了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕又口齿不清的浪叫道∶「林凯┅快┅哎哟┅我会死┅我快要痒死了┅我痒┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「你快┅快点嘛┅狠点吧┅顶死我也没关系┅我要你快一点。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕的双手死命的抱紧林凯的屁股。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯一见周燕的模样、浪声，就知道周燕已是很迫切的需要狠插猛抽的时候了┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯就猛烈的吸一口气，再憋住呼吸，突然猛烈的抬起屁股，将ròu棒拔出ròu洞再猛烈的全根尽入。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「滋！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;ròu棒已全根没入。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「呼┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕的满足呼声。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯就奋起了全身的吃奶力气，一会儿功夫，又已猛烈的抽插百馀下，插得她yín水直流。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕的yín水如黄河决堤般的倾泄而出，从屁股沟流到床单上，把床单弄湿了一大片。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯又将他那根又粗又大的内棒，左冲、右刺把整个ròu洞当水池，在里面游来游去。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕忽然大叫∶「哦┅哎哟┅我的好┅好情人┅我太舒服了┅我要泄┅泄了┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯一听已到时候更是加紧抽插。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;忽地┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯猛的感觉到ròu棒的前端的guī头上，被一股热流冲激到了，热得使他全身舒畅。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯笑道∶「周燕，你泄了？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕全身趐软的道∶「嗯！我泄了好多，真是太舒服了。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯一把就将泡在ròu洞里的ròu棒拔出来，用卫生纸把大ròu棒及小ròu洞擦拭乾净再把ròu棒猛烈的插入。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;因为，ròu洞里的yín水过多，会使双方的冲刺的快感降低，故他先擦拭乾净後再行火拼。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯眼看着周燕雪白妖媚的肉体，及桃红色的脸颊，激起他的爱怜而轻抚全身热吻小嘴。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕睁开一双媚眼道∶「林凯，我把双脚并拢，你狠狠插一会，请你把jīng液尽泄给我吧！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯不解的问道∶「为什麽呢？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕抚着头道∶「不知为什麽，我的头好痛。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯道∶「好，那完事後，你就好好的休息吧。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯一讲完话，周燕的双腿合并，林凯就一下比一下的快速抽插起来，一阵快攻猛插後。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;猛的┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;噗吱噗吱┅噗吱┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;林凯一阵颤抖後就猛烈的射出大量的jīng液，周燕被林凯的又热又强劲的jīng液冲得全身趐软。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;周燕一声娇呼∶「哦┅好烫┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;两人就相拥着，昏昏沉沉的进入梦乡。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;话说周燕和林凯先走一步之後，就成了江凌、沈宏及马洁、于惠二对二的场<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;面。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他们四个人保持优雅、客气的用完晚餐後，个子十分瘦高的江凌就对在座的每<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;个人道∶「等一下我们去夜总会跳舞，好吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;坐在一旁的沈宏接着道∶「好啊！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;江凌看着沈宏道∶「你少臭美了，我是在问小姐们，你又不是小姐呀！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;江凌与沈宏两人十分风趣的对话，使得洪马洁和于惠都笑得花枝招展。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏说道∶「两位小姐你们肯赏光吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;娇小的于惠道∶「我们是客随主便。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;江凌看着马洁道∶「你们都吃饱了吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏就故意的说∶「江凌，你在问那个你们呀？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;江凌就满脸含情脉脉的看着马洁，却回答着他质问的沈宏，道∶「就是你们呀！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;马洁被江凌看得不好意思把头垂了下去，杏脸马上飞红起来，使她显得更为娇俏。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏十分调皮的看了马洁一眼，然後对于惠眨眨眼睛，再恶作剧的拍拍江凌笑道∶「老兄！你这是怎麽回事，一看见漂亮小姐，眼睛连眨都不眨一下，江凌，你还真好玩。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;江凌道∶「去你的，你才好玩。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏就道∶「好了，好了！，我们别让小姐们看笑话了，我们都吃饱了，就向夜总会进军吧！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;马洁道∶「我吃饱了。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠也说∶「我也饱了。」「江凌接着道∶「那我们就买单吧，就可以去夜总会了。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏道∶「江凌，你先去叫车子，我去买单。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;马洁和于惠两人也一同和江凌到饭店门口来叫计程车，一会儿沈宏也走出来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;江凌的手一招，一辆黄色的计程车就停了下来，他们鱼贯坐进去，然後叫司机直驶目的地。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;到了目的地，沈宏付了车资。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏带路，带他们进入一家气氛高雅、灯光柔和、音乐优美的一家高级夜总会内。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;舞池已有五、六对在曼舞着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他们点了饮料。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;不久，饮料送上来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;江凌说道∶「马洁，请你赏光跳支舞。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;洪马洁笑笑将手递给了江凌，然後站了起来，两人手牵手走入灯光幽暗的舞池里。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;江凌就用手伏住了洪马洁那软若无骨的柳腰，一手握住了马洁那白嫩、细柔的手。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;渐渐地┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;江凌十分缓慢的将他的手圈紧了一些，使马洁的身子能靠近些，他好进一步采取行动。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一边的于惠道∶「沈先生，我去化妆室一下，失陪了。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏礼貌的道∶「你请便。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠缓缓的走到了布置很高雅的化妆室，就拿出法国香水，喷在自已的胸口、发上及衣服上，又涂了口红，才很满意的慢慢走出来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;但┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;另一边的沈宏却偷偷的将一些白色的粉，投入于惠的杯子内，然後，拿起摇了一摇又放回去。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;那杯饮料还是和原来一样，看不出有何不同。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏放的究竟是什麽呢？<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠对沈宏这人很有意思，所以她离坐去化妆室，又喷好多香水以诱沈宏┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠故意以美妙、动人的姿态慢慢的走过来，于惠人虽娇小，但三围却是合乎国际水准。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠故意荡动她那两座高峰，又一扭一摆的摇着她那个又浑圆、又高翘的屁股。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏看得直吞口水。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠一坐定，就未语先笑。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏一看于惠她那春花般的脸，充满了笑意，就像是个色中饿鬼似的盯着她的嘴及胸口看。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他吞吞口水道∶「于惠，你真美丽。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠是一个女人，女人最喜欢男人赞美，于惠当然也不例外，她十分高兴受用无穷。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她笑着说∶「谢谢你，沈先生。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏笑道∶「于惠，我叫你的名字，你不会介意吧？如果你不介意，也请跟我<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;朋友叫，叫我沈宏好了。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠笑着说∶「那我就叫你沈宏好了。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;两人正在聊天，马洁和江凌就回来了，江凌伏着马洁坐下後，就礼貌的笑着对于惠说道∶「你们怎麽不跳？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠笑道∶「待会我们就下去跳。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;说着，舞池就放出了时下最流行的迪斯可音乐。沈宏就对于惠伸出手。笑着说「于惠，该我们跳了。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;两人下了舞池，于惠就晃动她的秀发，跳着时下的功夫舞，一对大乳房也很狂野的晃动。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏的脚虽然在动着，手也在摇晃着，可是一双色眼却盯着于惠那对令人窒息的大乳房看。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;舞曲一毕，于惠与沈宏就回到坐位。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;江凌道∶「于惠，你的舞跳得真棒。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏邪门的说道∶「是呀！于惠你的舞很有动感。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠跳得很热，口也渴，就拿起了她的饮料，就是那杯沈宏放过东西的杯子大大的就喝一口。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠笑道∶「那里，我只是乱跳而已。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏一看于惠喝下了那杯饮料，就很怪异的笑着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;舞池中又响起了十分柔和、幽美的音乐。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;江凌带着马洁，沈宏带着于惠都下了舞池。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;两对男女一块儿，如果说，郎有情，妹有意，那他们之间的进展，就显得比一般人快了一些。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;现在┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;江凌已经将洪马洁整个人紧紧的搂抱在怀里了，而马洁也绝无反抗的靠在他的怀里，晃动着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠也被沈宏拉进了怀里，两人在舞池内摇摆着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏吻着于惠的脸颊，而于惠也柔顺的接受了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠渐渐的感觉到脸颊直发热，口直渴、心直跳，而且有点痒，但却不知究竟那里痒？<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;但┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;就是这会功夫，于惠就肯定了，她是yīn户痒，很痒，痒得恨不得主动要求别人与她作爱。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠实在忍不住了，她低声说∶「沈宏，我们别跳好不好？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏道∶「为什麽呢？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠难以启齿道∶「我好难过，口好渴也好热。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏看时机已成熟了，他就对正在看他的江凌做个势，然後很温柔的对于惠说道∶「那我们回坐位喝饮料，再送你回去。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠道∶「也好！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他们两人回到了座位，沈宏把于惠的饮料递给了于惠，她又喝了一大半，不一会于惠的脸更红了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏道∶「于惠，你的脸好红。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠道∶「是呀！而且身体也好烫。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏笑道∶「那我送你回去休息好吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠软软的道∶「好┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏扶起了软绵绵的于惠，对面对他的江凌点点头又笑笑，江凌也对他笑了一笑。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏道∶「我们走吧。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;坐了计程车，她仍软绵绵的靠在沈宏的怀里。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;计程车她们租住的小屋的门口，沈宏扶着她进入于惠的房间。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏将于惠往床上一摆，又帮她脱掉高跟鞋，再将自已的衣服脱掉，倒了一杯水和药喝下。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;接着就将于惠的上衣及裙子给脱下来，只剩白色奶罩和一条粉红色的三角裤。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠也没有反对，但脸红得更厉害。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏看到了于惠那付上帝创造的尤物玉体，他只觉得从丹田有股热气直冲他的ròu棒。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他迫不及待的把衣服全部脱得精光。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏又将于惠仅有的防线整个击破了，那条小小的红色三角裤，及雪白的奶罩全都被丢在床头。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏的手在她那双又坚、又挺、又圆的丰乳上，爱不释手的来回不断地揉搓着┅捏得她娇喘不停。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏撤回了他在王于惠腰际活动的左手，从前面转移到了她的禁地，女人最敏感的的禁地。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他摸到了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;嘿！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;巫山峡谷却是水流不停。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠张开媚眼，看了他一眼。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;娇喘着道∶「宏哥┅我今天┅不知道┅是怎麽┅一回事┅我的里面好痒┅好难过。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏此时不断地扣弄着王于惠那粒早已涨大如花生的阴核，他笑着对于惠道∶「要我帮你止痒吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠微点点头道∶「沈宏┅你快嘛┅人家都快痒死了┅我要你快一点插我的ròu洞嘛┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏道∶「好！」他别住气又道∶「我来了！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏应声而起，腾身而上。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她玉手带路，引着ròu棒直到ròu洞口。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他┅猛然一挺腰际，噗吱┅ròu棒如蛇入洞，整根没入只剩双卵。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哦┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠满意的浪叫道∶「哦┅这就对了┅对了┅狠狠的干┅好哥哥┅插死我吧┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他屁股一抬，ròu棒抽出三分之二，再猛烈一沉┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;噗吱！又进去了！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哦┅唔┅嘿┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;王于惠又浪哼一声。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;这时王于惠看起来又妖艳又淫荡。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;於是，沈宏开始猛烈快速的狠狠的抽插┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠则高声吟叫∶「哦┅唔┅这次┅真的好爽┅舒服┅用力太棒了。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;娇喘、娇呼不止。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;忽然┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏抽出了他的ròu棒，guī头在洞口慢慢的磨着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏他经过了一阵猛插快抽，恐怕难以持久，故乘机抽出休息片刻，以守住精关。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠猛觉得ròu洞内一空，心里也觉得一阵空虚，身体里好像掉了什麽东西似的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠急急的叫道∶「好哥哥，你是怎麽了，为何把宝贝抽出来呢？xiāo穴空空的好难受。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏吻着她的樱唇，把舌尖送入她的口中。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;如饥渴多年似的拼命吸吮他的舌尖。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她抬起了屁股，要迎接大ròu棒。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;guī头进去了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠猛的向上一抬、一摆，硬把沈宏的大ròu棒给吸进去，然後双手抱紧他的腰，屁股一摆，双腿夹住了他的屁股。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏突然奇袭她，猛烈的用十足的力气，将大ròu棒用力地往下冲刺，这一顶就猛烈的顶到了于惠的ròu洞深处。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她满足的长长吐一口气，浪声的叫道∶「哦┅好棒又┅又好涨┅沈宏┅你还要快点嘛┅人家┅都快┅痒死了┅我要┅哎哟┅要你狠狠的插┅ròu洞┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏别住气，力贯guī头如狂风暴雨似的，狠狠的抽插百馀下，插得于惠满脸生春┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠的屁股也跟着沈宏，有规律的上迎、下摆，下体的yín水如决堤的江水奔腾而出。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏气喘如牛的道∶「于惠，你舒服吗？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠娇脸飞红的道∶「嗯┅妹妹┅舒服┅都舒服死了┅我今天好怪┅特别想要┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏心想他如此心浮气燥，及疯狂的抽插，假如一时无法控制住精门，到时岂不是很丢脸。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏暗想∶「改一下战术吧，改以慢进慢出。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏飞快的拔出却又慢慢的插入，一分一寸的滑向ròu洞。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;噗吱的一声，ròu棒离洞，她内心一空。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;但┅大ròu棒进入洞内直逼花芯，刚顶了洞底，于惠的内心刚刚感觉到满足时却又偏偏┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;噗的一声，ròu棒却又似触电一般飞快拔出，随着又慢慢滑进，这样的紧抽慢送，把于惠弄得心里慌慌的，胃口也吊得十足。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏之所以采取这一战术，是想先稳固自已的精门，再狠狠的抽插使王于惠的ròu洞更舒畅。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠忙求道∶「哎哟┅好哥哥┅你快别这样┅狠抽慢入了┅你不知我好难过┅你一抽┅我的心也跟着空了┅想要你┅哎哟┅要你狠狠的┅插进去┅你偏偏又慢慢的┅让我全身空虚。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「唔┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她紧握着他。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;嗲声嗲气的说道∶「好哥哥┅拜托嘛┅你稍为快一点┅不！是要你抽得慢一点！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏见她已迫不及待了，於是┅他又改变了战法！沈宏改以九浅一深！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏虽然抽插的速度加快了！但是┅总是ròu棒半入即退，半进半出的。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;王于惠刚刚准备抬起屁股迎接大ròu棒时，他却偏偏猛的一插插到了她的花芯了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠这时浪叫着∶「哦┅好舒服哦┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;旦是┅偏偏随着沈宏这一插，又是半入不入的，半入又退了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠刚刚要叫∶噗吱！的一声！<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;又猛烈的直捣于惠的花芯了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;这样沈宏的九浅一深的战法，又把欲火如焚的于惠弄得ròu洞骚痒如蚁，她实在忍不住了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠嗲声的叫道∶「嗯┅好哥哥┅我好痒┅人家好┅难过哦┅求求你┅快插吧<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;┅别这样┅哎哟┅别这样┅不要再逗了┅人家会┅痒死了┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏笑道∶「好妹妹，你怎麽这麽浪？」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠白他一眼道∶「是呀┅人家都被┅你搞的┅难过死了┅不浪不行呀！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏用手捏揉着她的丰乳，嘻皮笑脸的说道∶「嘿嘿！慢慢搞，我一定让你痛快。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;王于惠此时已是欲火如焚，极需要大ròu棒的狠狠抽插，所以送上一个长长的香吻。软绵绵的道∶「沈宏┅我的最最┅好哥哥┅人家要你加油┅狠狠的插┅再深一点吧。」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏用力顶了一下说道∶「好吧！小淫妇，我会尽力把你的浪血插破！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哎哟！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠高兴的说∶「插吧，插破了┅我也不会怨你┅弄死我吧┅我会很感激你的┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「好！」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;语音一顿，他就猛一拔出ròu棒。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;於是┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏开始了猛烈的抽插了，沈宏精关早固，况且已是整军再战，故神勇万分这一波雨点般的抽插，真如天摇地动。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠浪叫道∶「哦┅美┅美死了┅我会爽┅爽死了┅哎哟┅唔┅我痛快┅痛快死了┅我要飞了┅痒死了┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏头低下不断的吸吮她的丰乳，一手揉捏她的rǔ头，使得于惠如一头发情的母猫般狂叫着。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;原来就有叫床习惯的于惠，经他如虎般的上下夹攻，ròu棒撑得她的ròu洞yín水直流，疯狂似的浪叫道∶「亲哥哥┅你就┅今天┅好好的干我吧┅我已经┅服了┅你的┅唔┅爽啊┅我的天呀┅ròu洞会裂的┅爽死了┅宝贝┅亲哥哥┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「唔┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她突然一阵颤抖道∶「哎哟┅不得了┅我要┅泄了┅爽┅又泄了┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;一阵颤抖，又泄了一次。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;但是┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠此时已进入性的最高氵朝，她用手紧紧的抱住了他的腰，更是歇斯底里的浪叫着∶「哎哟┅嘿┅我┅不得了┅làang穴碎了┅让你搞坏掉了┅唔┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「我┅完了┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;女人的高氵朝比男的慢了许多。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;但┅只要进入性的最高氵朝，女人就会接连几次的泄身┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;於是┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哎哟┅天啊┅我会死了┅ròu洞裂了┅我又要┅唔┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她嘴里直叫，而身体是一阵一阵的颤抖，她的媚眼微张，又紧紧的闭上，头一摆，又拼命的乱摇乱摆的┅身体扭着，屁股也跟着猛烈的迎合。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;噗吱┅噗吱┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;ròu棒在满满yín水的yīn户进出，而带动满是yín水的yīn唇，一翻一收的发出这美妙的音乐┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;噗吱！噗吱！噗吱┅噗吱┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;由於沈宏用力过猛，床也好像得到快感似的吱吱叫。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠已经进入性高氵朝的最高峰的境界。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「哥呀┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠有气无力的叫道∶「不行了┅哥哥啊┅妹妹┅真的受不了┅我不能动了┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「唔┅我好舒服┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠此时因为yīn户磨擦过久，开始有点痛了，她已过了高氵朝的绝顶，如今┅她需要休息了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;但是┅沈宏却偏偏愈战愈勇，抽、送、擦、旋、磨、转，ròu棒如出山猛虎。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠求饶道∶「亲哥哥┅好哥哥┅你快停吧┅我不能再干了┅唔┅嘿┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她的脸色苍白，她哀求道∶「天啊┅哎哟┅你┅宏哥┅真会把我┅搞死的┅我要死了┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏被喊得直想收兵了，但，如今他已陷入高峰，欲罢不能，他只有加快抽插的动作，尽快发泄。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏喘着气道∶「好妹妹┅我快了┅马上就┅好了┅你再忍耐一下┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠眼珠直翻，连喘气都感觉无力了。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;她呻吟的道∶「哎哟┅不┅哥哥┅我┅快死了┅会死的┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;突然┅<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;沈宏停止猛烈的抽插，他伏着不动了，一股如箭似的热流，正射入她的花芯、子宫口。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠她此时正在快要死的边缘上，突然被沈宏这股强劲的jīng液，又给射醒过来。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;「啊！」她惊叹了一声，「哥哥呀┅美死了┅爽死了┅痛快死了┅唔┅」<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;他也累得不想讲话，身体一侧倒在一边。<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;于惠也无力再动了，闭目养神了，双方都疲劳过度，两人相拥的睡着了。			
+			<div align="center">
+				<a href="javascript:postError(805049,12448);" style="text-align:center;color:red;">章节错误,点此报送(免注册)</a>,
+				报送后维护人员会在两分钟内校正章节内容,请耐心等待。
+			</div>
+		</div>
+		<div class="bottem2">
+			<a href="javascript:;" onclick="addBookMark(805049,12448,'9');">加入书签</a>
+						<a href="/12/12448/805047.html" target="_top" class="pre">上一章</a>
+						←
+			<a href="/12/12448/" target="_top" title="" class="back">章节列表</a>
+			→
+						<a href="/12/12448/805051.html" target="_top" class="next">下一章</a>
+						<a href="javascript:;" onclick="addBookMark(805049,12448,'9');">加入书签</a>
+		</div>
+		
+	</div>
+</div>
+
+<script language="javascript">
+if(typeof addBookMarkByJs!= 'undefined' &&addBookMarkByJs instanceof Function)
+	addBookMarkByJs(805049,12448,'9');
+</script>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+<script src="/layui/layui.js"></script>
+<script>
+layui.use(['element', 'form', 'layer'], function(){
+	var element = layui.element
+	,form = layui.form
+	,layer = layui.layer;
+	
+	
+});
+</script>
+
+</div>
+
+</div>
+
+
+<div class="footer">
+	<div class="footer_link">
+		&nbsp;新书推荐：
+				<a href="/117/117159/">最後一人</a>、
+				<a href="/117/117158/">轮回剑谱</a>、
+				<a href="/117/117155/">超完美神豪</a>、
+				<a href="/117/117154/">蛮人修仙传</a>、
+				<a href="/117/117153/">皇明天子</a>、
+				<a href="/117/117151/">洪荒之鲲鹏绝不让位</a>、
+				<a href="/117/117142/">海拉病毒</a>、
+				<a href="/117/117141/">西游之我可以签到诸天</a>、
+				<a href="/117/117138/">网游之逍遥仙魔</a>、
+				<a href="/117/117132/">作秦始皇的乖女婿</a>、
+				<a href="/117/117124/">我能追踪万物</a>、
+				<a href="/117/117123/">精灵之这个捕虫少年稳如老狗</a>、
+				<a href="/117/117109/">仙路茫然</a>、
+				<a href="/117/117108/">朱门贵女守则</a>、
+				<a href="/117/117107/">开局血赚的火影</a>、
+				<a href="/117/117104/">赶在春风之前拥抱你</a>、
+				<a href="/117/117103/">影视世界当导演</a>、
+				<a href="/117/117102/">豪横人生从捡破烂开始</a>、
+				<a href="/117/117101/">为师决不赴考</a>、
+				<a href="/117/117100/">莽明</a>、
+				<a href="/117/117096/">贫僧法海佛门世尊</a>、
+				<a href="/117/117095/">名侦探世界的警探</a>、
+				<a href="/117/117090/">诸界天灾上线</a>、
+				<a href="/117/117086/">霍格沃茨的诸天法爷</a>、
+				<a href="/117/117083/">出门撞见妖</a>、
+				<a href="/117/117081/">从文艺兵到娱乐宗师</a>、
+				<a href="/117/117078/">从火影开始抽卡</a>、
+				<a href="/117/117077/">为师我乐意</a>、
+				<a href="/117/117071/">都市无敌杀神秦浩楚嫣然</a>、
+				<a href="/117/117070/">随身带个修仙系统</a>、
+			</div>
+	<div class="footer_cont">
+	<p>本站所有小说为转载作品，所有章节均由网友上传，转载至本站只是为了宣传本书让更多读者欣赏。</p>
+	<p>Copyright © 2017 一世书城 All Rights Reserved. </p>
+	<script>tj();</script>
+	</div>
+	<p></p>
+	<p>欢迎收藏本站 <a href="/api/sitemap.xml" style="color: #FF0000;" target="_blank">网站地图</a></p>
+</div>
+
+
+</body>
+</html>
