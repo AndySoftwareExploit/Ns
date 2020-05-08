@@ -27,7 +27,12 @@ For more Python Program Language details please goto [Welcome to Python.org](htt
 H Passage generator
 
 >A "smart" H novel generator. It was rebulid by the "Bullshit Novel Generetor". It can bulid a bullshit H novel. <br>
-[Come and see!](https://andysoftwareexploit.github.io/Yellow-Novels/YellowNovelgenerator.html)
+[Come and see!](https://andysoftwareexploit.github.io/Yellow-Novels/YellowNovelgenerator.html)  
+  
+娇淫青春
+> A really huge long H Novel. Teacher-Student, Parents-Kids, classroom, Park, rooms and else! <br>
+[Click to read](https://andysoftwareexploit.github.io/Yellow-Novels/Novels/jyqc/1.html)  
+> Attention! The Pages of the novel was download by IDM, so your reading will have a small problem. And you need to change the Chapter by Enter web address Manual.
 
 ### Write by myself
 
